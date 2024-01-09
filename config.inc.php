@@ -14,19 +14,19 @@
  */
 
 // Database type: postgresql or mysql.
-$DatabaseType = 'postgresql';
+$DatabaseType = 'mysql';
 
 // Database server hostname: use localhost if on same server.
-$DatabaseServer = 'webschool-server.postgres.database.azure.com';
+$DatabaseServer = 'finalschool-server.mysql.database.azure.com';
 
 // Database username.
-$DatabaseUsername = 'lsjeygldln';
+$DatabaseUsername = 'hqhfmuzfjm';
 
 // Database password.
-$DatabasePassword = 'ODZ1Z072623236Q5$';
+$DatabasePassword = 'MXM35DHY320NKG1M$';
 
 // Database name.
-$DatabaseName = 'webschool-database';
+$DatabaseName = 'finalschool-database';
 
 
 /**
