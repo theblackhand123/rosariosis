@@ -23,7 +23,7 @@ $DatabaseServer = 'finalschool-server.mysql.database.azure.com';
 $DatabaseUsername = 'hqhfmuzfjm';
 
 // Database password.
-$DatabasePassword = 'MXM35DHY320NKG1M$';
+$DatabasePassword = '1234567890';
 
 // Database name.
 $DatabaseName = 'finalschool-database';
