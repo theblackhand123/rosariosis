@@ -17,16 +17,16 @@
 $DatabaseType = 'mysql';
 
 // Database server hostname: use localhost if on same server.
-$DatabaseServer = 'finalschool-server.mysql.database.azure.com';
+$DatabaseServer = 'microsch-server.mysql.database.azure.com';
 
 // Database username.
-$DatabaseUsername = 'hqhfmuzfjm';
+$DatabaseUsername = 'zydvpcauzf';
 
 // Database password.
-$DatabasePassword = '1234567890';
+$DatabasePassword = '3WWIUPNM2H3EUI51$';
 
 // Database name.
-$DatabaseName = 'finalschool-database';
+$DatabaseName = 'microsch-database';
 
 
 /**
