@@ -17,16 +17,16 @@
 $DatabaseType = 'mysql';
 
 // Database server hostname: use localhost if on same server.
-$DatabaseServer = 'microsch-server.mysql.database.azure.com';
+$DatabaseServer = 'microlab-server.mysql.database.azure.com';
 
 // Database username.
-$DatabaseUsername = 'zydvpcauzf';
+$DatabaseUsername = 'djqxfcjauf';
 
 // Database password.
-$DatabasePassword = '3WWIUPNM2H3EUI51$';
+$DatabasePassword = 'FG73Q7P0UM7V5W68$';
 
 // Database name.
-$DatabaseName = 'microsch-database';
+$DatabaseName = 'microlab-database';
 
 
 /**
