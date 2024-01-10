@@ -44,7 +44,7 @@ $DatabaseName = 'microlab-database';
  * @example /usr/bin/mysqldump
  * @example C:/wamp/bin/mysql/mysql[version]/mysqldump.exe
  */
-$DatabaseDumpPath = '';
+$DatabaseDumpPath = '/usr/bin/mysqldump';
 
 /**
  * Full path to wkhtmltopdf binary file
@@ -57,7 +57,7 @@ $DatabaseDumpPath = '';
  * @example /usr/local/bin/wkhtmltopdf
  * @example C:/Progra~1/wkhtmltopdf/bin/wkhtmltopdf.exe
  */
-$wkhtmltopdfPath = '';
+$wkhtmltopdfPath = '/usr/local/bin/wkhtmltopdf';
 
 
 /**
@@ -80,7 +80,7 @@ $DefaultSyear = '2023';
  *
  * Leave empty to not receive email notifications
  */
-$RosarioNotifyAddress = '';
+$RosarioNotifyAddress = 'azariahasafoagyei@gmail.com';
 
 
 /**
@@ -91,7 +91,7 @@ $RosarioNotifyAddress = '';
  *
  * Leave empty to not receive errors
  */
-$RosarioErrorsAddress = '';
+$RosarioErrorsAddress = 'azariahasafoagyei@gmail.com';
 
 
 /**
@@ -105,4 +105,4 @@ $RosarioErrorsAddress = '';
  *
  * @example [ 'en_US.utf8', 'fr_FR.utf8', 'es_ES.utf8' ];
  */
-$RosarioLocales = [ 'en_US.utf8' ];
+$RosarioLocales = [ 'en_US.utf8', 'ko_KR.utf8' ];
