@@ -1,0 +1,293 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Semester Rollover module Help\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-12 21:50+0100\n"
+"PO-Revision-Date: 2019-12-12 22:02+0100\n"
+"Last-Translator: François Jacquet <info@rosariosis.org>\n"
+"Language-Team: RosarioSIS <info@rosariosis.org>\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _help\n"
+"X-Poedit-Basepath: ../../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: Help_en.php\n"
+
+#: Help_en.php:16
+msgid ""
+"<i>Semester Rollover Students</i> lets you roll students to the next "
+"semester. The Rollover program only serves for one school year to another, "
+"and thus does not allow for passing students to the next grade during the "
+"year. The Semester Rollover Students program works by first dropping "
+"students and re-enroll them in the Next Grade, on the first day of the next "
+"semester. See Reference below."
+msgstr ""
+"<i>Transferir los Estudiantes de Semestre</i> le permite transferir los "
+"estudiantes al siguiente semestre. El programa Transferir solo sirve de un "
+"año escolar al siguiente, y no le permite pasar estudiantes al grado "
+"superior durante el año. El programa Transferir los Estudiantes de Semestre "
+"funciona retirando primero los estudiantes y inscribiéndolos de nuevo en el "
+"Grado Siguiente, el primer día del semestre siguiente. Ver la referencia "
+"abajo."
+
+#: Help_en.php:17
+msgid ""
+"Note: you may want to create specific <i>Enrollment Codes</i> such as "
+"\"Beginning of Semester 2\" and a \"End of Semester 1\" drop code."
+msgstr ""
+"Nota: de pronto quiere crear <i>Códigos de Matrícula</i> específicos tal "
+"como \"Principio del Semestre 2\" y un código de retiro \"Fin del Semestre "
+"1\"."
+
+#: Help_en.php:18
+msgid ""
+"Students are rolled to the next Semester based on their individual "
+"\"Rolling / Retention Options\" (see <i>Students > Student Info</i>):"
+msgstr ""
+"Los estudiantes están transferidos al siguiente Semestre basado en sus "
+"\"Promover / No Promover Opciones\" individuales (ver <i>Estudiantes > "
+"Información del Estudiante</i>):"
+
+#: Help_en.php:19
+msgid ""
+"Next grade at current school: the student is enrolled in the next Grade "
+"Level (see <i>School > Grade Levels</i>) or only Dropped if no Next Grade is "
+"set."
+msgstr ""
+"Próximo grado en la institución actual: el estudiante está promovido el "
+"Grado siguiente (ver <i>Institución > Grados</i>) o solamente Retirado si "
+"ningún Grado Siguiente esta definido."
+
+#: Help_en.php:20
+msgid ""
+"Retain: no need to drop and re-enroll the student in the same Grade Level. "
+"The student is skipped."
+msgstr ""
+"Mantener: no se necesita retirar y re-inscribir el estudiante en el mismo "
+"Grado. Se salta el estudiante."
+
+#: Help_en.php:21
+msgid ""
+"Do not enroll after this school year: student is Dropped. Interpreted here "
+"as \"Do not enroll after this semester\"."
+msgstr ""
+"No matricular después de este año escolar: el estudiante está Retirado. "
+"Interpretado como \"No matricular después de este semestre\"."
+
+#: Help_en.php:22
+msgid ""
+"Other School: the student is enrolled in another school. Note: no Grade "
+"Level or Calendar are set."
+msgstr ""
+"Otra Institución: el estudiante está inscrito en otra institución. Nota: no "
+"se definen el Grado o el Calendario."
+
+#~ msgid ""
+#~ "Next grade at current school: the student is enrolled in the next Grade "
+#~ "Level (see _School > Grade Levels_) or only Dropped if no Next Grade is "
+#~ "set."
+#~ msgstr ""
+#~ "Próximo grado en la institución actual: el estudiante está promovido el "
+#~ "Grado siguiente (ver )"
+
+#~ msgid ""
+#~ "<i>Semester Rollover Students</i> lets you roll students to the next "
+#~ "semester. The Rollover program only serves for one school year to "
+#~ "another. The Semester Rollover Students program works by first dropping "
+#~ "students and re-enroll them in the Next Grade, on the first day of the "
+#~ "next semester. See Reference below."
+#~ msgstr ""
+#~ "<i>Transferir los Estudiantes de Semestre</i> le permite transferir o "
+#~ "inscribir los estudiantes al siguiente semestre."
+
+#~ msgid "Semester Rollover"
+#~ msgstr "Transferir de Semestre"
+
+#~ msgid "Semester Rollover Students"
+#~ msgstr "Transferir los Estudiantes de Semestre"
+
+#~ msgid "Are you sure you want to roll students to the next semester?"
+#~ msgstr ""
+#~ "¿Está seguro que desea transferir los estudiantes al siguiente semestre?"
+
+#~ msgid "Please check the \"%s\" for each student and make a %s first."
+#~ msgstr ""
+#~ "Por favor revisa las \"%s\" para cada estudiante y haga un %s primero."
+
+#~ msgid "Next Semester Start Date"
+#~ msgstr "Fecha de Inicio del Semestre siguiente"
+
+#~ msgid "Other School"
+#~ msgstr "Otra Institución"
+
+#~ msgid "Semester_Rollover Log"
+#~ msgstr "Registro de Semester_Rolloveroría"
+
+#~ msgid "Semester_Rollover Log cleared."
+#~ msgstr "Registro de Semester_Rolloveroría borrado."
+
+#~ msgid "Semester_Rollover record"
+#~ msgstr "Entrada de Semester_Rolloveroría"
+
+#~ msgid "Semester_Rollover records"
+#~ msgstr "Entradas de Semester_Rolloveroría"
+
+#~ msgid "Quiz"
+#~ msgid_plural "Quizzes"
+#~ msgstr[0] "Prueba"
+#~ msgstr[1] "Pruebas"
+
+#~ msgid "Quizzes"
+#~ msgstr "Pruebas"
+
+#~ msgid "Questions"
+#~ msgstr "Preguntas"
+
+#~ msgid "Question"
+#~ msgstr "Pregunta"
+
+#~ msgid "Question Category"
+#~ msgstr "Categoría de Preguntas"
+
+#~ msgid "New Question"
+#~ msgstr "Nueva Pregunta"
+
+#~ msgid "New Question Category"
+#~ msgstr "Nueva Categoría de Preguntas"
+
+#~ msgid "Back to Quizzes"
+#~ msgstr "Volver a las Pruebas"
+
+#~ msgid "New Quiz"
+#~ msgstr "Nueva Prueba"
+
+#~ msgid "Quiz submitted."
+#~ msgstr "Prueba entregada"
+
+#~ msgid "You alreay have graded this Quiz."
+#~ msgstr "Esta Prueba ya ha sido calificada."
+
+#~ msgid "Grade Quiz"
+#~ msgstr "Calificar la Prueba"
+
+#~ msgid "Add Question"
+#~ msgstr "Agregar Pregunta"
+
+#~ msgid "Question Categories"
+#~ msgstr "Categoría de Preguntas"
+
+#~ msgid "Select One from Options"
+#~ msgstr "Selección de Opción Simple"
+
+#~ msgid "Gap Fill"
+#~ msgstr "Llene los Blancos"
+
+#~ msgid "Mark correct answer with an asterisk *."
+#~ msgstr "Marcar las respuestas correctas con un asterisco *."
+
+#~ msgid ""
+#~ "*True\n"
+#~ "False"
+#~ msgstr ""
+#~ "*Correcto\n"
+#~ "Incorrecto"
+
+#~ msgid ""
+#~ "*Correct option #1\n"
+#~ "Wrong option #2\n"
+#~ "Wrong option #3\n"
+#~ "*Correct option #4"
+#~ msgstr ""
+#~ "*Opción correcta #1\n"
+#~ "Opción incorrecta #2\n"
+#~ "Opción incorrecta#3\n"
+#~ "*Opción correcta #4"
+
+#~ msgid "Text with gaps"
+#~ msgstr "Texto con blancos"
+
+#~ msgid "Delimit gaps with double underscores __"
+#~ msgstr "Delimita los blancos con doble guiones bajos __"
+
+#~ msgid ""
+#~ "The sky is __blue__.\n"
+#~ "The grass is __green__."
+#~ msgstr ""
+#~ "El cielo es __azul__.\n"
+#~ "El pasto es __verde__."
+
+#~ msgid "Answer"
+#~ msgstr "Respuesta"
+
+#~ msgid "No Assignments are available. Please add a new Assignment: %s"
+#~ msgstr "No hay Tareas disponibles. Por favor agregue una nueva Tarea: %s"
+
+#~ msgid "Show Correct Answers"
+#~ msgstr "Mostrar las Respuestas Correctas"
+
+#~ msgid "Random Question Order"
+#~ msgstr "Orden de Preguntas Aleatorio"
+
+#~ msgid "You are not allowed to access this quiz."
+#~ msgstr "No está autorizado para acceder a esta prueba."
+
+#~ msgid "Submissions for this quiz are closed."
+#~ msgstr "No es más posible entregar esta prueba."
+
+#~ msgid "Submit Quiz"
+#~ msgstr "Entregar la Prueba"
+
+#~ msgid "Answered"
+#~ msgstr "Respondida"
+
+#~ msgid "Answers"
+#~ msgstr "Respuestas"
+
+#~ msgid "Add New Quiz"
+#~ msgstr "Agregar una Nueva Prueba"
+
+#~ msgid "Quizzes already contain this question."
+#~ msgstr "La pruebas ya contienen esta pregunta."
+
+#~ msgid "Answer (optional)."
+#~ msgstr "Respuesta (opcional)."
+
+#~ msgid "# of Students"
+#~ msgstr "# de Estudiantes"
+
+#~ msgid "# of Administrators"
+#~ msgstr "# de Administradores"
+
+#~ msgid "# of Teachers"
+#~ msgstr "# de Docentes"
+
+#~ msgid "# of Parents"
+#~ msgstr "# de Padres"
+
+#~ msgid "Create Subject PDF for Selected Students"
+#~ msgstr "Crear el PDF Materia para los Estudiantes Seleccionados"
+
+#~ msgid "Quiz Widget"
+#~ msgstr "Widget de Ejemplo"
+
+#~ msgid "Setup"
+#~ msgstr "Configuración"
+
+#~ msgid "Quiz Resource"
+#~ msgstr "Recurso de Ejemplo"
+
+#~ msgid "The configuration value has been modified."
+#~ msgstr "El valor de configuración ha sido modificado."
+
+#~ msgid "Quiz module Setup"
+#~ msgstr "Configuración del Módulo Ejemplo"
+
+#~ msgid "Try to enter a non-numeric value"
+#~ msgstr "Intente entrar un valor no numerico"
+
+#~ msgid "Quiz config value label"
+#~ msgstr "Ejemplo de nombre del valor de config"

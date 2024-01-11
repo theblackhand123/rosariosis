@@ -1,0 +1,430 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Billing Elements Module for RosarioSIS.\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-17 16:52+0200\n"
+"PO-Revision-Date: 2023-07-17 17:05+0200\n"
+"Last-Translator: François Jacquet <info@rosariosis.org>\n"
+"Language-Team: RosarioSIS <info@rosariosis.org>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: dgettext:2\n"
+"X-Poedit-Basepath: ../../..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: CategoryBreakdown.php:86
+msgid "N/A"
+msgstr ""
+
+#: CategoryBreakdown.php:125
+msgid "Please choose a category"
+msgstr ""
+
+#: CategoryBreakdown.php:133
+msgid "Number"
+msgstr ""
+
+#: CategoryBreakdown.php:134 CategoryBreakdown.php:238
+#: MassAssignElements.php:226 MassAssignElements.php:315
+#: StudentElements.php:137 includes/Elements.fnc.php:126
+msgid "Amount"
+msgstr ""
+
+#: CategoryBreakdown.php:140
+msgid "Total"
+msgstr ""
+
+#: CategoryBreakdown.php:150
+msgid "Breakdown by Grade Level"
+msgstr "Répartition par niveau scolaire"
+
+#: CategoryBreakdown.php:162
+msgid "Report Timeframe"
+msgstr ""
+
+#: CategoryBreakdown.php:163
+msgid "to"
+msgstr ""
+
+#: CategoryBreakdown.php:165
+msgid "Go"
+msgstr ""
+
+#: CategoryBreakdown.php:188
+msgid "Line"
+msgstr ""
+
+#: CategoryBreakdown.php:192 CategoryBreakdown.php:209
+msgid "List"
+msgstr ""
+
+#: CategoryBreakdown.php:201
+msgid "Column"
+msgstr ""
+
+#: CategoryBreakdown.php:205
+msgid "Pie"
+msgstr ""
+
+#: CategoryBreakdown.php:234
+msgid "Grade Level"
+msgstr ""
+
+#: CategoryBreakdown.php:235 CategoryBreakdown.php:250 Elements.php:181
+#: MassAssignElements.php:225 MassAssignElements.php:256
+#: MassAssignElements.php:298 includes/Elements.fnc.php:370
+#: includes/Elements.fnc.php:412
+msgid "Element"
+msgstr "Élément"
+
+#: CategoryBreakdown.php:237
+msgid "Number of Elements"
+msgstr "Nombre d'éléments"
+
+#: CategoryBreakdown.php:251 MassAssignElements.php:257 Menu.php:14 Menu.php:24
+#: includes/Elements.fnc.php:413
+msgid "Elements"
+msgstr "Éléments"
+
+#: CategoryBreakdown.php:261
+#, php-format
+msgid "%s Breakdown"
+msgstr ""
+
+#: Elements.php:165
+msgid "Please fill in the required fields"
+msgstr ""
+
+#: Elements.php:168
+msgid "Please enter valid Numeric data."
+msgstr ""
+
+#: Elements.php:201 MassAssignElements.php:224 includes/Elements.fnc.php:228
+#: includes/Elements.fnc.php:364
+msgid "Category"
+msgstr ""
+
+#: Elements.php:222
+msgid "Leave a comment"
+msgstr "Laisser un commentaire"
+
+#: Elements.php:228 Elements.php:280
+msgid "You are already enrolled in this course."
+msgstr "Vous êtes déjà inscrit à ce cours."
+
+#: Elements.php:235
+msgid "Do you want to purchase that element?"
+msgstr "Voulez-vous acheter cet élément?"
+
+#: Elements.php:251
+#, php-format
+msgid "This element was purchased. New balance: %s"
+msgstr "Cet élément a été acheté. Nouveau solde: %s"
+
+#: Elements.php:259
+msgid "You have been enrolled in the course."
+msgstr "Vous avez été inscrit à ce cours."
+
+#: Elements.php:284
+msgid "You child is already enrolled in this course."
+msgstr "Votre enfant est déjà inscrit à ce cours."
+
+#: Elements.php:292
+msgid "You are not enrolled in the right Grade Level to purchase this element."
+msgstr ""
+"Vous n'êtes pas inscrit au bon niveau scolaire pour pouvoir acheter cet "
+"élément."
+
+#: Elements.php:296
+msgid ""
+"You child is not enrolled in the right Grade Level to purchase this element."
+msgstr ""
+"Votre enfant n'est pas inscrit au bon niveau scolaire pour pouvoir acheter "
+"cet élément."
+
+#: Elements.php:303
+#, php-format
+msgid "You do not have sufficient funds to purchase this element. Balance: %s"
+msgstr ""
+"Vous n'avez pas assez de fonds pour pouvoir acheter cet élément. Solde: %s"
+
+#: Elements.php:312
+msgid "There are no available seats in this course."
+msgstr "Il n'y a pas de places disponibles pour ce cours."
+
+#: Elements.php:367 MassAssignElements.php:331
+msgid "New Element"
+msgstr "Nouvel élément"
+
+#: Elements.php:375
+msgid "New Category"
+msgstr ""
+
+#: Elements.php:395
+#, php-format
+msgid "%d assigned"
+msgstr "%d attribués"
+
+#: Elements.php:408
+#, php-format
+msgid "%d purchases"
+msgstr "%d achats"
+
+#: MassAssignElements.php:24
+msgid "You must choose at least one student."
+msgstr ""
+
+#: MassAssignElements.php:71 MassAssignElements.php:157
+msgid "The elements and fees have been added to the selected students."
+msgstr ""
+"Ces éléments et ces frais de scolarité ont été assignés aux élèves "
+"sélectionnés."
+
+#: MassAssignElements.php:85
+msgid "You must choose at least one element."
+msgstr "Vous devez choisir au moins un élément."
+
+#: MassAssignElements.php:170
+msgid "Assign Elements by Grade Level"
+msgstr "Assigner les éléments par niveau scolaire"
+
+#: MassAssignElements.php:193
+msgid "Only to students who have not been assigned the element yet"
+msgstr ""
+"Seulement pour les élèves pour qui l'élément n'a pas encore été assigné"
+
+#: MassAssignElements.php:197 MassAssignElements.php:261
+msgid "Assign Selected Elements"
+msgstr "Assigner les éléments sélectionnés"
+
+#: MassAssignElements.php:202
+msgid "Fee"
+msgstr ""
+
+#: MassAssignElements.php:207 MassAssignElements.php:319
+msgid "Due Date"
+msgstr ""
+
+#: MassAssignElements.php:214 MassAssignElements.php:324
+#: StudentElements.php:140
+msgid "Comment"
+msgstr ""
+
+#: MassAssignElements.php:227 includes/Elements.fnc.php:166
+msgid "Grade Levels"
+msgstr ""
+
+#: MassAssignElements.php:228
+msgid "Students"
+msgstr ""
+
+#: MassAssignElements.php:274 MassAssignElements.php:378
+msgid "Add Element and Fee to Selected Students"
+msgstr ""
+"Ajouter l'élément et le frais de scolarité pour les élèves sélectionnés"
+
+#: MassAssignElements.php:279 StudentElements.php:85 StudentElements.php:136
+msgid "Element and Fee"
+msgstr "Élément et frais de scolarité"
+
+#: MassAssignElements.php:308 includes/Elements.fnc.php:113
+#: includes/Elements.fnc.php:277
+msgid "Title"
+msgstr ""
+
+#: MassAssignElements.php:462
+#, php-format
+msgid "%d students who have not been assigned the element yet"
+msgstr "%d élèves pour qui l'élément n'a pas encore été assigné"
+
+#: Menu.php:12
+msgid "Billing Elements"
+msgstr "Éléments de facturation"
+
+#: Menu.php:15
+msgid "Mass Assign Elements"
+msgstr "Assigner des éléments en masse"
+
+#: Menu.php:16 Menu.php:26
+msgid "Student Elements"
+msgstr "Éléments de l'élève"
+
+#: Menu.php:17
+msgid "Reports"
+msgstr ""
+
+#: Menu.php:18
+msgid "Category Breakdown"
+msgstr ""
+
+#: Menu.php:22
+msgid "Store"
+msgstr "Magasin"
+
+#: Menu.php:26
+msgid "My Elements"
+msgstr "Mes éléments"
+
+#: StudentElements.php:132 StudentElements.php:229 includes/Elements.fnc.php:94
+msgid "Delete"
+msgstr ""
+
+#: StudentElements.php:138
+msgid "Assigned"
+msgstr ""
+
+#: StudentElements.php:139
+msgid "Due"
+msgstr ""
+
+#: StudentElements.php:214
+msgid "Total from Elements"
+msgstr "Total des éléments"
+
+#: includes/Elements.fnc.php:136
+msgid "Description"
+msgstr ""
+
+#: includes/Elements.fnc.php:168
+msgid "All"
+msgstr ""
+
+#: includes/Elements.fnc.php:180
+msgid "Course Period"
+msgstr ""
+
+#: includes/Elements.fnc.php:194
+msgid "Rollover"
+msgstr ""
+
+#: includes/Elements.fnc.php:206 includes/Elements.fnc.php:371
+msgid "Reference"
+msgstr "Référence"
+
+#: includes/Elements.fnc.php:287
+msgid "Sort Order"
+msgstr ""
+
+#: includes/Elements.fnc.php:398
+msgid "Element Category"
+msgstr "Catégorie d'élément"
+
+#: includes/Elements.fnc.php:399
+msgid "Categories"
+msgstr ""
+
+#: includes/Elements.fnc.php:500
+msgid "Assign"
+msgstr "Attribuer"
+
+#: includes/Elements.fnc.php:532
+msgid "Purchase"
+msgstr "Acheter"
+
+#~ msgid "The elements and fees has been added to the selected students."
+#~ msgstr ""
+#~ "Ces éléments et ces frais de scolarité ont été assignés aux élèves "
+#~ "sélectionnés."
+
+#~ msgid "That element and fee has been added to the selected students."
+#~ msgstr ""
+#~ "Cet élément et ce frais de scolarité a été assigné aux élèves "
+#~ "sélectionnés."
+
+#~ msgid "Email Alert"
+#~ msgstr "Alerte par Email"
+
+#~ msgid "Please set your user email address: %s"
+#~ msgstr "Veuillez définir votre adresse email: %s"
+
+#~ msgid "Send me an email alert when..."
+#~ msgstr "Envoyez-moi une alerte par email lorsque..."
+
+#~ msgid "Student reaches"
+#~ msgstr "L'élève atteint"
+
+#~ msgid "With value"
+#~ msgstr "Avec la valeur"
+
+#~ msgid "During"
+#~ msgstr "Durant"
+
+#~ msgid "Alerts sent"
+#~ msgstr "Alertes envoyées"
+
+#~ msgid "Email Alerts"
+#~ msgstr "Alertes par Email"
+
+#~ msgid "Student %s has reached %d %s with value %s within %s."
+#~ msgstr "L'élève %s a atteint %d %s avec la valeur %s durant le %s."
+
+#~ msgid "User %s has reached %d %s with value %s within %s."
+#~ msgstr "L'utilisateur %s a atteint %d %s avec la valeur %s durant le %s."
+
+#~ msgid "Week"
+#~ msgstr "Semaine"
+
+#~ msgid "Print Invoice for the Selected Fees"
+#~ msgstr "Imprimer Facture pour les Frais Sélectionnés"
+
+#~ msgid "No Fees were found."
+#~ msgstr "Aucun Frais n'a été trouvé."
+
+#~ msgid "Monthly Fees"
+#~ msgstr "Frais de Scolarité Mensuels"
+
+#~ msgid "Print Invoices"
+#~ msgstr "Imprimer Factures"
+
+#~ msgid "Print Receipts"
+#~ msgstr "Imprimer Reçus"
+
+#~ msgid "Print Receipt for the Selected Payments"
+#~ msgstr "Imprimer Reçu pour les Paiements Sélectionnés"
+
+#~ msgid "No Payments were found."
+#~ msgstr "Aucun Paiement n'a été trouvé."
+
+#~ msgid "Please select a valid Assigned day."
+#~ msgstr "Veuillez sélectionner un jour Attribué valide."
+
+#~ msgid "Print Receipt"
+#~ msgstr "Imprimer Reçu"
+
+#~ msgid "Print Invoice"
+#~ msgstr "Imprimer Facture"
+
+#~ msgid ""
+#~ "Fees due as of today. Due date must be set. Does not check for "
+#~ "corresponding Payments."
+#~ msgstr ""
+#~ "Frais dus à la date du jour. La date d'Échéance doit être définie. Ne "
+#~ "fait pas la relation avec les Paiements."
+
+#~ msgid "Include Invoice Number"
+#~ msgstr "Inclure le Numéro de Facture"
+
+#~ msgid "Invoice %s"
+#~ msgstr "Facture %s"
+
+#~ msgid "In two copies"
+#~ msgstr "En deux exemplaires"
+
+#~ msgid "Hide \"Lunch Payment\" column"
+#~ msgstr "Occulter colonne \"Paiement de la Cantine\""
+
+#~ msgid "Include Receipt Number"
+#~ msgstr "Inclure le Numéro de Reçu"
+
+#~ msgid "Payment Receipt %s"
+#~ msgstr "Reçu de Paiement %s"
+
+#~ msgid "Payment Date"
+#~ msgstr "Date du Paiement"
+
+#~ msgid "You must choose at least one payment."
+#~ msgstr "Vous devez choisir au moins un  paiement."

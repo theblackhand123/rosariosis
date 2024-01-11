@@ -1,0 +1,246 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Student ID Card module\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-28 19:27+0100\n"
+"PO-Revision-Date: 2022-11-28 19:27+0100\n"
+"Last-Translator: François Jacquet <info@rosariosis.org>\n"
+"Language-Team: RosarioSIS <info@rosariosis.org>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: dgettext:2\n"
+"X-Poedit-Basepath: ../../..\n"
+"X-Generator: Poedit 2.4.2\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: Menu.php:16 Menu.php:18
+msgid "Student ID Card"
+msgstr "Carte d'étudiant"
+
+#: StudentIDCard.php:13
+msgid "You must choose at least one student."
+msgstr ""
+
+#: StudentIDCard.php:73
+msgid "No Students were found."
+msgstr ""
+
+#: StudentIDCard.php:121
+msgid ""
+"To print in high quality (144dpi) and at true size, save the cards as an "
+"image, and print to 50&percnt; scale."
+msgstr ""
+"Pour imprimer en haute qualité (144dpi), et à taille réelle, sauvegardez les "
+"cartes comme image, et imprimez à une échelle de 50&percnt;."
+
+#: StudentIDCard.php:129
+msgid "Convert Student ID Cards to Images"
+msgstr "Convertir les cartes d'étudiant en images"
+
+#: StudentIDCard.php:133
+msgid "Download Student ID Cards as zip"
+msgstr "Télécharger les cartes d'étudiant"
+
+#: StudentIDCard.php:202 StudentIDCard.php:263
+msgid "Generate ID Card for Selected Students"
+msgstr "Générer les cartes pour les élèves sélectionnés"
+
+#: StudentIDCard.php:213
+msgid "Student ID Card Text"
+msgstr "Texte de la carte d'étudiant"
+
+#: StudentIDCard.php:218
+msgid "Display Name"
+msgstr ""
+
+#: StudentIDCard.php:219
+msgid "Last Name"
+msgstr ""
+
+#: StudentIDCard.php:220
+msgid "First Name"
+msgstr ""
+
+#: StudentIDCard.php:221
+msgid "Middle Name"
+msgstr ""
+
+#: StudentIDCard.php:222
+#, php-format
+msgid "%s ID"
+msgstr ""
+
+#: StudentIDCard.php:223
+msgid "School"
+msgstr ""
+
+#: StudentIDCard.php:224
+msgid "School Year"
+msgstr ""
+
+#: StudentIDCard.php:225
+msgid "Principal of School"
+msgstr ""
+
+#: StudentIDCard.php:226
+msgid "Grade Level"
+msgstr ""
+
+#: StudentIDCard.php:231
+msgid "Your Name"
+msgstr ""
+
+#: includes/StudentIDCard.fnc.php:110
+msgid "Background Image"
+msgstr "Image de fond"
+
+#: includes/StudentIDCard.fnc.php:116
+msgid "Card Padding"
+msgstr "Marge intérieure (padding) de la carte"
+
+#: includes/StudentIDCard.fnc.php:120 includes/StudentIDCard.fnc.php:138
+#: includes/StudentIDCard.fnc.php:156
+msgid "Top and bottom (pixels)"
+msgstr "Haut et bas (pixels)"
+
+#: includes/StudentIDCard.fnc.php:127 includes/StudentIDCard.fnc.php:145
+#: includes/StudentIDCard.fnc.php:163
+msgid "Left and right (pixels)"
+msgstr "Gauche et droite (pixels)"
+
+#: includes/StudentIDCard.fnc.php:134
+msgid "Text Padding"
+msgstr "Marge intérieure (padding) du texte"
+
+#: includes/StudentIDCard.fnc.php:152
+msgid "Photo Padding"
+msgstr "Marge intérieure (padding) de la photo"
+
+#: includes/StudentIDCard.fnc.php:169
+msgid "Left"
+msgstr "Gauche"
+
+#: includes/StudentIDCard.fnc.php:170
+msgid "Right"
+msgstr "Droite"
+
+#: includes/StudentIDCard.fnc.php:175
+msgid "Photo"
+msgstr "Photo"
+
+#: includes/StudentIDCard.fnc.php:179
+msgid "Max. width (pixels)"
+msgstr "Largeur max. (pixels)"
+
+#: includes/StudentIDCard.fnc.php:186
+msgid "Position"
+msgstr "Position"
+
+#~ msgid "Convert Student ID Cards as Images"
+#~ msgstr "Convertir les cartes d'étudiant en images"
+
+#~ msgid "Print Student_ID_Card for Selected Students"
+#~ msgstr "Imprimer le certificat pour les élèves sélectionnés"
+
+#~ msgid "Student_ID_Card Text"
+#~ msgstr "Texte du certificat"
+
+#~ msgid "Today's date"
+#~ msgstr "Date du jour"
+
+#~ msgid "You must configure the %s to use this script."
+#~ msgstr "Vous devez configurer le %s pour pouvoir utiliser ce programme."
+
+#~ msgid "[Copy]"
+#~ msgstr "[Copie]"
+
+#~ msgid "Student ID Card to Selected Students"
+#~ msgstr "Envoyer l'Student_ID_Card aux Élèves Sélectionnés"
+
+#~ msgid "Subject"
+#~ msgstr "Sujet"
+
+#~ msgid "Send copy to"
+#~ msgstr "Envoyer une copie à"
+
+#~ msgid "Student ID Card to Selected Users"
+#~ msgstr "Envoyer l'Student_ID_Card aux Utilisateurs Sélectionnés"
+
+#~ msgid "[Student ID Card copy]"
+#~ msgstr "[Copie Envoyer Student_ID_Card]"
+
+#~ msgid "Student_ID_Card not sent to: %s"
+#~ msgstr "Student_ID_Card non envoyé à: %s"
+
+#~ msgid "The discpline logs have been sent."
+#~ msgstr "Les journaux de discipline ont été envoyé."
+
+#~ msgid "Send Log to Selected Parents"
+#~ msgstr "Envoyer le Journal aux Parents Sélectionnés"
+
+#~ msgid "Student_ID_Card Report Cards to Parents"
+#~ msgstr "Envoyer le le Bulletin de Notes aux Parents"
+
+#~ msgid "Student_ID_Card Discipline Log to Parents"
+#~ msgstr "Envoyer le Journal de Discipline aux Parents"
+
+#~ msgid "Student_ID_Card Student Balances to Parents"
+#~ msgstr "Envoyer les Soldes des Élèves aux Parents"
+
+#~ msgid "The report cards have been sent."
+#~ msgstr "Les bulletins de notes ont été envoyé."
+
+#~ msgid "Send Report Cards to Selected Parents"
+#~ msgstr "Envoyer les Bulletins de Notes aux Parents Sélectionnés"
+
+#~ msgid "Student Balance"
+#~ msgstr "Solde Élève"
+
+#~ msgid "The student balances have been sent."
+#~ msgstr "Les soldes élève ont été envoyé."
+
+#~ msgid "Send Balances to Selected Parents"
+#~ msgstr "Envoyer les Soldes aux Parents Sélectionnés"
+
+#~ msgid "# of Students"
+#~ msgstr "# de Estudiantes"
+
+#~ msgid "# of Administrators"
+#~ msgstr "# de Administradores"
+
+#~ msgid "# of Teachers"
+#~ msgstr "# de Docentes"
+
+#~ msgid "# of Parents"
+#~ msgstr "# de Padres"
+
+#~ msgid "Create Subject PDF for Selected Students"
+#~ msgstr "Crear el PDF Materia para los Estudiantes Seleccionados"
+
+#~ msgid "Example"
+#~ msgstr "Ejemplo"
+
+#~ msgid "Example Widget"
+#~ msgstr "Widget de Ejemplo"
+
+#~ msgid "Setup"
+#~ msgstr "Configuración"
+
+#~ msgid "Example Resource"
+#~ msgstr "Recurso de Ejemplo"
+
+#~ msgid "The configuration value has been modified."
+#~ msgstr "El valor de configuración ha sido modificado."
+
+#~ msgid "Example module Setup"
+#~ msgstr "Configuración del Módulo Ejemplo"
+
+#~ msgid "Try to enter a non-numeric value"
+#~ msgstr "Intente entrar un valor no numerico"
+
+#~ msgid "Example config value label"
+#~ msgstr "Ejemplo de nombre del valor de config"

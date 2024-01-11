@@ -1,0 +1,300 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Reports module for RosarioSIS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-18 16:15-0300\n"
+"PO-Revision-Date: 2023-06-13 13:23+0200\n"
+"Last-Translator: Emerson Barros\n"
+"Language-Team: \n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-KeywordsList: dgettext:2\n"
+"X-Poedit-Basepath: ../../..\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: Calculations.php:86
+msgid "Saved Equation"
+msgstr "Equação salva"
+
+#: Calculations.php:139
+msgid "Time Values"
+msgstr "Valores de tempo"
+
+#: Calculations.php:140 Calculations.php:348
+msgid "Fields"
+msgstr ""
+
+#: Calculations.php:142 Calculations.php:291
+msgid "Constants"
+msgstr "Constantes"
+
+#: Calculations.php:230 Calculations.php:265
+msgid "Functions"
+msgstr "Funções"
+
+#: Calculations.php:247 Calculations.php:265
+msgid "Operators"
+msgstr "Operadores"
+
+#: Calculations.php:367 CalculationsReports.php:243
+#: includes/ReportsCalculations.fnc.php:438
+msgid "School"
+msgstr ""
+
+#: Calculations.php:368 Calculations.php:523 Calculations.php:530
+#: CalculationsReports.php:244 includes/ReportsCalculations.fnc.php:442
+#: includes/ReportsCalculations.fnc.php:1298
+msgid "Grade Level"
+msgstr ""
+
+#: Calculations.php:369 Calculations.php:507
+#: includes/ReportsCalculations.fnc.php:28
+#: includes/ReportsCalculations.fnc.php:1310
+msgid "Student ID"
+msgstr "ID do aluno"
+
+#: Calculations.php:375 CalculationsReports.php:251
+#: includes/ReportsCalculations.fnc.php:446
+msgid "Age"
+msgstr ""
+
+#: Calculations.php:388 CalculationsReports.php:264
+msgid "Breakdown"
+msgstr "Análise"
+
+#: Calculations.php:391 Calculations.php:463
+msgid "Equation"
+msgstr "Equação"
+
+#: Calculations.php:396
+msgid "Back"
+msgstr "Voltar"
+
+#: Calculations.php:399 SavedReports.php:256
+msgid "Run"
+msgstr "Executar"
+
+#: Calculations.php:402 Calculations.php:446
+msgid "Save"
+msgstr ""
+
+#: Calculations.php:441 Calculations.php:463 CalculationsReports.php:210
+#: SavedReports.php:193
+msgid "Title"
+msgstr ""
+
+#: Calculations.php:495
+msgid "First Name"
+msgstr ""
+
+#: Calculations.php:501
+msgid "Last Name"
+msgstr ""
+
+#: Calculations.php:513
+msgid "Schools"
+msgstr ""
+
+#: Calculations.php:539 includes/ReportsCalculations.fnc.php:531
+#: includes/ReportsCalculations.fnc.php:593
+#: includes/ReportsCalculations.fnc.php:685
+#: includes/ReportsCalculations.fnc.php:1329
+msgid "Between"
+msgstr ""
+
+#: Calculations.php:575
+msgid "Please choose a field."
+msgstr "Por favor, escolha um campo."
+
+#: Calculations.php:578
+msgid "A function cannot be placed here; choose a field instead."
+msgstr "Uma função não pode ser colocada aqui; escolha um campo."
+
+#: Calculations.php:581
+msgid "A function cannot be placed here; choose an operator instead."
+msgstr "Uma função não pode ser colocada aqui; em vez disso, escolha um operador."
+
+#: Calculations.php:584
+msgid "Please choose an operator or another constant."
+msgstr "Por favor, escolha um operador ou outra constante."
+
+#: Calculations.php:587
+msgid "Please choose an operator."
+msgstr "Por favor, escolha um operador."
+
+#: Calculations.php:590
+msgid "A field cannot be placed here; choose a function instead."
+msgstr "Um campo não pode ser colocado aqui; escolha uma função."
+
+#: Calculations.php:593
+msgid "A field cannot be placed here; choose an operator instead."
+msgstr "Um campo não pode ser colocado aqui; em vez disso, escolha um operador."
+
+#: Calculations.php:596 Calculations.php:608
+msgid "An operator cannot be placed here; choose a field instead."
+msgstr "Um operador não pode ser colocado aqui; escolha um campo."
+
+#: Calculations.php:599
+msgid "An operator cannot be placed here; choose a function instead."
+msgstr "Um operador não pode ser colocado aqui; escolha uma função."
+
+#: Calculations.php:602
+msgid "Please choose a function."
+msgstr "Por favor, escolha uma função."
+
+#: Calculations.php:605
+msgid "Please choose an operator or press save to finish."
+msgstr "Por favor, escolha um operador ou pressione salvar para terminar."
+
+#: CalculationsReports.php:14 CalculationsReports.php:274
+msgid "Go"
+msgstr ""
+
+#: CalculationsReports.php:228
+msgid "Calculation"
+msgstr "Cálculo"
+
+#: CalculationsReports.php:245 includes/ReportsCalculations.fnc.php:450
+#, php-format
+msgid "%s ID"
+msgstr ""
+
+#: CalculationsReports.php:268
+msgid "Graph Results"
+msgstr "Gráfico de resultados"
+
+#: CalculationsReports.php:279
+msgid "Add Column"
+msgstr "Adicionar coluna"
+
+#: CalculationsReports.php:282
+msgid "Add Row"
+msgstr "Adicionar linha"
+
+#: Menu.php:11
+msgid "Reports"
+msgstr ""
+
+#: Menu.php:13
+msgid "Calculations"
+msgstr "Cálculos"
+
+#: Menu.php:14
+msgid "Calculations Reports"
+msgstr "Relatórios de cálculos"
+
+#: Menu.php:15
+msgid "Saved Reports"
+msgstr "Relatórios salvos"
+
+#: SavedReports.php:22 SavedReports.php:240
+msgid "Untitled"
+msgstr "Sem título"
+
+#: SavedReports.php:157
+msgid "Saved Report"
+msgstr "Relatório salvo"
+
+#: SavedReports.php:194
+msgid "Program Title"
+msgstr "Título do programa"
+
+#: SavedReports.php:323
+msgid "Profiles"
+msgstr ""
+
+#: functions.php:30
+msgid "Save Report"
+msgstr "Salvar relatório"
+
+#: includes/ReportsCalculations.fnc.php:22
+msgid "Present"
+msgstr ""
+
+#: includes/ReportsCalculations.fnc.php:24
+msgid "Absent"
+msgstr ""
+
+#: includes/ReportsCalculations.fnc.php:26
+msgid "Enrolled"
+msgstr ""
+
+#: includes/ReportsCalculations.fnc.php:266
+#, php-format
+msgid "%s years"
+msgstr "%s anos"
+
+#: includes/ReportsCalculations.fnc.php:291
+#: includes/ReportsCalculations.fnc.php:583
+msgid "No Value"
+msgstr ""
+
+#: includes/ReportsCalculations.fnc.php:622
+msgid "Yes"
+msgstr ""
+
+#: includes/ReportsCalculations.fnc.php:622
+msgid "No"
+msgstr ""
+
+#: includes/ReportsCalculations.fnc.php:672
+msgid "Search All Schools"
+msgstr ""
+
+#: includes/ReportsCalculations.fnc.php:1304
+msgid "All Schools"
+msgstr ""
+
+#: includes/ReportsCalculations.fnc.php:1316
+msgid "Last Name starts with"
+msgstr ""
+
+#: includes/ReportsCalculations.fnc.php:1322
+msgid "First Name starts with"
+msgstr ""
+
+#~ msgid "Setup"
+#~ msgstr "Configuración"
+
+#~ msgid "Program"
+#~ msgstr "Programa"
+
+#~ msgid "# of Students"
+#~ msgstr "# de Estudiantes"
+
+#~ msgid "# of Administrators"
+#~ msgstr "# de Administradores"
+
+#~ msgid "# of Teachers"
+#~ msgstr "# de Docentes"
+
+#~ msgid "# of Parents"
+#~ msgstr "# de Padres"
+
+#~ msgid "Create Subject PDF for Selected Students"
+#~ msgstr "Crear el PDF Materia para los Estudiantes Seleccionados"
+
+#~ msgid "Example"
+#~ msgstr "Ejemplo"
+
+#~ msgid "Example Widget"
+#~ msgstr "Widget de Ejemplo"
+
+#~ msgid "Example Resource"
+#~ msgstr "Recurso de Ejemplo"
+
+#~ msgid "The configuration value has been modified."
+#~ msgstr "El valor de configuración ha sido modificado."
+
+#~ msgid "Example module Setup"
+#~ msgstr "Configuración del Módulo Ejemplo"
+
+#~ msgid "Try to enter a non-numeric value"
+#~ msgstr "Intente entrar un valor no numerico"
+
+#~ msgid "Example config value label"
+#~ msgstr "Ejemplo de nombre del valor de config"

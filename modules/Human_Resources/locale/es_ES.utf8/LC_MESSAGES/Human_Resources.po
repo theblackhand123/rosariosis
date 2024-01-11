@@ -1,0 +1,209 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Human Resources module for RosarioSIS.\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-12 18:32+0200\n"
+"PO-Revision-Date: 2020-08-12 18:35+0200\n"
+"Last-Translator: François Jacquet <info@rosariosis.org>\n"
+"Language-Team: RosarioSIS <info@rosariosis.org>\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: dgettext:2\n"
+"X-Poedit-Basepath: ../../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/Qualifications.fnc.php:30 includes/Qualifications.fnc.php:41
+#: includes/Qualifications.fnc.php:48
+msgid "Skill"
+msgstr "Habilidad"
+
+#: includes/Qualifications.fnc.php:31
+msgid "Description"
+msgstr ""
+
+#: includes/Qualifications.fnc.php:49
+msgid "Skills"
+msgstr "Habilidades"
+
+#: includes/Qualifications.fnc.php:80 includes/Qualifications.fnc.php:95
+#: includes/Qualifications.fnc.php:102
+msgid "Qualification"
+msgstr "Diploma"
+
+#: includes/Qualifications.fnc.php:81 includes/Qualifications.fnc.php:135
+msgid "Institute"
+msgstr "Instituto"
+
+#: includes/Qualifications.fnc.php:82
+msgid "Start Date"
+msgstr ""
+
+#: includes/Qualifications.fnc.php:83
+msgid "Completed on"
+msgstr "Terminado el"
+
+#: includes/Qualifications.fnc.php:103
+msgid "Qualifications"
+msgstr "Diploma"
+
+#: includes/Qualifications.fnc.php:134 includes/Qualifications.fnc.php:149
+#: includes/Qualifications.fnc.php:156
+msgid "Certification"
+msgstr "Certificación"
+
+#: includes/Qualifications.fnc.php:136
+msgid "Granted on"
+msgstr "Obtenida el"
+
+#: includes/Qualifications.fnc.php:137
+msgid "Valid through"
+msgstr "Valida hasta"
+
+#: includes/Qualifications.fnc.php:157
+msgid "Certifications"
+msgstr "Certificaciones"
+
+#: includes/Qualifications.fnc.php:188 includes/Qualifications.fnc.php:203
+#: includes/Qualifications.fnc.php:210
+msgid "Language"
+msgstr "Idioma"
+
+#: includes/Qualifications.fnc.php:189
+msgid "Reading"
+msgstr "Leido"
+
+#: includes/Qualifications.fnc.php:190
+msgid "Speaking"
+msgstr "Hablado"
+
+#: includes/Qualifications.fnc.php:191
+msgid "Writing"
+msgstr "Escrito"
+
+#: includes/Qualifications.fnc.php:211
+msgid "Languages"
+msgstr "Idiomas"
+
+#: includes/Qualifications.fnc.php:316
+msgid "Edit"
+msgstr ""
+
+#: includes/Qualifications.fnc.php:424
+msgid "Elementary proficiency"
+msgstr "Competencia elemental"
+
+#: includes/Qualifications.fnc.php:425
+msgid "Limited working proficiency"
+msgstr "Competencia limitada de trabajo"
+
+#: includes/Qualifications.fnc.php:426
+msgid "Professional working proficiency"
+msgstr "Competencia profesional de trabajo"
+
+#: includes/Qualifications.fnc.php:427
+msgid "Full professional proficiency"
+msgstr "Competencia profesional plena"
+
+#: includes/Qualifications.fnc.php:428
+msgid "Native or bilingual proficiency"
+msgstr "Competencia nativa o bilingüe"
+
+#~ msgid "Email Alert"
+#~ msgstr "Alerta por Email"
+
+#~ msgid "Please set your user email address: %s"
+#~ msgstr "Por favor entra su dirección de correo: %s"
+
+#~ msgid "Send me an email alert when..."
+#~ msgstr "Envíeme una alerta por email cuando..."
+
+#~ msgid "Student reaches"
+#~ msgstr "El estudiante llega a"
+
+#~ msgid "With value"
+#~ msgstr "Con el valor"
+
+#~ msgid "During"
+#~ msgstr "Durante"
+
+#~ msgid "Alerts sent"
+#~ msgstr "Alertas enviadas"
+
+#~ msgid "Email Alerts"
+#~ msgstr "Alertas por Email"
+
+#~ msgid "Student %s has reached %d %s with value %s within %s."
+#~ msgstr "El Estudiante %s a llegado a %d %s con el valor %s durante el %s."
+
+#~ msgid "User %s has reached %d %s with value %s within %s."
+#~ msgstr "El Usuario %s a llegado a %d %s con el valor %s durante el %s."
+
+#~ msgid "Week"
+#~ msgstr "Semana"
+
+#~ msgid "Within"
+#~ msgstr "Durante"
+
+#~ msgid "Print Invoice for the Selected Fees"
+#~ msgstr "Imprimir Factura para los Cobros Seleccionados"
+
+#~ msgid "No Fees were found."
+#~ msgstr "No se encontró ningún Cobro."
+
+#~ msgid "Monthly Fees"
+#~ msgstr "Cobros Mensuales"
+
+#~ msgid "Print Invoices"
+#~ msgstr "Imprimir Facturas"
+
+#~ msgid "Print Receipts"
+#~ msgstr "Imprimir Recibos"
+
+#~ msgid "Print Receipt for the Selected Payments"
+#~ msgstr "Imprimir Recibo para los Pagos Seleccionados"
+
+#~ msgid "No Payments were found."
+#~ msgstr "No se encontró ningún Pago."
+
+#~ msgid "Please select a valid Assigned day."
+#~ msgstr "Seleccione un dia Asignado válido por favor."
+
+#~ msgid "Print Receipt"
+#~ msgstr "Imprimir Recibo"
+
+#~ msgid "Print Invoice"
+#~ msgstr "Imprimir Factura"
+
+#~ msgid "Fees due as of today. Due date must be set. Does not check for corresponding Payments."
+#~ msgstr "Cobros vencidos a la fecha de hoy. La fecha de Plazo debe ser definida. No chequea los Pagos corespondientes."
+
+#~ msgid "Include Invoice Number"
+#~ msgstr "Incluir el Número de Factura"
+
+#~ msgid "Invoice %s"
+#~ msgstr "Factura %s"
+
+#~ msgid "In two copies"
+#~ msgstr "En dos ejemplares"
+
+#~ msgid "Hide \"Lunch Payment\" column"
+#~ msgstr "Ocultar la columna \"Pago de Comida\""
+
+#~ msgid "Include Receipt Number"
+#~ msgstr "Incluir el Número de Recibo"
+
+#~ msgid "Payment Receipt %s"
+#~ msgstr "Recibo de Pago %s"
+
+#~ msgid "You must choose at least one payment."
+#~ msgstr "Debe escoger por lo menos un pago."
+
+#~ msgid "Assign"
+#~ msgstr "Asignar"
+
+#~ msgid "Student Payment Receipts"
+#~ msgstr "Recibos de Pago Estudiante"
