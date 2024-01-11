@@ -1,0 +1,188 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Attendance Excel Sheet Module for RosarioSIS.\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-16 13:15+0200\n"
+"PO-Revision-Date: 2023-04-21 22:37+0200\n"
+"Last-Translator: Emerson Barros\n"
+"Language-Team: RosarioSIS <info@rosariosis.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-KeywordsList: dgettext:2\n"
+"X-Poedit-Basepath: ../../..\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: Menu.php:13
+msgid "Attendance Excel Sheet"
+msgstr "Planilha Excel de presença"
+
+#: Menu.php:23
+msgid "Print Attendance Sheets"
+msgstr "Imprimir folhas de presença"
+
+#: PrintAttendanceSheets.php:23
+msgid "You must choose at least one course period."
+msgstr ""
+
+#: PrintAttendanceSheets.php:51
+msgid "Error: AttendanceSheet.xls file not found."
+msgstr "Erro: arquivo AttendanceSheet.xls não encontrado."
+
+#: PrintAttendanceSheets.php:115
+msgid "Error: Cannot save temporary Excel sheet."
+msgstr "Erro: não é possível salvar planilha temporária do Excel."
+
+#: PrintAttendanceSheets.php:123
+msgid "No Students were found."
+msgstr ""
+
+#: PrintAttendanceSheets.php:149 PrintAttendanceSheets.php:166
+msgid "Create Attendance Sheet for Selected Course Periods"
+msgstr "Criar folha de presença para as aulas selecionadas"
+
+#: PrintAttendanceSheets.php:156
+msgid "Include Inactive Students"
+msgstr ""
+
+#: includes/AttendanceExcelSheet.fnc.php:149
+msgid "PHP zip extension is required. Please enable it."
+msgstr "A extensão zip do PHP é necessária. Por favor, ative-a."
+
+#: includes/ClassSearchWidget.fnc.php:58
+msgid "Find a Course"
+msgstr ""
+
+#: includes/ClassSearchWidget.fnc.php:77
+msgid "Teacher"
+msgstr ""
+
+#: includes/ClassSearchWidget.fnc.php:79 includes/ClassSearchWidget.fnc.php:96
+#: includes/ClassSearchWidget.fnc.php:113
+msgid "N/A"
+msgstr ""
+
+#: includes/ClassSearchWidget.fnc.php:94
+msgid "Subject"
+msgstr ""
+
+#: includes/ClassSearchWidget.fnc.php:111
+msgid "Period"
+msgstr ""
+
+#: includes/ClassSearchWidget.fnc.php:128
+msgid "Submit"
+msgstr ""
+
+#: includes/ClassSearchWidget.fnc.php:128
+msgid "Reset"
+msgstr ""
+
+#: includes/ClassSearchWidget.fnc.php:220
+msgid "Course Period"
+msgstr ""
+
+#~ msgid "Cannot open file."
+#~ msgstr "El archivo no se puede abrir."
+
+#~ msgid "%s students were imported."
+#~ msgstr "%s estudiantes han sido importados."
+
+#~ msgid "Select CSV or Excel file"
+#~ msgstr "Seleccionar archivo CSV o Excel"
+
+#~ msgid "%s rows"
+#~ msgstr "%s líneas"
+
+#~ msgid "Import Students"
+#~ msgstr "Importar Estudiantes"
+
+#~ msgid "Are you absolutely ready to import students? Make sure you have backed up your database!"
+#~ msgstr "Está listo para importar los estudiantes? Asegurese de haber hecho un backup de la base de datos!"
+
+#~ msgid "Stop"
+#~ msgstr "Pare"
+
+#~ msgid "Import first row"
+#~ msgstr "Importar la primera línea"
+
+#~ msgid "Reset form"
+#~ msgstr "Restablecer formulario"
+
+#~ msgid "IDs are automatically generated if you select \"N/A\"."
+#~ msgstr "Los IDs son automaticamente generados si selecciona \"N/A\"."
+
+#~ msgid "If the date is left empty, students will not be enrolled (inactive)."
+#~ msgstr "Si deja la fecha vacía, los estudiantes no estarán matriculados (inactivos)."
+
+#~ msgid "No names were found."
+#~ msgstr "No se encontró ningún nombre."
+
+#~ msgid "Attendance Excel Sheet for "
+#~ msgstr "Importación de Estudiantes para "
+
+#~ msgid "CSV file imported."
+#~ msgstr "Archivo CSV importado."
+
+#~ msgid "Cannot open CSV file."
+#~ msgstr "El archivo CSV no se puede abrir."
+
+#~ msgid "CSV columns reference: see \"CSV_COLUMNS_REFERENCE\" file."
+#~ msgstr "Referencia de columnas CSV: ver el archivo \"CSV_COLUMNS_REFERENCE\"."
+
+#~ msgid "Set Username as %s"
+#~ msgstr "Definir Nombre de Usuario como %s"
+
+#~ msgid "Set Password as %s"
+#~ msgstr "Definir Contraseña como %s"
+
+#~ msgid "Select CSV file"
+#~ msgstr "Seleccionar archivo CSV"
+
+#~ msgid "Import CSV file"
+#~ msgstr "Importar archivo CSV"
+
+#~ msgid "The following required columns were not found in the CSV file: %s"
+#~ msgstr "Las columnas requeridas no han sido encontradas en el archivo CSV: %s"
+
+#~ msgid "# of Students"
+#~ msgstr "# de Estudiantes"
+
+#~ msgid "# of Administrators"
+#~ msgstr "# de Administradores"
+
+#~ msgid "# of Teachers"
+#~ msgstr "# de Docentes"
+
+#~ msgid "# of Parents"
+#~ msgstr "# de Padres"
+
+#~ msgid "Example"
+#~ msgstr "Ejemplo"
+
+#~ msgid "Create Subject PDF for Selected Students"
+#~ msgstr "Crear el PDF Materia para los Estudiantes Seleccionados"
+
+#~ msgid "Example Widget"
+#~ msgstr "Widget de Ejemplo"
+
+#~ msgid "Setup"
+#~ msgstr "Configuración"
+
+#~ msgid "Example Resource"
+#~ msgstr "Recurso de Ejemplo"
+
+#~ msgid "The configuration value has been modified."
+#~ msgstr "El valor de configuración ha sido modificado."
+
+#~ msgid "Example module Setup"
+#~ msgstr "Configuración del Módulo Ejemplo"
+
+#~ msgid "Try to enter a non-numeric value"
+#~ msgstr "Intente entrar un valor no numerico"
+
+#~ msgid "Example config value label"
+#~ msgstr "Ejemplo de nombre del valor de config"

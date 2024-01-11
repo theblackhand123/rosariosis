@@ -1,0 +1,150 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Hostel module for RosarioSIS\n"
+"POT-Creation-Date: 2022-10-07 18:56+0200\n"
+"PO-Revision-Date: 2022-10-07 18:56+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-Basepath: ../../..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-KeywordsList: dgettext:2;ngettext:2\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: Hostel.php:141
+msgid "Please fill in the required fields"
+msgstr ""
+
+#: Hostel.php:144
+msgid "Please enter valid Numeric data."
+msgstr ""
+
+#: Hostel.php:158 Hostel.php:303 RoomList.php:91 RoomList.php:107
+#: includes/Hostel.fnc.php:95 includes/Hostel.fnc.php:298
+#: includes/Hostel.fnc.php:383
+msgid "Room"
+msgstr "Chambre"
+
+#: Hostel.php:177 RoomList.php:27 RoomList.php:90 includes/Hostel.fnc.php:115
+#: includes/Hostel.fnc.php:291 includes/Hostel.fnc.php:369
+msgid "Building"
+msgstr "Bâtiment"
+
+#: Hostel.php:208
+msgid "The room was assigned to the selected student."
+msgstr "La chambre a été assignée à l'élève sélectionné."
+
+#: Hostel.php:254 Hostel.php:301 RoomList.php:99 RoomList.php:107
+#: includes/Hostel.fnc.php:408 includes/Hostel.fnc.php:431
+msgid "Student"
+msgstr ""
+
+#: Hostel.php:254
+msgid "Remove"
+msgstr "Retirer"
+
+#: Hostel.php:263
+msgid "The student was removed from the room."
+msgstr "L'élève a été retiré de la chambre."
+
+#: Hostel.php:285
+msgid "The selected students were removed from their room."
+msgstr "Les élèves sélectionnés ont été retirés de leur chambre."
+
+#: Hostel.php:295 includes/Hostel.fnc.php:555
+msgid "Remove Inactive Students"
+msgstr "Retirer les élèves inactifs"
+
+#: Hostel.php:296 Hostel.php:346
+msgid "Remove selected students from their room"
+msgstr "Retirer les élèves sélectionnés de leur chambre"
+
+#: Hostel.php:302
+#, php-format
+msgid "%s ID"
+msgstr ""
+
+#: Hostel.php:392
+msgid "New Room"
+msgstr "Nouvelle chambre"
+
+#: Hostel.php:400
+msgid "New Building"
+msgstr "Nouveau bâtiment"
+
+#: Menu.php:15 Menu.php:19 Menu.php:27 Menu.php:33
+msgid "Hostel"
+msgstr "Internat"
+
+#: Menu.php:21 Menu.php:29 Menu.php:35 RoomList.php:108
+#: includes/Hostel.fnc.php:292 includes/Hostel.fnc.php:384
+msgid "Rooms"
+msgstr "Chambres"
+
+#: Menu.php:22
+msgid "Reports"
+msgstr ""
+
+#: Menu.php:23
+msgid "Room List"
+msgstr "Liste des chambres"
+
+#: RoomList.php:29
+msgid "All Buildings"
+msgstr "Tous les bâtiments"
+
+#: RoomList.php:37
+msgid "Include Students"
+msgstr "Inclure les élèves"
+
+#: RoomList.php:92 includes/Hostel.fnc.php:136
+msgid "Capacity"
+msgstr "Capacité"
+
+#: RoomList.php:93 includes/Hostel.fnc.php:145
+msgid "Price"
+msgstr ""
+
+#: RoomList.php:94 RoomList.php:108 includes/Hostel.fnc.php:299
+#: includes/Hostel.fnc.php:432
+msgid "Students"
+msgstr ""
+
+#: RoomList.php:101 includes/Hostel.fnc.php:409
+msgid "Since"
+msgstr "Depuis"
+
+#: includes/Hostel.fnc.php:77
+msgid "Delete"
+msgstr ""
+
+#: includes/Hostel.fnc.php:127 includes/Hostel.fnc.php:207
+msgid "Description"
+msgstr ""
+
+#: includes/Hostel.fnc.php:190
+msgid "Title"
+msgstr ""
+
+#: includes/Hostel.fnc.php:198
+msgid "Sort Order"
+msgstr ""
+
+#: includes/Hostel.fnc.php:370
+msgid "Buildings"
+msgstr "Bâtiments"
+
+#: includes/common.fnc.php:126
+msgid "Student's Room"
+msgstr "Chambre de l'élève"
+
+#: includes/common.fnc.php:130
+msgid "My Room"
+msgstr "Ma chambre"
+
+#~ msgid "The room was attributed to the selected student."
+#~ msgstr "La chambre a été attribuée à l'élève sélectionné."

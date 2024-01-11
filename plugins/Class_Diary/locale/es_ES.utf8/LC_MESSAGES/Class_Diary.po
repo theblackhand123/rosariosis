@@ -1,0 +1,222 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Class Diary module for RosarioSIS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-16 13:15+0200\n"
+"PO-Revision-Date: 2022-07-16 13:15+0200\n"
+"Last-Translator: François Jacquet <info@rosariosis.org>\n"
+"Language-Team: RosarioSIS <info@rosariosis.org>\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: dgettext:2\n"
+"X-Poedit-Basepath: ../../..\n"
+"X-Generator: Poedit 2.4.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: DiariesList.php:10 DiariesList.php:34 Menu.php:14 Menu.php:17 Menu.php:20
+#: Read.php:14 Write.php:11
+msgid "Class Diary"
+msgstr "Diario de Clase"
+
+#: DiariesList.php:24
+msgid "Subject"
+msgstr ""
+
+#: DiariesList.php:25
+msgid "Course Period"
+msgstr ""
+
+#: DiariesList.php:26
+msgid "Entries"
+msgstr "Entradas"
+
+#: DiariesList.php:27
+msgid "Last Entry"
+msgstr "Última Entrada"
+
+#: DiariesList.php:28 Menu.php:15 Menu.php:18 Menu.php:21
+#: includes/common.fnc.php:312
+msgid "Read"
+msgstr "Leer"
+
+#: DiariesList.php:35
+msgid "Class Diaries"
+msgstr "Diarios de Clase"
+
+#: Menu.php:22
+msgid "Write"
+msgstr "Escribir"
+
+#: Read.php:36 includes/common.fnc.php:56
+msgid "Entry"
+msgstr "Entrada"
+
+#: Read.php:42
+msgid "The entry has been removed from the diary."
+msgstr "Se quitó la entrada del diario."
+
+#: Read.php:54 Write.php:52
+msgid "No courses assigned to teacher."
+msgstr ""
+
+#: Read.php:58
+msgid "No courses found"
+msgstr ""
+
+#: Read.php:71
+#, php-format
+msgid "No %s were found."
+msgstr ""
+
+#: Read.php:72
+msgid "Diary entry"
+msgid_plural "Diary entries"
+msgstr[0] "Entrada del Diario"
+msgstr[1] "Entradas del Diario"
+
+#: Read.php:86
+msgid "Back"
+msgstr ""
+
+#: Write.php:42
+msgid "The entry has been added to the diary."
+msgstr "La entrada ha sido añadida al diario."
+
+#~ msgid "Diary entries"
+#~ msgid_plural "Diary entry"
+#~ msgstr[0] "Entrada del Diario"
+#~ msgstr[1] "Entradas del Diario"
+
+#~ msgid "Class_Diary"
+#~ msgstr "Mensajeria"
+
+#~ msgid "Messages"
+#~ msgstr "Mensajes"
+
+#~ msgid "Message archived."
+#~ msgstr "Mensaje archivado."
+
+#~ msgid "Message sent."
+#~ msgstr "Mensaje enviado."
+
+#~ msgid "The message could not be sent."
+#~ msgstr "El mensaje no ha sido enviado."
+
+#~ msgid "You are not allowed to send messages."
+#~ msgstr "No está autorizado para enviar mensajes."
+
+#~ msgid "Find a Parent"
+#~ msgstr "Encontrar un Padre"
+
+#~ msgid "Send"
+#~ msgstr "Enviar"
+
+#~ msgid "Message"
+#~ msgstr "Mensaje"
+
+#~ msgid "%d new message"
+#~ msgid_plural "%d new messages"
+#~ msgstr[0] "%d nuevo mensaje"
+#~ msgstr[1] "%d nuevos mensajes"
+
+#~ msgid "Recipients"
+#~ msgstr "Recipientes"
+
+#~ msgid "From"
+#~ msgstr "De"
+
+#~ msgid "Unread"
+#~ msgstr "No leído"
+
+#~ msgid "Unread message"
+#~ msgstr "Mensaje no leído"
+
+#~ msgid "Unread messages"
+#~ msgstr "Mensajes no leídos"
+
+#~ msgid "Read message"
+#~ msgstr "Mensaje leído"
+
+#~ msgid "Read messages"
+#~ msgstr "Mensajes leídos"
+
+#~ msgid "Archived"
+#~ msgstr "Archivado"
+
+#~ msgid "Archived message"
+#~ msgstr "Mensaje archivado"
+
+#~ msgid "Archived messages"
+#~ msgstr "Mensajes archivados"
+
+#~ msgid "Sent"
+#~ msgstr "Enviado"
+
+#~ msgid "Sent message"
+#~ msgstr "Mensaje enviado"
+
+#~ msgid "Sent messages"
+#~ msgstr "Mensajes envidaos"
+
+#~ msgid "Archive"
+#~ msgstr "Archivar"
+
+#~ msgid "To"
+#~ msgstr "Para"
+
+#~ msgid "Reply"
+#~ msgstr "Responder"
+
+#~ msgid "Back to %s"
+#~ msgstr "Volver a %s"
+
+#~ msgid "%s Read"
+#~ msgstr "%s Leído"
+
+#~ msgid "The message could not be sent. Form elements are missing."
+#~ msgstr "El mensaje no ha sido enviado. Elementos del formulario están faltando."
+
+#~ msgid "You are not allowed to send a message to those recipients."
+#~ msgstr "No tiene permiso para enviar un mensaje a estos recipientes."
+
+#~ msgid "Re: %s"
+#~ msgstr "Re: %s"
+
+#~ msgid "# of Students"
+#~ msgstr "# de Estudiantes"
+
+#~ msgid "# of Administrators"
+#~ msgstr "# de Administradores"
+
+#~ msgid "# of Teachers"
+#~ msgstr "# de Docentes"
+
+#~ msgid "# of Parents"
+#~ msgstr "# de Padres"
+
+#~ msgid "Create Subject PDF for Selected Students"
+#~ msgstr "Crear el PDF Materia para los Estudiantes Seleccionados"
+
+#~ msgid "Class_Diary Widget"
+#~ msgstr "Widget de Ejemplo"
+
+#~ msgid "Setup"
+#~ msgstr "Configuración"
+
+#~ msgid "Class_Diary Resource"
+#~ msgstr "Recurso de Ejemplo"
+
+#~ msgid "The configuration value has been modified."
+#~ msgstr "El valor de configuración ha sido modificado."
+
+#~ msgid "Class_Diary module Setup"
+#~ msgstr "Configuración del Módulo Ejemplo"
+
+#~ msgid "Try to enter a non-numeric value"
+#~ msgstr "Intente entrar un valor no numerico"
+
+#~ msgid "Class_Diary config value label"
+#~ msgstr "Ejemplo de nombre del valor de config"

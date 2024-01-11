@@ -1,0 +1,284 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Email Alerts Help\n"
+"POT-Creation-Date: 2023-07-17 16:50+0200\n"
+"PO-Revision-Date: 2023-07-17 16:52+0200\n"
+"Last-Translator: \n"
+"Language-Team: RosarioSIS <info@rosariosis.org>\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-Basepath: ../../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _help\n"
+"X-Poedit-SearchPath-0: Help_en.php\n"
+
+#: Help_en.php:22
+msgid ""
+"<i>Elements</i> lets you create Billing Elements and organize them into "
+"categories. To create a new Category, click on the \"+\" icon. Then, enter "
+"the Category Title and click the \"Save\" button."
+msgstr ""
+"<i>Elementos</i> le permite crear Elementos de Facturación e organizarlos "
+"por categorías. Para crear una nueva Categoría, haga clic en el icono \"+\". "
+"Luego, entre el Título de la Categoría y haga clic en el botón \"Guardar\"."
+
+#: Help_en.php:23
+msgid ""
+"To create a new Element, first select a Category in the list. Then, click on "
+"the \"+\" icon in the list at the right of categories. Then, enter the "
+"Element Title, Amount, Reference and Description. Optionally select the "
+"Grade Level the Element applies to. Uncheck the Rollover checkbox if you do "
+"not wish to roll the Element to the next school year. After entering the "
+"Element details, click the \"Save\" button."
+msgstr ""
+"Para crear un nuevo Elemento, seleccione primero una Categoría en la lista. "
+"Luego, haga clic en el icono \"+\" a la derecha de las categorías. Luego, "
+"entre el Título, la Cantidad, la Referencia y la Descripción del Elemento. "
+"Puede seleccionar el Grado al cual el Elemento aplica. Desmarque la casilla "
+"Transferir si no quiere transferir el Elemento al año escolar siguiente. "
+"Después de haber entrado los detalles del Elemento, haga clic en el botón "
+"\"Guardar\"."
+
+#: Help_en.php:24
+msgid ""
+"Below the Element details, you will notice the \"Assign\" button. It will "
+"redirect you to the <i>Mass Assign Elements</i> program and will prefill the "
+"form with the Element details."
+msgstr ""
+"Debajo de los detalles del Elemento, notará el botón \"Asignar\". Le "
+"direccionará al programa <i>Asignar Elementos a Varios</i> y llenará el "
+"formulario con los detalles del Elemento."
+
+#: Help_en.php:25
+msgid "Note: only elements not assigned to students can be deleted."
+msgstr ""
+"Nota: solo los elementos no asignados a un estudiante pueden ser eliminados."
+
+#: Help_en.php:27
+msgid ""
+"<i>Mass Assign Elements</i> allows you to assign a Billing Element and the "
+"corresponding Fee to various students at once."
+msgstr ""
+"<i>Asignar Elementos a Varios</i> le permite asignar un Elemento de "
+"Facturación y el Cobro correspondiente a varios estudiantes a la vez."
+
+#: Help_en.php:28
+msgid ""
+"You must first select a (group of) student(s) by using the \"Find a Student"
+"\" search screen."
+msgstr ""
+
+#: Help_en.php:29
+msgid "Then, select an Element from the dropdown list."
+msgstr "Luego, seleccione un Elemento desde la lista desplegable."
+
+#: Help_en.php:30 Help_en.php:39
+msgid ""
+"The fee Title and Amount fields will be automatically filled with the "
+"Element details. You can also set the Due Date and Comment."
+msgstr ""
+"El Título y la Cantidad del cobro se llenan automáticamente con los detalles "
+"del Elemento. Puede también definir una Fecha de Plazo y un Comentario."
+
+#: Help_en.php:31
+msgid ""
+"From the search result, you can select any number of students. You can "
+"select all the students in the list by checking the checkbox in the column "
+"headings above the list."
+msgstr ""
+
+#: Help_en.php:32
+msgid "Finally, click the \"Add Element and Fee to Selected Students\" button."
+msgstr ""
+"Finalmente, haga clic en el botón \"Agregar Elemento y Cobro a los "
+"Estudiantes Seleccionados\"."
+
+#: Help_en.php:33
+msgid ""
+"Alternatively, you can click the \"Assign Elements by Grade Level\" link at "
+"the top of the screen to semi automatically assign the selected Billing "
+"Elements to students enrolled in the Grade Levels associated to each element."
+msgstr ""
+"De manera alternativa, puede hacer clic en el enlace \"Asignar los elementos "
+"por grado\" arriba en la pantalla para asignar los elementos de cobro "
+"seleccionados a los estudiantes inscritos en los grados asociados a cada "
+"elemento, y eso de manera semi automática."
+
+#: Help_en.php:35
+msgid ""
+"<i>Student Elements</i> allows you to consult, assign, or remove Billing "
+"Elements and their corresponding Fee for a single student."
+msgstr ""
+"<i>Elementos Estudiante</i> le permite consultar, asignar, y eliminar los "
+"Elementos de Facturación y los Cobros correspondientes para un estudiante."
+
+#: Help_en.php:36
+msgid ""
+"You must first select a student by using the \"Find a Student\" search "
+"screen."
+msgstr ""
+
+#: Help_en.php:37
+msgid ""
+"Then, the Billing Elements and their corresponding Fee will be displayed in "
+"the list."
+msgstr ""
+"Luego, los Elementos de Facturación y sus Cobros correspondientes están "
+"listados."
+
+#: Help_en.php:38
+msgid ""
+"To add an Element, select it from the dropdown list at the bottom of the "
+"list."
+msgstr ""
+"Para agregar un Elemento, selecciónelo desde la lista desplegable al final "
+"de la lista."
+
+#: Help_en.php:40
+msgid "Then, click the \"Save\" button."
+msgstr "Luego, haga clic en el botón \"Guardar\"."
+
+#: Help_en.php:41
+msgid ""
+"To remove an Element and its corresponding Fee, click the \"Delete\" link "
+"next to the desired fee in the list. You will be asked to confirm the "
+"deletion."
+msgstr ""
+"Para eliminar un Elemento y su Cobro correspondiente, haga clic en el enlace "
+"\"Eliminar\" al lado del cobro deseado en la lista. Se le preguntará "
+"confirmar su elección."
+
+#: Help_en.php:43
+msgid ""
+"<i>Category Breakdown</i> is a report showing Billing Elements breakdown per "
+"Category. You must first select a Category from the dropdown list at the top "
+"of the screen."
+msgstr ""
+"<i>Análisis de las Categorías</i> es un reporte mostrando la repartición de "
+"los Elementos de Facturación por Categoría. Debe primero seleccionar una "
+"Categoría desde la lista desplegable arriba en la pantalla."
+
+#: Help_en.php:44
+msgid ""
+"A column chart listing the Elements belonging to the category will be "
+"displayed. To display a pie chart, click on the \"Pie\" tab. To list the "
+"Elements, click on the \"List\" tab."
+msgstr ""
+"Se mostrará el gráfico de columna listando los Elementos que pertenecen a la "
+"categoría. Para obtener el gráfico de torta, haga clic en la pestaña "
+"\"Gráfico\". Para listar los Elementos, haga clic en la pestaña \"Lista\"."
+
+#: Help_en.php:45
+msgid ""
+"To display the total amount for each Element, click the \"Amount\" radio "
+"button at the top of the screen."
+msgstr ""
+"Para mostrar la cantidad total de cada Elemento, haga clic en el botón radio "
+"\"Cantidad\" arriba en la pantalla."
+
+#: Help_en.php:46
+msgid ""
+"To display breakdown by grade level instead, check the \"Breakdown by Grade "
+"Level\" checkbox at the top right corner."
+msgstr ""
+"Para mostrar la repartición por grado, marcar la casilla \"Análisis por Grado"
+"\" en la parte de arriba a la derecha."
+
+#: Help_en.php:47
+msgid ""
+"You can adjust the Report Timeframe selecting the start and end date from "
+"the dropdown menus. Then, click on the \"Go\" button to update the chart."
+msgstr ""
+"Puede ajustar el Transcurso del Reporte seleccionando la fecha de inicio y "
+"de fin desde los menús desplegables. Luego, haga clic en el botón \"Ir\" "
+"para actualizar el gráfico."
+
+#: Help_en.php:48
+msgid ""
+"To save the chart as an image file, click on the download icon below the "
+"chart."
+msgstr ""
+"Para guardar el gráfico como imagen, haga clic en el icono descargar debajo "
+"del gráfico."
+
+#: Help_en.php:49
+msgid "Note: charts will display at most 25 elements per category."
+msgstr "Nota: los gráficos muestran como mucho 25 elementos por categoría."
+
+#~ msgid ""
+#~ "To add an Element, select in from the dropdown list at the bottom of the "
+#~ "list."
+#~ msgstr "Para agregar un Elemento, seleccione"
+
+#~ msgid ""
+#~ "<i>Email Alerts</i> lets you setup alerts which are sent to your personal "
+#~ "email when a certain condition is reached. Conditions involve students "
+#~ "data like attendance (absences), grades, discipline referrals or balance. "
+#~ "Periods (school year, semester, quarter, month, week, day) define the "
+#~ "condition timeframe."
+#~ msgstr ""
+#~ "<i>Alertas por Email</i> le permite definir alertas enviadas a su "
+#~ "dirección de email personal cuando se cumple una condición. Las "
+#~ "condiciones involucran los datos de los estudiantes como la asistencia "
+#~ "(ausencias), las calificaciones, la disciplina o el saldo. Los periodos "
+#~ "(año escolar, semestre, trimestre, mes, semana, día) definen el "
+#~ "transcurso de la condición."
+
+#~ msgid "Send me an email alert when:"
+#~ msgstr "Envíeme una alerta por email cuando:"
+
+#~ msgid ""
+#~ "\"Student reaches 10 Attendance records with value <em>Absent</em> during "
+#~ "the Semester\"."
+#~ msgstr ""
+#~ "\"El estudiante llega a 10 registros de Asistencia con el valor "
+#~ "<em>Ausente</em> durante el Semestre\"."
+
+#~ msgid ""
+#~ "\"Student reaches Student Billing Balance with value <em>-1000.00</em> "
+#~ "during the Month\"."
+#~ msgstr ""
+#~ "\"El estudiante llega a un Saldo de Cobros con el valor <em>-1000.00</em> "
+#~ "durante el Mes\"."
+
+#~ msgid ""
+#~ "\"Student reaches 5 Gradebook Grades with value <em>F</em> during the "
+#~ "Quarter\"."
+#~ msgstr ""
+#~ "\"El estudiante llega a 5 Calificaciones del Libro con el valor <em>F</"
+#~ "em> durante el Trimestre\"."
+
+#~ msgid ""
+#~ "\"Student reaches 2 Final Grades with value <em>I</em> during the School "
+#~ "Year\". (<em>I</em> means Incomplete)."
+#~ msgstr ""
+#~ "\"El estudiante llega a 5 Calificaciones Finales con el valor <em>I</em> "
+#~ "durante el Año Escolar\". (<em>I</em> significa Incompleto)."
+
+#~ msgid ""
+#~ "\"Student reaches 3 Discipline Referrals with value <em>Parents contacted "
+#~ "by Teacher</em> during the Semester\"."
+#~ msgstr ""
+#~ "\"El estudiante llega a 3 Sanciones de Disciplina con el valor <em>Padres "
+#~ "contactados por el Docente</em> durante el Semestre\"."
+
+#~ msgid ""
+#~ "Alerts are processed daily and sent only <em>once per period</em>, on the "
+#~ "day the limit is reached (or the day <em>after</em> for \"Day\" period)."
+#~ msgstr ""
+#~ "Las alertas son procesadas de manera diaria y enviadas solamente <em>una "
+#~ "vez por periodo</em>, el día que se llega al límite (o el día "
+#~ "<em>después</em> para el periodo \"Día\")."
+
+#~ msgid "Alerts must be created separately for each School."
+#~ msgstr "La alertas deben ser creadas para cada Institución."
+
+#~ msgid ""
+#~ "Finally, please make sure your email address has been set in the "
+#~ "<em>Users > User Info</em> program."
+#~ msgstr ""
+#~ "Finalmente, asegúrese de haber definido su correo electrónico en el "
+#~ "programa <em>Usuarios > Información del Usuario</em>."
