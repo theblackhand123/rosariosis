@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/classes" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/classes" isTestSource="false" packagePrefix="PhpMyAdmin" />
+      <sourceFolder url="file://$MODULE_DIR$/classes/SimpleXLSXGen" isTestSource="false" packagePrefix="Shuchkin" />
+      <sourceFolder url="file://$MODULE_DIR$/classes/core" isTestSource="false" packagePrefix="RosarioSIS" />
+      <sourceFolder url="file://$MODULE_DIR$/classes/phpwkhtmltopdf/src" isTestSource="false" packagePrefix="mikehaertl\wkhtmlto\" />
+      <sourceFolder url="file://$MODULE_DIR$/classes/phpwkhtmltopdf/tests" isTestSource="true" packagePrefix="tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

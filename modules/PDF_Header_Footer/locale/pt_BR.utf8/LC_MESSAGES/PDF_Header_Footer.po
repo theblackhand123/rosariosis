@@ -1,0 +1,94 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PDF Header Footer plugin for RosarioSIS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-18 13:04-0300\n"
+"PO-Revision-Date: 2023-05-28 16:59+0200\n"
+"Last-Translator: Emerson Barros\n"
+"Language-Team: RosarioSIS <info@rosariosis.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-KeywordsList: dgettext:2\n"
+"X-Poedit-Basepath: ../../..\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-Bookmarks: -1,-1,3,-1,-1,-1,-1,-1,-1,-1\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: config.inc.php:15
+msgid "You're not allowed to use this program!"
+msgstr ""
+
+#: config.inc.php:59
+msgid "The plugin configuration has been modified."
+msgstr ""
+
+#: config.inc.php:78 config.inc.php:158
+msgid "Save"
+msgstr ""
+
+#: config.inc.php:105
+#, php-format
+msgid "PDF Header Footer %s"
+msgstr "Cabeçalho e rodapé de PDF %s\""
+
+#: config.inc.php:117
+msgid "Header"
+msgstr "Cabeçalho"
+
+#: config.inc.php:125
+msgid "Top Margin (mm)"
+msgstr "Margem superior (mm)"
+
+#: config.inc.php:133
+msgid "Footer"
+msgstr "Rodapé"
+
+#: config.inc.php:141
+msgid "Bottom Margin (mm)"
+msgstr "Margem inferior (mm)"
+
+#: config.inc.php:149
+msgid "Exclude PDF generated using the \"Print\" button"
+msgstr "Excluir PDF gerado pelo botão \"Imprimir\""
+
+#~ msgid "# of Students"
+#~ msgstr "# de Estudiantes"
+
+#~ msgid "# of Administrators"
+#~ msgstr "# de Administradores"
+
+#~ msgid "# of Teachers"
+#~ msgstr "# de Docentes"
+
+#~ msgid "# of Parents"
+#~ msgstr "# de Padres"
+
+#~ msgid "Create Subject PDF for Selected Students"
+#~ msgstr "Crear el PDF Materia para los Estudiantes Seleccionados"
+
+#~ msgid "Example"
+#~ msgstr "Ejemplo"
+
+#~ msgid "Example Widget"
+#~ msgstr "Widget de Ejemplo"
+
+#~ msgid "Setup"
+#~ msgstr "Configuración"
+
+#~ msgid "Example Resource"
+#~ msgstr "Recurso de Ejemplo"
+
+#~ msgid "The configuration value has been modified."
+#~ msgstr "El valor de configuración ha sido modificado."
+
+#~ msgid "Example module Setup"
+#~ msgstr "Configuración del Módulo Ejemplo"
+
+#~ msgid "Try to enter a non-numeric value"
+#~ msgstr "Intente entrar un valor no numerico"
+
+#~ msgid "Example config value label"
+#~ msgstr "Ejemplo de nombre del valor de config"

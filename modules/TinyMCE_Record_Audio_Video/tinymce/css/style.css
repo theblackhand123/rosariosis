@@ -1,0 +1,53 @@
+.mce-container * {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #595959;
+}
+
+div {
+    font-weight: normal;
+    line-height: 40px;
+    padding: 3px 0 3px 0;
+}
+
+.alert {
+    line-height: 20px;
+    padding: 2px 7px 4px;
+    border-style: solid;
+    border-width: 0 0 1px 4px;
+    border-left-color: red;
+    border-bottom-color: lightgray;
+}
+
+audio {
+    display: block;
+    width: 100%;
+}
+
+@media screen and (max-width: 680px) {
+    video {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (min-width: 681px) {
+    video {
+        display: block;
+        width: 640px;
+        height: 480px;
+        margin: 0 auto;
+    }
+}
+
+#start-stop,
+#upload {
+    white-space: normal;
+}
+
+.hide {
+    display: none;
+}

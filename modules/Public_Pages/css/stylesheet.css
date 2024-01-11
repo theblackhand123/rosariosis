@@ -1,0 +1,75 @@
+/**
+ * CSS
+ *
+ * @package Public Pages plugin
+ */
+
+.login #body,
+body.login {
+	padding-top: 0;
+}
+
+body.public-pages {
+	background-image: none;
+}
+
+.public-pages-menu {
+	list-style-type: none;
+	padding: 0 15px;
+}
+
+.public-pages-menu ul {
+	margin: 0;
+	padding: 0;
+}
+
+.public-pages-menu + .postbox-wrapper,
+.public-pages-menu + .postbox {
+	margin-top: 32px;
+}
+
+.public-pages-school-menu {
+	padding: 4px 15px;
+}
+
+.public-pages-menu li {
+	display: inline-block;
+	margin: 4px 0;
+}
+
+.public-pages-menu a {
+	padding: 4px 8px;
+}
+
+.public-pages-menu .current {
+	font-weight: bold;
+}
+
+.public-pages-module {
+	margin-top: 16px;
+	padding: 0 15px;
+}
+
+.login .public-pages-module .popTable td {
+	padding-bottom: 3px !important;
+}
+
+/*.public-pages-calendar .header2 a {
+	display: none;
+}*/
+
+.login .public-pages-module .postbox {
+	max-width: 100%;
+}
+
+.public-pages-module a[href*="LO_save=1"] {
+	display: none;
+}
+
+/*mobile + tablet vertical*/
+
+@media only screen and (max-width:874px) {
+	.public-pages-module {
+		padding: 0 3px;
+	}
+}

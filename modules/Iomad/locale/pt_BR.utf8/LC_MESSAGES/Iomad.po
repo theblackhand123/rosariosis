@@ -1,0 +1,171 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Iomad plugin for RosarioSIS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-18 10:56-0300\n"
+"PO-Revision-Date: 2023-05-28 16:51+0200\n"
+"Last-Translator: Emerson Barros\n"
+"Language-Team: RosarioSIS <info@rosariosis.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-KeywordsList: dgettext:2\n"
+"X-Poedit-Basepath: ../../..\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-Bookmarks: -1,-1,3,-1,-1,-1,-1,-1,-1,-1\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: config.inc.php:13
+msgid "You're not allowed to use this program!"
+msgstr ""
+
+#: config.inc.php:55
+msgid "The plugin configuration has been modified."
+msgstr ""
+
+#: config.inc.php:67 config.inc.php:71
+msgid "Test"
+msgstr ""
+
+#: config.inc.php:67
+msgid "Fail"
+msgstr "Falhou"
+
+#: config.inc.php:71
+msgid "Success"
+msgstr ""
+
+#: config.inc.php:85
+msgid "Please activate and configure the Moodle plugin."
+msgstr "Por favor, ative e configure o plug-in do Moodle."
+
+#: config.inc.php:101
+msgid "A single company is associated to various schools."
+msgstr "Uma mesma empresa está associada a várias escolas."
+
+#: config.inc.php:125
+msgid "Iomad"
+msgstr ""
+
+#: config.inc.php:127
+msgid "Companies"
+msgstr "Empresas"
+
+#: functions.php:32
+msgid "Create company in Iomad"
+msgstr "Criar empresa no Iomad"
+
+#: includes/common.fnc.php:240
+msgid "Iomad: Could not create company."
+msgstr "Iomad: Não foi possível criar empresa."
+
+#: includes/common.fnc.php:348
+msgid "Iomad: Could not get company category."
+msgstr "Iomad: Não foi possível obter a categoria da empresa."
+
+#: includes/common.fnc.php:467
+msgid "Iomad: Could not delete company."
+msgstr "Iomad: Não foi possível excluir a empresa."
+
+#: includes/common.fnc.php:592
+msgid "Iomad: Could not edit company."
+msgstr "Iomad: Não foi possível editar a empresa."
+
+#: includes/common.fnc.php:706 includes/common.fnc.php:816
+#, php-format
+msgid "Iomad: Could not assign user to company ID %d"
+msgstr "Iomad: Não foi possível atribuir (associar) o usuário ao ID da empresa %d"
+
+#: includes/common.fnc.php:926
+#, php-format
+msgid "Iomad: successfully unassigned user from company ID %d"
+msgstr "Iomad: Não foi possível desassociar o usuário ao ID da empresa %d\""
+
+#: includes/common.fnc.php:1009
+#, php-format
+msgid "Iomad: Could not unassign user from company ID %d"
+msgstr "Iomad: Não foi possível desassociar o usuário ao ID da empresa %d\""
+
+#: includes/common.fnc.php:1103
+#, php-format
+msgid "Iomad: Could not assign course to company ID %d"
+msgstr "Iomad: Não foi possível atribuir o curso à ID da empresa %d"
+
+#: includes/common.fnc.php:1243
+#, php-format
+msgid "Iomad: Could not assign user to course ID %d"
+msgstr "Iomad: Não foi possível atribuir o usuário ao ID do curso %d"
+
+#~ msgid "Add school events to your Outlook, Google, Thunderbird, Android calendar (.ics)."
+#~ msgstr "Añade los eventos de la escuela a su calendario Outlook, Google, Thunderbird o Android (.ics)."
+
+#~ msgid "Add classes to your Outlook, Google, Thunderbird, Android calendar (.ics)."
+#~ msgstr "Añade las clases a su calendario Outlook, Google, Thunderbird o Android (.ics)."
+
+#~ msgid "Calendar Schedule View"
+#~ msgstr "Vista Horario del Calendario"
+
+#~ msgid "Schedule View"
+#~ msgstr "Vista Horario"
+
+#~ msgid "Events and Assignments View"
+#~ msgstr "Vista Eventos y Tareas"
+
+#~ msgid "PDF Header Footer %s"
+#~ msgstr "Encabezado y Pie de página PDF %s"
+
+#~ msgid "Header"
+#~ msgstr "Encabezado"
+
+#~ msgid "Top Margin (mm)"
+#~ msgstr "Margen Superior (mm)"
+
+#~ msgid "Footer"
+#~ msgstr "Pie de página"
+
+#~ msgid "Bottom Margin (mm)"
+#~ msgstr "Margen Inferior (mm)"
+
+#~ msgid "Exclude PDF generated using the \"Print\" button"
+#~ msgstr "Excluir PDF generados con el botón \"Imprimir\""
+
+#~ msgid "# of Students"
+#~ msgstr "# de Estudiantes"
+
+#~ msgid "# of Administrators"
+#~ msgstr "# de Administradores"
+
+#~ msgid "# of Teachers"
+#~ msgstr "# de Docentes"
+
+#~ msgid "# of Parents"
+#~ msgstr "# de Padres"
+
+#~ msgid "Create Subject PDF for Selected Students"
+#~ msgstr "Crear el PDF Materia para los Estudiantes Seleccionados"
+
+#~ msgid "Example"
+#~ msgstr "Ejemplo"
+
+#~ msgid "Example Widget"
+#~ msgstr "Widget de Ejemplo"
+
+#~ msgid "Setup"
+#~ msgstr "Configuración"
+
+#~ msgid "Example Resource"
+#~ msgstr "Recurso de Ejemplo"
+
+#~ msgid "The configuration value has been modified."
+#~ msgstr "El valor de configuración ha sido modificado."
+
+#~ msgid "Example module Setup"
+#~ msgstr "Configuración del Módulo Ejemplo"
+
+#~ msgid "Try to enter a non-numeric value"
+#~ msgstr "Intente entrar un valor no numerico"
+
+#~ msgid "Example config value label"
+#~ msgstr "Ejemplo de nombre del valor de config"

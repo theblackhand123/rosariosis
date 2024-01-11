@@ -1,0 +1,303 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Tutor Report Card Comments plugin for RosarioSIS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-29 21:24+0100\n"
+"PO-Revision-Date: 2022-05-17 11:36+0200\n"
+"Last-Translator: François Jacquet <info@rosariosis.org>\n"
+"Language-Team: RosarioSIS <info@rosariosis.org>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: dgettext:2\n"
+"X-Poedit-Basepath: ../../..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: Student.inc.php:52
+msgid ""
+"Student's Tutor or Homeroom Teacher can enter global Comments for each "
+"graded Marking Period. Comments will be displayed on the Report Card. \"Name"
+"\" field is optional."
+msgstr ""
+"Le tuteur de l'élève ou le professeur principal peut entrer un commentaire "
+"global pour chaque période scolaire notée. Les commentaires seront affichés "
+"sur le bulletin de notes. Le champ \"Nom\" est optionnel."
+
+#: Student.inc.php:66
+msgid "Comments"
+msgstr ""
+
+#: Student.inc.php:76 includes/TutorReportCardComments.fnc.php:46
+msgid "Name"
+msgstr ""
+
+#: config.inc.php:13
+msgid "You're not allowed to use this program!"
+msgstr ""
+
+#: config.inc.php:33
+msgid "The plugin configuration has been modified."
+msgstr ""
+
+#: config.inc.php:52 config.inc.php:77
+msgid "Save"
+msgstr ""
+
+#: config.inc.php:62
+msgid "Tutor Report Card Comments"
+msgstr "Commentaires du tuteur"
+
+#: config.inc.php:68
+msgid "Small font size"
+msgstr "Taille de police réduite"
+
+#~ msgid "TinyMCE Record Audio Video"
+#~ msgstr "TinyMCE Enregistrement Audio Vidéo"
+
+#~ msgid "Time Limit (seconds)"
+#~ msgstr "Limite de Temps (secondes)"
+
+#~ msgid "Insert audio recording"
+#~ msgstr "Insérer enregistrement audio"
+
+#~ msgid "Insert video recording"
+#~ msgstr "Insérer enregistrement vidéo"
+
+#~ msgid ""
+#~ "Your browser offers limited or no support for WebRTC technologies yet, "
+#~ "and cannot be used with this plugin. Please switch or upgrade your browser"
+#~ msgstr ""
+#~ "Votre navigateur ne supporte pas la technologie WebRTC, et ne peut être "
+#~ "utilisé avec ce plugin. Veuillez changer ou mettre à jour votre navigateur"
+
+#~ msgid ""
+#~ "Something strange happened which prevented the webcam/microphone from "
+#~ "being used"
+#~ msgstr "Un évènement empêche l'utilisation de votre webcam/microphone"
+
+#~ msgid "The user must allow the browser access to the webcam/microphone"
+#~ msgstr ""
+#~ "L'utilisateur doit autoriser l'accès du navigateur à la webcam / au "
+#~ "microphone"
+
+#~ msgid "There is no input device connected or enabled"
+#~ msgstr "Aucun appareil d'enregistrement connecté ou activé"
+
+#~ msgid ""
+#~ "Something is preventing the browser from accessing the webcam/microphone"
+#~ msgstr ""
+#~ "Quelque-chose empêche le navigateur d'accéder à la webcam / au microphone"
+
+#~ msgid ""
+#~ "The current webcam/microphone can not produce a stream with the required "
+#~ "constraints"
+#~ msgstr "La webcam / le microphone ne peut produire un flux adapté"
+
+#~ msgid ""
+#~ "Your browser does not support recording over an insecure connection and "
+#~ "must close the plugin"
+#~ msgstr ""
+#~ "Votre navigateur ne supporte pas l'enregistrement depuis une connexion "
+#~ "non sécurisée et doit fermer le plugin"
+
+#~ msgid ""
+#~ "Tried to get stream from the webcam/microphone, but no constraints were "
+#~ "specified"
+#~ msgstr ""
+#~ "Tentative de récupération du flux de la webcam / du microphone, mais "
+#~ "aucune contrainte spécifiée"
+
+#~ msgid "Start Recording"
+#~ msgstr "Enregistrer"
+
+#~ msgid "Stop Recording"
+#~ msgstr "Arrêter"
+
+#~ msgid "Record Again"
+#~ msgstr "Enregistrer à Nouveau"
+
+#~ msgid "Recording failed, try again"
+#~ msgstr "Enregistrement échoué, essayez de nouveau"
+
+#~ msgid "Attach Recording as Annotation"
+#~ msgstr "Joindre l'Enregistrement comme Annotation"
+
+#~ msgid ""
+#~ "Something appears to have gone wrong, it seems nothing has been recorded"
+#~ msgstr "Une erreur est survenue, rien n'a été enregistré"
+
+#~ msgid "Upload failed:"
+#~ msgstr "Upoad échoué:"
+
+#~ msgid "Upload failed: file too large"
+#~ msgstr "Upload échoué: fichier trop gros"
+
+#~ msgid "Upload aborted:"
+#~ msgstr "Upload interrompu:"
+
+#~ msgid "You have attained the maximum size limit for file uploads"
+#~ msgstr "Vous avez atteint la taille maximum pour l'upload de fichier"
+
+#~ msgid "completed"
+#~ msgstr "complet"
+
+#~ msgid "What should the annotation appear as?"
+#~ msgstr "Comment devrait apparaître l'annotation?"
+
+#~ msgid "Audio annotation"
+#~ msgstr "Annotation audio"
+
+#~ msgid "Video annotation"
+#~ msgstr "Annotation vidéo"
+
+#~ msgid "Insecure connection!"
+#~ msgstr "Connexion non sécurisée!"
+
+#~ msgid ""
+#~ "Your browser might not allow this plugin to work unless it is used either "
+#~ "over HTTPS or from localhost"
+#~ msgstr ""
+#~ "Il se peut que votre navigateur empêche ce plugin de fonctionner à moins "
+#~ "que vous soyez sur un site en HTTPS ou depuis localhost"
+
+#~ msgid "LDAP authentication: %s."
+#~ msgstr "Authentification LDAP: %s."
+
+#~ msgid "LDAP authentication."
+#~ msgstr "Authentification LDAP."
+
+#~ msgid "LDAP connection: Syntax."
+#~ msgstr "Connexion LDAP: syntaxe."
+
+#~ msgid "LDAP: %s."
+#~ msgstr "LDAP: %s."
+
+#~ msgid ""
+#~ "PHP extensions: LDAP plugin relies on the ldap extension. Please install "
+#~ "and activate it."
+#~ msgstr ""
+#~ "Extensions PHP: le plugin LDAP requiert l'extension ldap. Veuillez "
+#~ "l'installer et de l'activer."
+
+#~ msgid "Is Active Directory?"
+#~ msgstr "Est Active Directory?"
+
+#~ msgid "LDAP server URI"
+#~ msgstr "URI du serveur LDAP"
+
+#~ msgid "User base DN"
+#~ msgstr "Base du DN Utilisateur"
+
+#~ msgid "Force Password Change"
+#~ msgstr "Forcer le Changement de Mot de Passe"
+
+#~ msgid "Reset the list of users who have already changed their password."
+#~ msgstr ""
+#~ "Effacer la liste des utilisateurs qui ont déjà changé leur mot de passe."
+
+#~ msgid "Test email to %s"
+#~ msgstr "Email de test à %s"
+
+#~ msgid ""
+#~ "This is a test email generated by the Force Password Change RosarioSIS "
+#~ "plugin."
+#~ msgstr ""
+#~ "Ceci est un email de test généré par le pluign Force Password Change pour "
+#~ "RosarioSIS."
+
+#~ msgid "Force Password Change %s"
+#~ msgstr "Force Password Change %s"
+
+#~ msgid ""
+#~ "If you are sending using an email provider (Gmail, Yahoo, Hotmail, "
+#~ "Outlook.com, etc) this setting should be your email address for this "
+#~ "account."
+#~ msgstr ""
+#~ "Si vous envoyez depuis un fournisseur d'email (Gmail, Yahoo, Hotmail, "
+#~ "Outlook.com, etc), ce devrait être l'adresse email de votre compte."
+
+#~ msgid "From Email"
+#~ msgstr "Email De"
+
+#~ msgid ""
+#~ "You can specify the name that emails should be sent from. If you leave "
+#~ "this blank, the emails will be sent from %s."
+#~ msgstr ""
+#~ "Vous pouvez spécifier le nom depuis lequel les emails devraient être "
+#~ "envoyé. Si vous laissez le champ vide, les emails seront envoyé depuis %s."
+
+#~ msgid "From Name"
+#~ msgstr "Nom De"
+
+#~ msgid "SMTP Host"
+#~ msgstr "Serveur SMTP"
+
+#~ msgid "SMTP Port"
+#~ msgstr "Port SMTP"
+
+#~ msgid "Encryption"
+#~ msgstr "Chiffrage"
+
+#~ msgid "Send a test email To"
+#~ msgstr "Envoyer un email de test À"
+
+#~ msgid "Send Test"
+#~ msgstr "Envoyer le Test"
+
+#~ msgid "Header"
+#~ msgstr "En-tête"
+
+#~ msgid "Top Margin (mm)"
+#~ msgstr "Marge Supérieure (mm)"
+
+#~ msgid "Footer"
+#~ msgstr "Pied de page"
+
+#~ msgid "Bottom Margin (mm)"
+#~ msgstr "Marge Inférieure (mm)"
+
+#~ msgid "Exclude PDF generated using the \"Print\" button"
+#~ msgstr "Exclure PDF générés grâce au bouton \"Imprimer\""
+
+#~ msgid "# of Students"
+#~ msgstr "# d'Élèves"
+
+#~ msgid "# of Administrators"
+#~ msgstr "# d'Administrateurs"
+
+#~ msgid "# of Teachers"
+#~ msgstr "# de Professeurs"
+
+#~ msgid "# of Parents"
+#~ msgstr "# de Parents"
+
+#~ msgid "Create Subject PDF for Selected Students"
+#~ msgstr "Créer le PDF Matière pour les Élèves Sélectionnés"
+
+#~ msgid "Example"
+#~ msgstr "Exemple"
+
+#~ msgid "Example Widget"
+#~ msgstr "Widget Exemple"
+
+#~ msgid "Setup"
+#~ msgstr "Paramétrage"
+
+#~ msgid "Example Resource"
+#~ msgstr "Ressource Exemple"
+
+#~ msgid "The configuration value has been modified."
+#~ msgstr "La valeur de configuration a été modifiée."
+
+#~ msgid "Example module Setup"
+#~ msgstr "Paramétrage du Module Exemple"
+
+#~ msgid "Try to enter a non-numeric value"
+#~ msgstr "Essayez d'entrer une valuer non-numérique"
+
+#~ msgid "Example config value label"
+#~ msgstr "Exemple de nom de valeur de config"

@@ -1,0 +1,321 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Tutor Report Card Comments plugin for RosarioSIS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-29 21:22+0100\n"
+"PO-Revision-Date: 2022-01-29 21:24+0100\n"
+"Last-Translator: François Jacquet <info@rosariosis.org>\n"
+"Language-Team: RosarioSIS <info@rosariosis.org>\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: dgettext:2\n"
+"X-Poedit-Basepath: ../../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: Student.inc.php:52
+msgid ""
+"Student's Tutor or Homeroom Teacher can enter global Comments for each "
+"graded Marking Period. Comments will be displayed on the Report Card. \"Name"
+"\" field is optional."
+msgstr ""
+"El Tutor del estudiante o el Docente principal puede entrar Comentarios "
+"globales para cada Periodo Calificado. Los Comentarios estarán visibles en "
+"el Boletín de Calificaciones. El campo \"Nombre\" es opcional."
+
+#: Student.inc.php:66
+msgid "Comments"
+msgstr ""
+
+#: Student.inc.php:76 includes/TutorReportCardComments.fnc.php:46
+msgid "Name"
+msgstr ""
+
+#: config.inc.php:13
+msgid "You're not allowed to use this program!"
+msgstr ""
+
+#: config.inc.php:33
+msgid "The plugin configuration has been modified."
+msgstr ""
+
+#: config.inc.php:52 config.inc.php:77
+msgid "Save"
+msgstr ""
+
+#: config.inc.php:62
+msgid "Tutor Report Card Comments"
+msgstr "Comentarios del Tutor"
+
+#: config.inc.php:68
+msgid "Small font size"
+msgstr "Tamaño de fuente reducido"
+
+#~ msgid ""
+#~ "Student's Tutor or Homeroom Teacher can enter global Comments for each "
+#~ "graded Marking Period. Comments will be displayed on the Report Card. "
+#~ "Name is optional."
+#~ msgstr ""
+#~ "El Tutor del estudiante o el Docente principal puede entrar Comentarios "
+#~ "globales para cada Periodo Calificado. Los Comentarios estarán visibles "
+#~ "en el Boletín de Calificaciones. El nombre es opcional."
+
+#~ msgid "TinyMCE Record Audio Video"
+#~ msgstr "TinyMCE Grabación Audio Video"
+
+#~ msgid "Time Limit (seconds)"
+#~ msgstr "Limite de Tiempo (segundos)"
+
+#~ msgid "Insert audio recording"
+#~ msgstr "Insertar grabación audio"
+
+#~ msgid "Insert video recording"
+#~ msgstr "Insertar grabación video"
+
+#~ msgid ""
+#~ "Your browser offers limited or no support for WebRTC technologies yet, "
+#~ "and cannot be used with this plugin. Please switch or upgrade your browser"
+#~ msgstr ""
+#~ "Su navegador no soporta la tecnología WebRTC, y no se puede usar con este "
+#~ "plugin. Por favor cambiar o actualizar su navegador"
+
+#~ msgid ""
+#~ "Something strange happened which prevented the webcam/microphone from "
+#~ "being used"
+#~ msgstr "Algo extraño ocurrió que impidió usar la cámara / el micrófono"
+
+#~ msgid "The user must allow the browser access to the webcam/microphone"
+#~ msgstr ""
+#~ "El usuario debe autorizar el acceso del navegador a la webcam / al "
+#~ "micrófono"
+
+#~ msgid "There is no input device connected or enabled"
+#~ msgstr "Ningún dispositivo de entrada conectado o activado"
+
+#~ msgid ""
+#~ "Something is preventing the browser from accessing the webcam/microphone"
+#~ msgstr "Algo impide el navegador acceder a la webcam / al micrófono"
+
+#~ msgid ""
+#~ "The current webcam/microphone can not produce a stream with the required "
+#~ "constraints"
+#~ msgstr ""
+#~ "La webcam / el micrófono no puede producir una transmisión como requerido"
+
+#~ msgid ""
+#~ "Your browser does not support recording over an insecure connection and "
+#~ "must close the plugin"
+#~ msgstr ""
+#~ "Su navegador no puede grabar desde una conexión insegura y debe cerrar el "
+#~ "plugin"
+
+#~ msgid ""
+#~ "Tried to get stream from the webcam/microphone, but no constraints were "
+#~ "specified"
+#~ msgstr ""
+#~ "Intentó de obtener la transmisión de la webcam / del micrófono, pero "
+#~ "ninguna restricción especificada"
+
+#~ msgid "Start Recording"
+#~ msgstr "Empezar"
+
+#~ msgid "Stop Recording"
+#~ msgstr "Terminar"
+
+#~ msgid "Record Again"
+#~ msgstr "Grabar de Nuevo"
+
+#~ msgid "Recording failed, try again"
+#~ msgstr "Error de grabación, intenta de nuevo"
+
+#~ msgid "Attach Recording as Annotation"
+#~ msgstr "Adjuntar la Grabación como Anotación"
+
+#~ msgid ""
+#~ "Something appears to have gone wrong, it seems nothing has been recorded"
+#~ msgstr "Algo pasó mal, nada fue grabado"
+
+#~ msgid "Upload failed:"
+#~ msgstr "Error de upload:"
+
+#~ msgid "Upload failed: file too large"
+#~ msgstr "Error de upload: archivo demasiado grande"
+
+#~ msgid "Upload aborted:"
+#~ msgstr "Upload abortado:"
+
+#~ msgid "You have attained the maximum size limit for file uploads"
+#~ msgstr "Ha llegado al tamaño máximo para el upload de archivo"
+
+#~ msgid "completed"
+#~ msgstr "completo"
+
+#~ msgid "What should the annotation appear as?"
+#~ msgstr "Como debe aparecer la anotación?"
+
+#~ msgid "Audio annotation"
+#~ msgstr "Anotación audio"
+
+#~ msgid "Video annotation"
+#~ msgstr "Anotación video"
+
+#~ msgid "Insecure connection!"
+#~ msgstr "Conexión insegura!"
+
+#~ msgid ""
+#~ "Your browser might not allow this plugin to work unless it is used either "
+#~ "over HTTPS or from localhost"
+#~ msgstr ""
+#~ "Su navegador podría impedirle usar este plugin al menos de estar en una "
+#~ "página en HTTPS o desde localhost"
+
+#~ msgid "LDAP authentication: %s."
+#~ msgstr "Autenticación LDAP: %s."
+
+#~ msgid "LDAP authentication."
+#~ msgstr "Autenticación LDAP."
+
+#~ msgid "LDAP connection: Syntax."
+#~ msgstr "Conexión LDAP: sintaxis."
+
+#~ msgid "LDAP: %s."
+#~ msgstr "LDAP: %s."
+
+#~ msgid ""
+#~ "PHP extensions: LDAP plugin relies on the ldap extension. Please install "
+#~ "and activate it."
+#~ msgstr ""
+#~ "Extensiones PHP: el plugin LDAP requiere la extensión ldap. Por favor "
+#~ "instalar e activarla."
+
+#~ msgid "Is Active Directory?"
+#~ msgstr "Es Active Directory?"
+
+#~ msgid "LDAP server URI"
+#~ msgstr "URI del servidor LDAP"
+
+#~ msgid "User base DN"
+#~ msgstr "Base del DN Usuario"
+
+#~ msgid "LDAP authentication error: %s."
+#~ msgstr "Error de autenticación LDAP: %s."
+
+#~ msgid "LDAP authentication error."
+#~ msgstr "Error de autenticación LDAP."
+
+#~ msgid "LDAP connection error: Syntax error."
+#~ msgstr "Error de conexión LDAP: error de sintaxis."
+
+#~ msgid "LDAP error: %s."
+#~ msgstr "Error LDAP: %s."
+
+#~ msgid "Force Password Change"
+#~ msgstr "Forzar el Cambio de Contraseña"
+
+#~ msgid "Reset the list of users who have already changed their password."
+#~ msgstr "Resetear la lista de usuarios que ya han cambiado su contraseña."
+
+#~ msgid ""
+#~ "This is a test email generated by the Force Password Change RosarioSIS "
+#~ "plugin."
+#~ msgstr ""
+#~ "Este es un email generado por le plugin Force Password Change para "
+#~ "RosarioSIS."
+
+#~ msgid "Force Password Change %s"
+#~ msgstr "Force Password Change %s"
+
+#~ msgid ""
+#~ "If you are sending using an email provider (Gmail, Yahoo, Hotmail, "
+#~ "Outlook.com, etc) this setting should be your email address for this "
+#~ "account."
+#~ msgstr ""
+#~ "Si manda usando un provedorde email (Gmail, Yahoo, Hotmail, Outlook.com, "
+#~ "etc), deberia ser la dirección de email de esta cuenta."
+
+#~ msgid "From Email"
+#~ msgstr "Email De"
+
+#~ msgid ""
+#~ "You can specify the name that emails should be sent from. If you leave "
+#~ "this blank, the emails will be sent from %s."
+#~ msgstr ""
+#~ "Puede especificar el nombre desde el cual los emails deberian ser "
+#~ "enviados. Si deja el campo en blanco, los emails estaran enviados desde "
+#~ "%s."
+
+#~ msgid "From Name"
+#~ msgstr "Nombre De"
+
+#~ msgid "SMTP Host"
+#~ msgstr "Servidor SMTP"
+
+#~ msgid "SMTP Port"
+#~ msgstr "Puerto SMTP"
+
+#~ msgid "Encryption"
+#~ msgstr "Encriptación"
+
+#~ msgid "Send a test email To"
+#~ msgstr "Mandar un email de prueba A"
+
+#~ msgid "Send Test"
+#~ msgstr "Mandar Prueba"
+
+#~ msgid "Header"
+#~ msgstr "Encabezado"
+
+#~ msgid "Top Margin (mm)"
+#~ msgstr "Margen Superior (mm)"
+
+#~ msgid "Footer"
+#~ msgstr "Pie de página"
+
+#~ msgid "Bottom Margin (mm)"
+#~ msgstr "Margen Inferior (mm)"
+
+#~ msgid "Exclude PDF generated using the \"Print\" button"
+#~ msgstr "Excluir PDF generados con el botón \"Imprimir\""
+
+#~ msgid "# of Students"
+#~ msgstr "# de Estudiantes"
+
+#~ msgid "# of Administrators"
+#~ msgstr "# de Administradores"
+
+#~ msgid "# of Teachers"
+#~ msgstr "# de Docentes"
+
+#~ msgid "# of Parents"
+#~ msgstr "# de Padres"
+
+#~ msgid "Create Subject PDF for Selected Students"
+#~ msgstr "Crear el PDF Materia para los Estudiantes Seleccionados"
+
+#~ msgid "Example"
+#~ msgstr "Ejemplo"
+
+#~ msgid "Example Widget"
+#~ msgstr "Widget de Ejemplo"
+
+#~ msgid "Setup"
+#~ msgstr "Configuración"
+
+#~ msgid "Example Resource"
+#~ msgstr "Recurso de Ejemplo"
+
+#~ msgid "The configuration value has been modified."
+#~ msgstr "El valor de configuración ha sido modificado."
+
+#~ msgid "Example module Setup"
+#~ msgstr "Configuración del Módulo Ejemplo"
+
+#~ msgid "Try to enter a non-numeric value"
+#~ msgstr "Intente entrar un valor no numerico"
+
+#~ msgid "Example config value label"
+#~ msgstr "Ejemplo de nombre del valor de config"

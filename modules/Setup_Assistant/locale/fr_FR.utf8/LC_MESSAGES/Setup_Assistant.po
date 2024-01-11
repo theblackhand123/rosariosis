@@ -1,0 +1,293 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Setup Assistant plugin for RosarioSIS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-28 12:31+0100\n"
+"PO-Revision-Date: 2022-05-17 11:33+0200\n"
+"Last-Translator: François Jacquet <info@rosariosis.org>\n"
+"Language-Team: RosarioSIS <info@rosariosis.org>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: dgettext:2\n"
+"X-Poedit-Basepath: ../../..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: config.inc.php:13
+msgid "You're not allowed to use this program!"
+msgstr ""
+
+#: config.inc.php:43
+msgid "The plugin configuration has been modified."
+msgstr ""
+
+#: config.inc.php:61 config.inc.php:129
+msgid "Save"
+msgstr ""
+
+#: config.inc.php:88
+#, php-format
+msgid "Setup Assistant %s"
+msgstr "Assistant de configuration %s"
+
+#: config.inc.php:96
+msgid "Administrator"
+msgstr ""
+
+#: config.inc.php:97
+msgid "Teacher"
+msgstr ""
+
+#: config.inc.php:98
+msgid "Parent"
+msgstr ""
+
+#: config.inc.php:99
+msgid "Student"
+msgstr ""
+
+#: config.inc.php:102
+msgid "Profiles"
+msgstr ""
+
+#: config.inc.php:119
+msgid "Disabled"
+msgstr ""
+
+#: config.inc.php:120
+msgid "Enabled"
+msgstr "Activé"
+
+#: includes/SetupAssistant.fnc.php:13
+msgid "Setup Assistant"
+msgstr "Assistant de configuration"
+
+#: includes/SetupAssistant.fnc.php:87
+msgid "Done."
+msgstr ""
+
+#: includes/SetupAssistant.fnc.php:118
+msgid "Consult the inline Help"
+msgstr "Consulter l'aide en ligne"
+
+#: includes/SetupAssistant.fnc.php:125
+msgid "Print my Handbook"
+msgstr "Imprimer mon manuel"
+
+#: includes/SetupAssistant.fnc.php:142
+msgid "Get the Helpful Tips PDF"
+msgstr "Obtenir le PDF de Conseils pratiques"
+
+#: includes/SetupAssistant.fnc.php:223
+msgid "Completed"
+msgstr ""
+
+#: includes/SetupAssistant.fnc.php:246
+msgid "Quick Setup Guide"
+msgstr "Guide de configuration rapide"
+
+#: includes/SetupAssistantSteps.fnc.php:24
+#: includes/SetupAssistantSteps.fnc.php:40
+#: includes/SetupAssistantSteps.fnc.php:106
+#: includes/SetupAssistantSteps.fnc.php:122
+#: includes/SetupAssistantSteps.fnc.php:245
+#: includes/SetupAssistantSteps.fnc.php:281
+#: includes/SetupAssistantSteps.fnc.php:408
+#: includes/SetupAssistantSteps.fnc.php:423
+#, php-format
+msgid "Edit %s"
+msgstr "Modifier les %s"
+
+#: includes/SetupAssistantSteps.fnc.php:25
+msgid "School Information"
+msgstr ""
+
+#: includes/SetupAssistantSteps.fnc.php:41
+msgid "Configuration"
+msgstr ""
+
+#: includes/SetupAssistantSteps.fnc.php:74
+#: includes/SetupAssistantSteps.fnc.php:90
+#: includes/SetupAssistantSteps.fnc.php:174
+#: includes/SetupAssistantSteps.fnc.php:189
+#: includes/SetupAssistantSteps.fnc.php:326
+#: includes/SetupAssistantSteps.fnc.php:438
+#: includes/SetupAssistantSteps.fnc.php:548
+#, php-format
+msgid "Create %s"
+msgstr "Créer les %s"
+
+#: includes/SetupAssistantSteps.fnc.php:75
+msgid "Marking Periods"
+msgstr ""
+
+#: includes/SetupAssistantSteps.fnc.php:91
+msgid "Calendars"
+msgstr ""
+
+#: includes/SetupAssistantSteps.fnc.php:107
+msgid "Periods"
+msgstr ""
+
+#: includes/SetupAssistantSteps.fnc.php:123
+msgid "Grade Levels"
+msgstr ""
+
+#: includes/SetupAssistantSteps.fnc.php:158
+#: includes/SetupAssistantSteps.fnc.php:210
+#, php-format
+msgid "Setup %s"
+msgstr "Configurer les %s"
+
+#: includes/SetupAssistantSteps.fnc.php:159
+msgid "Grading Scales"
+msgstr ""
+
+#: includes/SetupAssistantSteps.fnc.php:175
+msgid "Comment Codes"
+msgstr ""
+
+#: includes/SetupAssistantSteps.fnc.php:190
+msgid "Report Card Comments"
+msgstr ""
+
+#: includes/SetupAssistantSteps.fnc.php:211
+msgid "Gradebook"
+msgstr ""
+
+#: includes/SetupAssistantSteps.fnc.php:246
+msgid "Attendance Codes"
+msgstr ""
+
+#: includes/SetupAssistantSteps.fnc.php:282
+msgid "Enrollment Codes"
+msgstr ""
+
+#: includes/SetupAssistantSteps.fnc.php:296
+msgid "Add a Student"
+msgstr ""
+
+#: includes/SetupAssistantSteps.fnc.php:311
+msgid "Import Students"
+msgstr "Importer les élèves"
+
+#: includes/SetupAssistantSteps.fnc.php:327
+msgid "Student Fields"
+msgstr ""
+
+#: includes/SetupAssistantSteps.fnc.php:346
+msgid "Registration"
+msgstr ""
+
+#: includes/SetupAssistantSteps.fnc.php:380
+#: includes/SetupAssistantSteps.fnc.php:478
+#: includes/SetupAssistantSteps.fnc.php:513
+#, php-format
+msgid "Edit my %s"
+msgstr "Modifier ma/mes %s"
+
+#: includes/SetupAssistantSteps.fnc.php:381
+#: includes/SetupAssistantSteps.fnc.php:479
+#: includes/SetupAssistantSteps.fnc.php:514
+msgid "User Info"
+msgstr ""
+
+#: includes/SetupAssistantSteps.fnc.php:394
+msgid "Add a User"
+msgstr ""
+
+#: includes/SetupAssistantSteps.fnc.php:409
+msgid "User Profiles"
+msgstr ""
+
+#: includes/SetupAssistantSteps.fnc.php:424
+msgid "User Permissions"
+msgstr ""
+
+#: includes/SetupAssistantSteps.fnc.php:439
+msgid "User Fields"
+msgstr ""
+
+#: includes/SetupAssistantSteps.fnc.php:493
+#, php-format
+msgid "Consult my %s"
+msgstr "Consulter mon %s"
+
+#: includes/SetupAssistantSteps.fnc.php:494
+msgid "Schedule"
+msgstr ""
+
+#: includes/SetupAssistantSteps.fnc.php:549
+msgid "Courses"
+msgstr ""
+
+#: includes/SetupAssistantSteps.fnc.php:563
+msgid "Group Schedule"
+msgstr ""
+
+#: includes/SetupAssistantSteps.fnc.php:581
+msgid "Print Class Pictures"
+msgstr ""
+
+#~ msgid "I'm done"
+#~ msgstr "Terminé"
+
+#~ msgid "PDF Header Footer %s"
+#~ msgstr "En-tête et Pied de page PDF %s"
+
+#~ msgid "Header"
+#~ msgstr "En-tête"
+
+#~ msgid "Top Margin (mm)"
+#~ msgstr "Marge Supérieure (mm)"
+
+#~ msgid "Footer"
+#~ msgstr "Pied de page"
+
+#~ msgid "Bottom Margin (mm)"
+#~ msgstr "Marge Inférieure (mm)"
+
+#~ msgid "Exclude PDF generated using the \"Print\" button"
+#~ msgstr "Exclure PDF générés grâce au bouton \"Imprimer\""
+
+#~ msgid "# of Students"
+#~ msgstr "# d'Élèves"
+
+#~ msgid "# of Administrators"
+#~ msgstr "# d'Administrateurs"
+
+#~ msgid "# of Teachers"
+#~ msgstr "# de Professeurs"
+
+#~ msgid "# of Parents"
+#~ msgstr "# de Parents"
+
+#~ msgid "Create Subject PDF for Selected Students"
+#~ msgstr "Créer le PDF Matière pour les Élèves Sélectionnés"
+
+#~ msgid "Example"
+#~ msgstr "Exemple"
+
+#~ msgid "Example Widget"
+#~ msgstr "Widget Exemple"
+
+#~ msgid "Setup"
+#~ msgstr "Paramétrage"
+
+#~ msgid "Example Resource"
+#~ msgstr "Ressource Exemple"
+
+#~ msgid "The configuration value has been modified."
+#~ msgstr "La valeur de configuration a été modifiée."
+
+#~ msgid "Example module Setup"
+#~ msgstr "Paramétrage du Module Exemple"
+
+#~ msgid "Try to enter a non-numeric value"
+#~ msgstr "Essayez d'entrer une valuer non-numérique"
+
+#~ msgid "Example config value label"
+#~ msgstr "Exemple de nom de valeur de config"
