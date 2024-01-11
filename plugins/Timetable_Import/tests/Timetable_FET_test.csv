@@ -1,0 +1,45 @@
+Activity Id,Day,Hour,Students Sets,Subject,Teachers,Activity Tags,Room,Comments,Seats
+1,Tuesday,14:00,KG+1,Mathematics,ELTON John,,101,,10
+1,Tuesday,15:00,KG+1,Mathematics,ELTON John,,101,,10
+2,Tuesday,16:00,2+3,Mathematics,ELTON John,,202,,20
+2,Tuesday,17:00,2+3,Mathematics,ELTON John,,202,,20
+3,Friday,13:00,2+3,Mathematics,ELTON John,,202,,20
+3,Friday,14:00,2+3,Mathematics,ELTON John,,202,,20
+4,Friday,15:00,4+5+6+7+8,Mathematics,ELTON John,,111,,30
+4,Friday,16:00,4+5+6+7+8,Mathematics,ELTON John,,111,,30
+5,Monday,10:00,4+5+6+7+8,Mathematics,ELTON John,,111,,30
+5,Monday,11:00,4+5+6+7+8,Mathematics,ELTON John,,111,,30
+6,Tuesday,12:00,4+5+6+7+8,Mathematics,ELTON John,,111,,30
+6,Tuesday,13:00,4+5+6+7+8,Mathematics,ELTON John,,111,,30
+7,Monday,14:00,9+10+11+12,Mathematics,ELTON John,,212,,20
+7,Monday,15:00,9+10+11+12,Mathematics,ELTON John,,212,,20
+8,Monday,12:00,9+10+11+12,Mathematics,ELTON John,,212,,20
+8,Monday,13:00,9+10+11+12,Mathematics,ELTON John,,212,,20
+9,Friday,11:00,9+10+11+12,Mathematics,ELTON John,,212,,20
+9,Friday,12:00,9+10+11+12,Mathematics,ELTON John,,212,,20
+10,Friday,09:00,9+10+11+12,Mathematics,ELTON John,,212,,20
+10,Friday,10:00,9+10+11+12,Mathematics,ELTON John,,212,,20
+11,Friday,09:00,KG+1+2+3,Spanish,Anna Smith,,,,
+11,Friday,10:00,KG+1+2+3,Spanish,Anna Smith,,,,
+12,Friday,11:00,4+5+6+7+8,Spanish,Anna Smith,,,,
+12,Friday,12:00,4+5+6+7+8,Spanish,Anna Smith,,,,
+13,Monday,12:00,4+5+6+7+8,Spanish,Anna Smith,,,,
+13,Monday,13:00,4+5+6+7+8,Spanish,Anna Smith,,,,
+14,Thursday,10:00,9+10+11+12,Spanish,Anna Smith,,,,
+14,Thursday,11:00,9+10+11+12,Spanish,Anna Smith,,,,
+15,Monday,16:00,9+10+11+12,Spanish,Anna Smith,,,,
+15,Monday,17:00,9+10+11+12,Spanish,Anna Smith,,,,
+16,Friday,13:00,9+10+11+12,Spanish,Anna Smith,,,,
+16,Friday,14:00,9+10+11+12,Spanish,Anna Smith,,,,
+17,Monday,14:00,KG+1+2+3,History',Anna Smith+Rebecca M. Simpson,,,,
+17,Monday,15:00,KG+1+2+3,History',Anna Smith+Rebecca M. Simpson,,,,
+18,Thursday,15:00,4+5+6+7+8,History',Anna Smith+Rebecca M. Simpson,,,,
+18,Thursday,16:00,4+5+6+7+8,History',Anna Smith+Rebecca M. Simpson,,,,
+19,Monday,08:00,4+5+6+7+8,History',Anna Smith+Rebecca M. Simpson,,,,
+19,Monday,09:00,4+5+6+7+8,History',Anna Smith+Rebecca M. Simpson,,,,
+20,Thursday,08:00,9+10+11+12,History',Anna Smith+Rebecca M. Simpson,,,,
+20,Thursday,09:00,9+10+11+12,History',Anna Smith+Rebecca M. Simpson,,,,
+21,Friday,15:00,9+10+11+12,History',Anna Smith+Rebecca M. Simpson,,,,
+21,Friday,16:00,9+10+11+12,History',Anna Smith+Rebecca M. Simpson,,,,
+22,Monday,10:00,9+10+11+12,History',Anna Smith+Rebecca M. Simpson,,,,
+22,Monday,11:00,9+10+11+12,History',Anna Smith+Rebecca M. Simpson,,,,

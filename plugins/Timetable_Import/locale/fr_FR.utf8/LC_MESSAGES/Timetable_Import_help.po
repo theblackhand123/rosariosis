@@ -1,0 +1,224 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Timetable Import Help\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-03 19:00+0200\n"
+"PO-Revision-Date: 2023-04-03 19:04+0200\n"
+"Last-Translator: François Jacquet <info@rosariosis.org>\n"
+"Language-Team: RosarioSIS <info@rosariosis.org>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _help:1\n"
+"X-Poedit-Basepath: ../../..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-SearchPath-0: Help_en.php\n"
+
+#: Help_en.php:26
+msgid ""
+"<i>Timetable Import</i> allows you to import a timetable contained in an "
+"<b>Excel</b> spreadsheet or a <b>CSV</b> file."
+msgstr ""
+"<i>Import emploi du temps</i> vous permet l'import des emplois du temps "
+"contenus dans un fichier <b>Excel</b> ou <b>CSV</b>."
+
+#: Help_en.php:27
+msgid ""
+"First thing, it is recommended to <b>backup your database</b> in case "
+"something goes wrong."
+msgstr ""
+"D'abord, il est recommandé procéder à un <b>backup de la base de données</b> "
+"au cas où surviendrait un problème."
+
+#: Help_en.php:28
+msgid ""
+"Then, select the Excel (.xls, .xlsx) or CSV (.csv) file containing your "
+"timetable using the \"Select CSV or Excel file\". Then, click the \"Submit\" "
+"button to upload the file. Please note that if you select an Excel file, "
+"only the first spreadsheet will be uploaded."
+msgstr ""
+"Ensuite, sélectionnez le fichier Excel (.xls, .xlsx) ou CSV (.csv) qui "
+"contient votre emploi du temps à l'aide du champ \"Sélectionner fichier CSV "
+"ou Excel\". Ensuite, cliquez sur le bouton \"Valider\" pour uploader le "
+"fichier. Si vous sélectionnez un fichier Excel, seule la première feuille de "
+"calcul sera uploadée."
+
+#: Help_en.php:29
+msgid ""
+"On the next screen, you will be able to associate a column to each Timetable "
+"Field. Please note that the fields in <span style=\"color:red;\">red</span> "
+"are mandatory. Check the \"Import first row\" checkbox at the top of the "
+"screen if your file's first row contains user data instead of column labels. "
+"Once you are set, click the \"Import Timetable\" button."
+msgstr ""
+"Sur l'écran suivant, vous pourrez associer une colonne à chaque champs de "
+"classe. Vous pourrez aussi définir les options pour toutes les classes "
+"importées. Notez s'il vous plaît que les champs en <span style=\"color:red;"
+"\">rouge</span> sont obligatoires. Cochez la case \"Importer la première "
+"ligne\" en haut de l'écran si la première ligne du fichier contient des "
+"données au lieu de noms de colonnes. Une fois prêt, cliquez sur le bouton "
+"\"Importer l'emploi du temps\"."
+
+#~ msgid "Timetable Import"
+#~ msgstr "Import emploi du temps"
+
+#~ msgid "Cannot open file."
+#~ msgstr "Le fichier ne peut pas être ouvert."
+
+#, php-format
+#~ msgid "%s Course Periods were imported."
+#~ msgstr "%s classes ont été importés."
+
+#~ msgid "Select CSV or Excel file"
+#~ msgstr "Sélectionner fichier CSV ou Excel"
+
+#, php-format
+#~ msgid "%s rows"
+#~ msgstr "%s lignes"
+
+#~ msgid "Import Timetable"
+#~ msgstr "Importer l'emploi du temps"
+
+#~ msgid ""
+#~ "Are you absolutely ready to import timetable? Make sure you have backed "
+#~ "up your database!"
+#~ msgstr ""
+#~ "Êtes-vous prêt pour importer l'emploi du temps ? Assurez-vous d'avoir "
+#~ "sauvegardé la base de données !"
+
+#~ msgid "Stop"
+#~ msgstr "Stop"
+
+#~ msgid "Import first row"
+#~ msgstr "Importer la primière ligne"
+
+#~ msgid "Reset form"
+#~ msgstr "Réinitialiser le formulaire"
+
+#~ msgid "Delete existing Courses and Course Periods"
+#~ msgstr "Supprimer les cours et classes existantes"
+
+#~ msgid "Timetable Fields"
+#~ msgstr "Champs emploi du temps"
+
+#~ msgid "Activity ID"
+#~ msgstr "ID activité"
+
+#~ msgid "Student Sets"
+#~ msgstr "Groupes d'élèves"
+
+#~ msgid ""
+#~ "PHP zip extension is required. Please enable it or convert your file to "
+#~ "CSV."
+#~ msgstr ""
+#~ "Extension PHP zip requise. Merci de l'activer ou bien de convertir votre "
+#~ "fichier en CSV."
+
+#~ msgid "No teacher found."
+#~ msgstr "Aucun enseignant trouvé."
+
+#~ msgid "No subject found."
+#~ msgstr "Aucune matière trouvée."
+
+#~ msgid "No day found."
+#~ msgstr "Aucun jour trouvé."
+
+#~ msgid "No period found."
+#~ msgstr "Aucune heure trouvée."
+
+#~ msgid "No student sets / grade levels found."
+#~ msgstr "Aucun groupe d'élèves / niveau scolaire trouvé."
+
+#~ msgid "%s users were imported."
+#~ msgstr "%s utilisateurs ont été importés."
+
+#~ msgid "Import Users"
+#~ msgstr "Importer Utilisateurs"
+
+#~ msgid ""
+#~ "Are you absolutely ready to import users? Make sure you have backed up "
+#~ "your database!"
+#~ msgstr ""
+#~ "Êtes-vous prêt pour importer les utilisateurs? Assurez-vous d'avoir "
+#~ "sauvegardé la base de données!"
+
+#~ msgid "No names were found."
+#~ msgstr "Aucun nom n'a été trouvé."
+
+#~ msgid "IDs are automatically generated if you select \"N/A\"."
+#~ msgstr "Les IDs sont automatiquement générés si vous séleccionnez \"N/D\"."
+
+#~ msgid "If the date is left empty, users will not be enrolled (inactive)."
+#~ msgstr ""
+#~ "Si vous n'indiquez pas de date, les élèves ne seront pas inscrits "
+#~ "(inactifs)."
+
+#~ msgid "Timetable Import for "
+#~ msgstr "Importación de Estudiantes para "
+
+#~ msgid "CSV file imported."
+#~ msgstr "Archivo CSV importado."
+
+#~ msgid "Cannot open CSV file."
+#~ msgstr "El archivo CSV no se puede abrir."
+
+#~ msgid "CSV columns reference: see \"CSV_COLUMNS_REFERENCE\" file."
+#~ msgstr ""
+#~ "Referencia de columnas CSV: ver el archivo \"CSV_COLUMNS_REFERENCE\"."
+
+#~ msgid "Set Username as %s"
+#~ msgstr "Definir Nombre de Usuario como %s"
+
+#~ msgid "Set Password as %s"
+#~ msgstr "Definir Contraseña como %s"
+
+#~ msgid "Select CSV file"
+#~ msgstr "Seleccionar archivo CSV"
+
+#~ msgid "Import CSV file"
+#~ msgstr "Importar archivo CSV"
+
+#~ msgid "The following required columns were not found in the CSV file: %s"
+#~ msgstr ""
+#~ "Las columnas requeridas no han sido encontradas en el archivo CSV: %s"
+
+#~ msgid "# of Users"
+#~ msgstr "# de Estudiantes"
+
+#~ msgid "# of Administrators"
+#~ msgstr "# de Administradores"
+
+#~ msgid "# of Teachers"
+#~ msgstr "# de Docentes"
+
+#~ msgid "# of Parents"
+#~ msgstr "# de Padres"
+
+#~ msgid "Example"
+#~ msgstr "Ejemplo"
+
+#~ msgid "Create Subject PDF for Selected Users"
+#~ msgstr "Crear el PDF Materia para los Estudiantes Seleccionados"
+
+#~ msgid "Example Widget"
+#~ msgstr "Widget de Ejemplo"
+
+#~ msgid "Setup"
+#~ msgstr "Configuración"
+
+#~ msgid "Example Resource"
+#~ msgstr "Recurso de Ejemplo"
+
+#~ msgid "The configuration value has been modified."
+#~ msgstr "El valor de configuración ha sido modificado."
+
+#~ msgid "Example module Setup"
+#~ msgstr "Configuración del Módulo Ejemplo"
+
+#~ msgid "Try to enter a non-numeric value"
+#~ msgstr "Intente entrar un valor no numerico"
+
+#~ msgid "Example config value label"
+#~ msgstr "Ejemplo de nombre del valor de config"

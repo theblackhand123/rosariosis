@@ -1,0 +1,314 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Students Import Module for RosarioSIS.\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-28 19:24+0200\n"
+"PO-Revision-Date: 2023-07-28 19:24+0200\n"
+"Last-Translator: François Jacquet <info@rosariosis.org>\n"
+"Language-Team: RosarioSIS <info@rosariosis.org>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: dgettext:2\n"
+"X-Poedit-Basepath: ../../..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: Menu.php:13 Menu.php:19
+msgid "Students Import"
+msgstr "Import d'élèves"
+
+#: StudentsImport.php:53 StudentsImport.php:75
+msgid "Cannot open file."
+msgstr "Le fichier ne peut pas être ouvert."
+
+#: StudentsImport.php:83
+#, php-format
+msgid "%s students were imported."
+msgstr "%s élèves ont été importés."
+
+#: StudentsImport.php:134
+msgid "Database Backup"
+msgstr ""
+
+#: StudentsImport.php:138
+#, php-format
+msgid "Maximum file size: %01.0fMb"
+msgstr ""
+
+#: StudentsImport.php:140
+msgid "Select CSV or Excel file"
+msgstr "Sélectionner fichier CSV ou Excel"
+
+#: StudentsImport.php:142
+msgid "Submit"
+msgstr ""
+
+#: StudentsImport.php:171
+#, php-format
+msgid "%s rows"
+msgstr "%s lignes"
+
+#: StudentsImport.php:173 StudentsImport.php:495
+msgid "Import Students"
+msgstr "Importer les élèves"
+
+#: StudentsImport.php:187
+msgid ""
+"Are you absolutely ready to import students? Make sure you have backed up "
+"your database!"
+msgstr ""
+"Êtes-vous prêt pour importer les élèves ? Assurez-vous d'avoir sauvegardé la "
+"base de données !"
+
+#: StudentsImport.php:197
+msgid "Stop"
+msgstr "Stop"
+
+#: StudentsImport.php:230
+msgid "Import first row"
+msgstr "Importer la primière ligne"
+
+#: StudentsImport.php:237
+msgid "Reset form"
+msgstr "Réinitialiser le formulaire"
+
+#: StudentsImport.php:248
+msgid "Student Fields"
+msgstr ""
+
+#: StudentsImport.php:251
+msgid "First Name"
+msgstr ""
+
+#: StudentsImport.php:255
+msgid "Middle Name"
+msgstr ""
+
+#: StudentsImport.php:259
+msgid "Last Name"
+msgstr ""
+
+#: StudentsImport.php:264
+msgid "IDs are automatically generated if you select \"N/A\"."
+msgstr "Les ID sont automatiquement générés si vous sélectionnez \"N/D\"."
+
+#: StudentsImport.php:268
+#, php-format
+msgid "%s ID"
+msgstr ""
+
+#: StudentsImport.php:272 includes/SendNotifications.fnc.php:65
+msgid "Username"
+msgstr ""
+
+#: StudentsImport.php:276 includes/SendNotifications.fnc.php:69
+msgid "Password"
+msgstr ""
+
+#: StudentsImport.php:317
+msgid "Enrollment"
+msgstr ""
+
+#: StudentsImport.php:336
+msgid "Grade Level"
+msgstr ""
+
+#: StudentsImport.php:353
+msgid "Default"
+msgstr ""
+
+#: StudentsImport.php:363
+msgid "Calendar"
+msgstr ""
+
+#: StudentsImport.php:376
+msgid "Next grade at current school"
+msgstr ""
+
+#: StudentsImport.php:377
+msgid "Retain"
+msgstr ""
+
+#: StudentsImport.php:378
+msgid "Do not enroll after this school year"
+msgstr ""
+
+#: StudentsImport.php:390
+msgid "Rolling / Retention Options"
+msgstr ""
+
+#: StudentsImport.php:415
+msgid "Attendance Start Date this School Year"
+msgstr ""
+
+#: StudentsImport.php:417
+msgid "If the date is left empty, students will not be enrolled (inactive)."
+msgstr ""
+"Si vous n'indiquez pas de date, les élèves ne seront pas inscrits (inactifs)."
+
+#: StudentsImport.php:429
+msgid ""
+"Notifications are sent if Username, Password, Email Address are set and "
+"Attendance Start Date this School Year is on or before today."
+msgstr ""
+"Les notifications sont envoyées si le nom d'utilisateur, le mot de passe, "
+"l'adresse email sont définis et si la date de début de présence cette année "
+"scolaire est aujourd'hui ou avant."
+
+#: StudentsImport.php:435
+msgid "Send email notification to Students"
+msgstr "Envoyer notification par email aux élèves"
+
+#: includes/SendNotifications.fnc.php:59
+#, php-format
+msgid "Your account was activated (%d). You can login at %s"
+msgstr ""
+
+#: includes/SendNotifications.fnc.php:74
+msgid "Student Account"
+msgstr ""
+
+#: includes/StudentsImport.fnc.php:76
+msgid ""
+"PHP zip extension is required. Please enable it or convert your file to CSV."
+msgstr ""
+"Extension PHP zip requise. Merci de l'activer ou bien de convertir votre "
+"fichier en CSV."
+
+#: includes/StudentsImport.fnc.php:114
+#, php-format
+msgid ""
+"PHPExcel error reading file %s: %s. Please convert the file to CSV format."
+msgstr ""
+"Erreur PHPExcel à la lecture du fichier %s : %s. Merci de convertir le "
+"fichier au format CSV."
+
+#: includes/StudentsImport.fnc.php:345
+#, php-format
+msgid "%d notifications sent."
+msgstr "%d notifications envoyées."
+
+#: includes/StudentsImport.fnc.php:470
+msgid "No names were found."
+msgstr "Aucun nom n'a été trouvé."
+
+#: includes/StudentsImport.fnc.php:490
+msgid ""
+"A user with that username already exists. Choose a different username and "
+"try again."
+msgstr ""
+
+#: includes/StudentsImport.fnc.php:646
+msgid "Please enter valid Numeric data."
+msgstr ""
+
+#: includes/StudentsImport.fnc.php:655
+msgid "Some dates were not entered correctly."
+msgstr ""
+
+#: includes/StudentsImport.fnc.php:923
+msgid "Pull-Down"
+msgstr ""
+
+#: includes/StudentsImport.fnc.php:924
+msgid "Auto Pull-Down"
+msgstr ""
+
+#: includes/StudentsImport.fnc.php:925
+msgid "Text"
+msgstr ""
+
+#: includes/StudentsImport.fnc.php:926
+msgid "Checkbox"
+msgstr ""
+
+#: includes/StudentsImport.fnc.php:927
+msgid "Export Pull-Down"
+msgstr ""
+
+#: includes/StudentsImport.fnc.php:928
+msgid "Number"
+msgstr ""
+
+#: includes/StudentsImport.fnc.php:929
+msgid "Select Multiple from Options"
+msgstr ""
+
+#: includes/StudentsImport.fnc.php:930
+msgid "Date"
+msgstr ""
+
+#: includes/StudentsImport.fnc.php:931
+msgid "Long Text"
+msgstr ""
+
+#~ msgid "Students Import for "
+#~ msgstr "Importación de Estudiantes para "
+
+#~ msgid "CSV file imported."
+#~ msgstr "Archivo CSV importado."
+
+#~ msgid "Cannot open CSV file."
+#~ msgstr "El archivo CSV no se puede abrir."
+
+#~ msgid "CSV columns reference: see \"CSV_COLUMNS_REFERENCE\" file."
+#~ msgstr ""
+#~ "Referencia de columnas CSV: ver el archivo \"CSV_COLUMNS_REFERENCE\"."
+
+#~ msgid "Set Username as %s"
+#~ msgstr "Definir Nombre de Usuario como %s"
+
+#~ msgid "Set Password as %s"
+#~ msgstr "Definir Contraseña como %s"
+
+#~ msgid "Select CSV file"
+#~ msgstr "Seleccionar archivo CSV"
+
+#~ msgid "Import CSV file"
+#~ msgstr "Importar archivo CSV"
+
+#~ msgid "The following required columns were not found in the CSV file: %s"
+#~ msgstr ""
+#~ "Las columnas requeridas no han sido encontradas en el archivo CSV: %s"
+
+#~ msgid "# of Students"
+#~ msgstr "# de Estudiantes"
+
+#~ msgid "# of Administrators"
+#~ msgstr "# de Administradores"
+
+#~ msgid "# of Teachers"
+#~ msgstr "# de Docentes"
+
+#~ msgid "# of Parents"
+#~ msgstr "# de Padres"
+
+#~ msgid "Example"
+#~ msgstr "Ejemplo"
+
+#~ msgid "Create Subject PDF for Selected Students"
+#~ msgstr "Crear el PDF Materia para los Estudiantes Seleccionados"
+
+#~ msgid "Example Widget"
+#~ msgstr "Widget de Ejemplo"
+
+#~ msgid "Setup"
+#~ msgstr "Configuración"
+
+#~ msgid "Example Resource"
+#~ msgstr "Recurso de Ejemplo"
+
+#~ msgid "The configuration value has been modified."
+#~ msgstr "El valor de configuración ha sido modificado."
+
+#~ msgid "Example module Setup"
+#~ msgstr "Configuración del Módulo Ejemplo"
+
+#~ msgid "Try to enter a non-numeric value"
+#~ msgstr "Intente entrar un valor no numerico"
+
+#~ msgid "Example config value label"
+#~ msgstr "Ejemplo de nombre del valor de config"

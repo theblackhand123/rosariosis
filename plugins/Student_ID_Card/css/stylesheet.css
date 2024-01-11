@@ -1,0 +1,45 @@
+/**
+ * CSS stylesheet
+ *
+ * CSS custom variables are injected in PHP
+ *
+ * @package Student ID Card module
+ */
+
+:root {
+	/* 2.125in 1.5:1 ratio */
+	--card_height: calc(204px * 1.5);
+	/* 3.370in 1.5:1 ratio */
+	--card_width: calc(324px * 1.5);
+}
+
+.student-id-card {
+	/* Custom */
+	padding: var(--card_padding);
+	height: var(--card_height);
+	width: var(--card_width);
+	box-sizing: border-box;
+	/* Custom */
+	background-image: var(--background_image);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
+}
+
+.student-id-card-text {
+	/* Custom */
+	padding: var(--text_padding);
+	overflow: hidden;
+}
+
+.student-id-card-photo {
+	/* Custom */
+	padding: var(--photo_padding);
+	max-width: var(--photo_max_width_px);
+	max-height: 100%;
+	/* Custom */
+	float: var(--photo_float);
+	overflow: hidden;
+}

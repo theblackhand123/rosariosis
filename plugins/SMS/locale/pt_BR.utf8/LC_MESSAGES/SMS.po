@@ -1,0 +1,699 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SMS module for RosarioSIS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-22 15:34-0300\n"
+"PO-Revision-Date: 2023-06-13 14:44+0200\n"
+"Last-Translator: Emerson Barros\n"
+"Language-Team: RosarioSIS <info@rosariosis.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-KeywordsList: dgettext:2;ngettext:2\n"
+"X-Poedit-Basepath: ../../..\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: Configuration.php:36
+msgid "Back"
+msgstr ""
+
+#: Configuration.php:64 Configuration.php:92 Configuration.php:117 Send.php:300
+msgid "Mobile Number"
+msgstr "Número do celular"
+
+#: Configuration.php:90
+msgid "Website"
+msgstr ""
+
+#: Configuration.php:91
+msgid "Country"
+msgstr "País"
+
+#: Configuration.php:93
+msgid "Help"
+msgstr ""
+
+#: Configuration.php:125 includes/functions.php:64
+msgid "Credit"
+msgstr "Crédito"
+
+#: Configuration.php:141
+msgid "Gateways Info"
+msgstr "Informações do gateway"
+
+#: Configuration.php:147 Menu.php:14 Menu.php:23 Outbox.php:81
+#: includes/functions.php:66 includes/gateways/_ebulksms.class.php:56
+#: includes/gateways/suresms.class.php:70
+msgid "SMS"
+msgstr "SMS"
+
+#: Configuration.php:165
+msgid "Student mobile number field"
+msgstr "Campo do número do celular do aluno"
+
+#: Configuration.php:177
+msgid "Phone Number"
+msgstr ""
+
+#: Configuration.php:201
+msgid "User mobile number field"
+msgstr "Campo do número do celular do usuário"
+
+#: Configuration.php:221
+msgid "Gateway"
+msgstr "Gateway"
+
+#: Configuration.php:229
+msgid "Gateway API"
+msgstr "API de gateway"
+
+#: Configuration.php:236
+msgid "API key"
+msgstr "Chave de API"
+
+#: Configuration.php:243
+msgid "API username"
+msgstr "Nome de usuário da API"
+
+#: Configuration.php:250
+msgid "API password"
+msgstr "Senha da API"
+
+#: Configuration.php:256
+msgid "Sender name"
+msgstr "Nome do remetente"
+
+#: Menu.php:16 Menu.php:25
+msgid "Send"
+msgstr "Enviar"
+
+#: Menu.php:17 Menu.php:26
+msgid "Outbox"
+msgstr "Caixa de saída"
+
+#: Menu.php:18
+msgid "Setup"
+msgstr "Configuração"
+
+#: Menu.php:19 Send.php:156 Send.php:175 Send.php:193
+msgid "Configuration"
+msgstr ""
+
+#: Outbox.php:43
+msgid "From"
+msgstr ""
+
+#: Outbox.php:44
+msgid "To"
+msgstr ""
+
+#: Outbox.php:45
+msgid "Go"
+msgstr ""
+
+#: Outbox.php:79
+msgid "Date"
+msgstr ""
+
+#: Outbox.php:80
+msgid "Sender"
+msgstr "Remetente"
+
+#: Outbox.php:82 includes/SMSMake.fnc.php:111
+msgid "Recipients"
+msgstr "Destinatários"
+
+#: Send.php:40
+msgid "You must choose at least one student."
+msgstr ""
+
+#: Send.php:41
+msgid "You must choose at least one user"
+msgstr ""
+
+#: Send.php:80
+msgid "No Students were found."
+msgstr ""
+
+#: Send.php:81
+msgid "No Users were found."
+msgstr ""
+
+#: Send.php:126
+#, php-format
+msgid "SMS sent to %d students."
+msgstr "SMS enviado para %d alunos."
+
+#: Send.php:127
+#, php-format
+msgid "SMS sent to %d users."
+msgstr "SMS enviado para %d usuários."
+
+#: Send.php:134
+msgid "SMS not sent."
+msgstr "SMS não enviado."
+
+#: Send.php:155
+#, php-format
+msgid "Please set the Student mobile number field: %s"
+msgstr "Por favor, defina o campo do número do celular do aluno: %s"
+
+#: Send.php:161
+msgid "Student mobile number field not set."
+msgstr "Campo de número de celular do aluno não definido."
+
+#: Send.php:174
+#, php-format
+msgid "Please set the User mobile number field: %s"
+msgstr "Por favor, defina o campo de número do celular do usuário: %s"
+
+#: Send.php:180
+msgid "User mobile number field not set."
+msgstr "Campo de número do celular do usuário não definido."
+
+#: Send.php:192
+#, php-format
+msgid "Please select a Gateway: %s"
+msgstr "Por favor, selecione um gateway: %s"
+
+#: Send.php:198
+msgid "Gateway not set."
+msgstr "Gateway não definido."
+
+#: Send.php:255
+msgid "Send SMS to Selected Students"
+msgstr "Enviar SMS para alunos selecionados"
+
+#: Send.php:259
+msgid "Send SMS to Selected Users"
+msgstr "Enviar SMS para usuários selecionados"
+
+#: Send.php:275
+msgid "Text"
+msgstr ""
+
+#: includes/SMS.fnc.php:175 includes/SMSMake.fnc.php:95
+msgid "Students"
+msgstr ""
+
+#: includes/SMS.fnc.php:177 includes/SMSMake.fnc.php:95
+msgid "Users"
+msgstr ""
+
+#: includes/SMS.fnc.php:241 includes/SMS.fnc.php:314
+#: includes/Substitutions.fnc.php:287 includes/Substitutions.fnc.php:302
+msgid "N/A"
+msgstr ""
+
+#: includes/SMSMake.fnc.php:198
+msgid "Send again"
+msgstr "Enviar novamente"
+
+#: includes/SMSMake.fnc.php:250
+msgid "User Info"
+msgstr ""
+
+#: includes/SMSMake.fnc.php:260
+msgid "Student Info"
+msgstr ""
+
+#: includes/Substitutions.fnc.php:54
+msgid "Copy"
+msgstr ""
+
+#: includes/Substitutions.fnc.php:57
+msgid ""
+"Copy the substitution code and paste it into your text. The code will be "
+"dynamically replaced with the corresponding value."
+msgstr ""
+
+#: includes/Substitutions.fnc.php:61
+msgid "Substitutions"
+msgstr ""
+
+#: includes/Substitutions.fnc.php:279
+msgid "Yes"
+msgstr ""
+
+#: includes/Substitutions.fnc.php:279
+msgid "No"
+msgstr ""
+
+#: includes/class-sms-gateway.php:239
+msgid "Inactive!"
+msgstr ""
+
+#: includes/class-sms-gateway.php:247
+#, php-format
+msgid "Active! Account balance: %s"
+msgstr ""
+
+#: includes/class-sms-gateway.php:281
+msgid "Supported"
+msgstr ""
+
+#: includes/class-sms-gateway.php:286
+msgid "Not supported!"
+msgstr ""
+
+#: includes/gateways/_0098sms.class.php:20 includes/gateways/_1s2u.class.php:19
+#: includes/gateways/_500sms.class.php:21
+#: includes/gateways/_textplode.class.php:25
+#: includes/gateways/abrestan.class.php:29
+#: includes/gateways/adpdigital.class.php:21
+#: includes/gateways/adspanel.class.php:28 includes/gateways/afe.class.php:19
+#: includes/gateways/afilnet.class.php:20
+#: includes/gateways/africastalking.class.php:25
+#: includes/gateways/alchemymarketinggm.class.php:21
+#: includes/gateways/amansoft.class.php:21
+#: includes/gateways/aradsms.class.php:21
+#: includes/gateways/ariaideh.class.php:21
+#: includes/gateways/arkapayamak.class.php:21
+#: includes/gateways/aruba.class.php:19 includes/gateways/asanak.class.php:19
+#: includes/gateways/asiapayamak.class.php:21
+#: includes/gateways/asr3sms.class.php:23
+#: includes/gateways/avalpayam.class.php:29
+#: includes/gateways/bandarsms.class.php:29
+#: includes/gateways/barmanpayamak.class.php:21
+#: includes/gateways/barzinsms.class.php:21
+#: includes/gateways/bearsms.class.php:19 includes/gateways/bestit.class.php:22
+#: includes/gateways/bulutfon.class.php:19
+#: includes/gateways/cellsynt.class.php:19
+#: includes/gateways/chapargah.class.php:21
+#: includes/gateways/chaparpanel.class.php:21
+#: includes/gateways/cheapglobalsms.class.php:19
+#: includes/gateways/default.class.php:19 includes/gateways/difaan.class.php:19
+#: includes/gateways/dot4all.class.php:19 includes/gateways/dsms.class.php:19
+#: includes/gateways/easysendsms.class.php:19
+#: includes/gateways/eazismspro.class.php:64
+#: includes/gateways/eshare.class.php:18 includes/gateways/esms24.class.php:20
+#: includes/gateways/eurosms.class.php:20
+#: includes/gateways/experttexting.class.php:22
+#: includes/gateways/faraed.class.php:21
+#: includes/gateways/farapayamak.class.php:21
+#: includes/gateways/farazpayam.class.php:21
+#: includes/gateways/fayasms.class.php:21
+#: includes/gateways/firstpayamak.class.php:21
+#: includes/gateways/fortytwo.class.php:21
+#: includes/gateways/freepayamak.class.php:21
+#: includes/gateways/gateway.class.php:19 includes/gateways/hisms.class.php:21
+#: includes/gateways/hostiran.class.php:21
+#: includes/gateways/idehpayam.class.php:28
+#: includes/gateways/imencms.class.php:21
+#: includes/gateways/instantalerts.class.php:20
+#: includes/gateways/iransms.class.php:22
+#: includes/gateways/iransmspanel.class.php:194
+#: includes/gateways/iranspk.class.php:21
+#: includes/gateways/irsmsland.class.php:19 includes/gateways/isms.class.php:18
+#: includes/gateways/ismsie.class.php:20 includes/gateways/isun.class.php:19
+#: includes/gateways/itfisms.class.php:20
+#: includes/gateways/itpayamak.class.php:21
+#: includes/gateways/jahanpayamak.class.php:22
+#: includes/gateways/joghataysms.class.php:29
+#: includes/gateways/labsmobile.class.php:20
+#: includes/gateways/livesms.class.php:19
+#: includes/gateways/loginpanel.class.php:21
+#: includes/gateways/magicdeal4u.class.php:19
+#: includes/gateways/markazpayamak.class.php:21
+#: includes/gateways/matinsms.class.php:21
+#: includes/gateways/mdpanel.class.php:29
+#: includes/gateways/mediana.class.php:28
+#: includes/gateways/melipayamak.class.php:21
+#: includes/gateways/mobtexting.class.php:22
+#: includes/gateways/modiranweb.class.php:21
+#: includes/gateways/msgwow.class.php:21 includes/gateways/mtarget.class.php:19
+#: includes/gateways/mydnspanel.class.php:28
+#: includes/gateways/nasrpayam.class.php:29
+#: includes/gateways/navidsoft.class.php:21
+#: includes/gateways/niazpardaz.class.php:21
+#: includes/gateways/niazpardazcom.class.php:21
+#: includes/gateways/novin1sms.class.php:21
+#: includes/gateways/novinpayamak.class.php:22
+#: includes/gateways/opilo.class.php:19 includes/gateways/oursms.class.php:19
+#: includes/gateways/paaz.class.php:21 includes/gateways/panizsms.class.php:21
+#: includes/gateways/parandhost.class.php:20
+#: includes/gateways/parsasms.class.php:21
+#: includes/gateways/parsgreen.class.php:22
+#: includes/gateways/payamakalmas.class.php:29
+#: includes/gateways/payamakaria.class.php:21
+#: includes/gateways/payamakde.class.php:21
+#: includes/gateways/payamakpanel.class.php:21
+#: includes/gateways/payameavval.class.php:21
+#: includes/gateways/payameroz.class.php:21
+#: includes/gateways/payamgah.class.php:21
+#: includes/gateways/payamresan.class.php:21
+#: includes/gateways/pegahpayamak.class.php:21
+#: includes/gateways/persiansms.class.php:22
+#: includes/gateways/pichakhost.class.php:21
+#: includes/gateways/ponishasms.class.php:29
+#: includes/gateways/popaksms.class.php:21
+#: includes/gateways/postgah.class.php:21
+#: includes/gateways/pridesms.class.php:20
+#: includes/gateways/primotexto.class.php:23
+#: includes/gateways/rayanbit.class.php:21
+#: includes/gateways/rayansmspanel.class.php:21
+#: includes/gateways/razpayamak.class.php:21
+#: includes/gateways/resalaty.class.php:19
+#: includes/gateways/sabasms.class.php:22
+#: includes/gateways/sadat24.class.php:29
+#: includes/gateways/sarabsms.class.php:21
+#: includes/gateways/sarinapayamak.class.php:21
+#: includes/gateways/sendsms247.class.php:19
+#: includes/gateways/sepehritc.class.php:21
+#: includes/gateways/sharifpardazan.class.php:21
+#: includes/gateways/shreesms.class.php:18 includes/gateways/sms77.class.php:21
+#: includes/gateways/sms_new.class.php:21 includes/gateways/sms_s.class.php:21
+#: includes/gateways/smsapi.class.php:20 includes/gateways/smsarak.class.php:21
+#: includes/gateways/smsban.class.php:22
+#: includes/gateways/smsbartar.class.php:21
+#: includes/gateways/smscall.class.php:21
+#: includes/gateways/smsclick.class.php:21 includes/gateways/smsde.class.php:29
+#: includes/gateways/smsfa.class.php:21
+#: includes/gateways/smsgateway.class.php:19
+#: includes/gateways/smsgatewaycenter.class.php:19
+#: includes/gateways/smsgatewayhub.class.php:22
+#: includes/gateways/smsglobal.class.php:21
+#: includes/gateways/smshooshmand.class.php:29
+#: includes/gateways/smshosting.class.php:20
+#: includes/gateways/smsline.class.php:21
+#: includes/gateways/smsmart.class.php:21
+#: includes/gateways/smsmaster.class.php:25
+#: includes/gateways/smsmelli.class.php:29
+#: includes/gateways/smsozone.class.php:21
+#: includes/gateways/smsroo.class.php:21 includes/gateways/smss.class.php:19
+#: includes/gateways/smsservice.class.php:23
+#: includes/gateways/smstoos.class.php:21
+#: includes/gateways/smstrade.class.php:18
+#: includes/gateways/sonoratecnologia.class.php:21
+#: includes/gateways/spadbs.class.php:20 includes/gateways/spirius.class.php:19
+#: includes/gateways/ssmss.class.php:21 includes/gateways/suresms.class.php:20
+#: includes/gateways/tablighsmsi.class.php:21
+#: includes/gateways/tcisms.class.php:21
+#: includes/gateways/textanywhere.class.php:21
+#: includes/gateways/textsms.class.php:21 includes/gateways/tgfsms.class.php:22
+#: includes/gateways/tsms.class.php:20 includes/gateways/unisender.class.php:20
+#: includes/gateways/viensms.class.php:18 includes/gateways/vsms.class.php:20
+#: includes/gateways/websmscy.class.php:21
+#: includes/gateways/wifisms.class.php:22
+#: includes/gateways/yashilsms.class.php:29
+msgid "Your account does not have credit to send SMS."
+msgstr "Sua conta não tem créditos para enviar SMS."
+
+#: includes/gateways/_0098sms.class.php:97 includes/gateways/_1s2u.class.php:91
+#: includes/gateways/_500sms.class.php:80
+#: includes/gateways/_textplode.class.php:94
+#: includes/gateways/abrestan.class.php:90
+#: includes/gateways/adpdigital.class.php:77
+#: includes/gateways/adspanel.class.php:66 includes/gateways/afe.class.php:91
+#: includes/gateways/afilnet.class.php:92
+#: includes/gateways/alchemymarketinggm.class.php:78
+#: includes/gateways/amansoft.class.php:87
+#: includes/gateways/aradsms.class.php:85
+#: includes/gateways/ariaideh.class.php:87
+#: includes/gateways/arkapayamak.class.php:91
+#: includes/gateways/aruba.class.php:70 includes/gateways/asanak.class.php:85
+#: includes/gateways/asiapayamak.class.php:85
+#: includes/gateways/asr3sms.class.php:89
+#: includes/gateways/avalpayam.class.php:90
+#: includes/gateways/bandarsms.class.php:90
+#: includes/gateways/barmanpayamak.class.php:85
+#: includes/gateways/barzinsms.class.php:85
+#: includes/gateways/bearsms.class.php:76 includes/gateways/bestit.class.php:98
+#: includes/gateways/bulutfon.class.php:63
+#: includes/gateways/caffeweb.class.php:85
+#: includes/gateways/cellsynt.class.php:74
+#: includes/gateways/chapargah.class.php:86
+#: includes/gateways/chaparpanel.class.php:91
+#: includes/gateways/cheapglobalsms.class.php:106
+#: includes/gateways/default.class.php:28 includes/gateways/difaan.class.php:77
+#: includes/gateways/dot4all.class.php:76 includes/gateways/dsms.class.php:76
+#: includes/gateways/easysendsms.class.php:89
+#: includes/gateways/eshare.class.php:89 includes/gateways/esms24.class.php:78
+#: includes/gateways/eurosms.class.php:110
+#: includes/gateways/experttexting.class.php:91
+#: includes/gateways/faraed.class.php:78
+#: includes/gateways/farapayamak.class.php:85
+#: includes/gateways/farazpayam.class.php:87
+#: includes/gateways/fayasms.class.php:85
+#: includes/gateways/firstpayamak.class.php:76
+#: includes/gateways/freepayamak.class.php:85
+#: includes/gateways/gateway.class.php:84 includes/gateways/hisms.class.php:86
+#: includes/gateways/hostiran.class.php:78
+#: includes/gateways/idehpayam.class.php:89
+#: includes/gateways/imencms.class.php:83
+#: includes/gateways/instantalerts.class.php:51
+#: includes/gateways/iransms.class.php:73
+#: includes/gateways/iransmspanel.class.php:252
+#: includes/gateways/iranspk.class.php:85
+#: includes/gateways/irsmsland.class.php:74 includes/gateways/isms.class.php:76
+#: includes/gateways/ismsie.class.php:81 includes/gateways/isun.class.php:92
+#: includes/gateways/itfisms.class.php:89
+#: includes/gateways/itpayamak.class.php:77
+#: includes/gateways/jahanpayamak.class.php:96
+#: includes/gateways/joghataysms.class.php:90
+#: includes/gateways/labsmobile.class.php:99
+#: includes/gateways/livesms.class.php:75
+#: includes/gateways/loginpanel.class.php:86
+#: includes/gateways/magicdeal4u.class.php:75
+#: includes/gateways/markazpayamak.class.php:85
+#: includes/gateways/matinsms.class.php:76
+#: includes/gateways/mdpanel.class.php:90
+#: includes/gateways/mediana.class.php:91
+#: includes/gateways/melipayamak.class.php:85
+#: includes/gateways/modiranweb.class.php:77
+#: includes/gateways/mtarget.class.php:92
+#: includes/gateways/mydnspanel.class.php:93
+#: includes/gateways/nasrpayam.class.php:90
+#: includes/gateways/navidsoft.class.php:87
+#: includes/gateways/niazpardaz.class.php:85
+#: includes/gateways/niazpardazcom.class.php:81
+#: includes/gateways/novin1sms.class.php:80
+#: includes/gateways/novinpayamak.class.php:88
+#: includes/gateways/opilo.class.php:110 includes/gateways/oursms.class.php:72
+#: includes/gateways/paaz.class.php:85 includes/gateways/panizsms.class.php:85
+#: includes/gateways/parandhost.class.php:76
+#: includes/gateways/parsasms.class.php:82
+#: includes/gateways/parsgreen.class.php:96
+#: includes/gateways/payamakalmas.class.php:90
+#: includes/gateways/payamakaria.class.php:85
+#: includes/gateways/payamakde.class.php:85
+#: includes/gateways/payamakpanel.class.php:85
+#: includes/gateways/payameavval.class.php:85
+#: includes/gateways/payameroz.class.php:86
+#: includes/gateways/payamgah.class.php:86
+#: includes/gateways/payamresan.class.php:76
+#: includes/gateways/pegahpayamak.class.php:85
+#: includes/gateways/persiansms.class.php:86
+#: includes/gateways/pichakhost.class.php:86
+#: includes/gateways/ponishasms.class.php:87
+#: includes/gateways/popaksms.class.php:77
+#: includes/gateways/postgah.class.php:84
+#: includes/gateways/pridesms.class.php:89
+#: includes/gateways/rayanbit.class.php:85
+#: includes/gateways/rayansmspanel.class.php:85
+#: includes/gateways/razpayamak.class.php:85
+#: includes/gateways/resalaty.class.php:86
+#: includes/gateways/sabasms.class.php:86
+#: includes/gateways/sadat24.class.php:89
+#: includes/gateways/sarabsms.class.php:85
+#: includes/gateways/sarinapayamak.class.php:91
+#: includes/gateways/sendsms247.class.php:75
+#: includes/gateways/sepehritc.class.php:85
+#: includes/gateways/sharifpardazan.class.php:85
+#: includes/gateways/shreesms.class.php:75 includes/gateways/sms77.class.php:74
+#: includes/gateways/sms_new.class.php:78 includes/gateways/sms_s.class.php:76
+#: includes/gateways/smsapi.class.php:82 includes/gateways/smsarak.class.php:75
+#: includes/gateways/smsban.class.php:86
+#: includes/gateways/smsbartar.class.php:77
+#: includes/gateways/smscall.class.php:76
+#: includes/gateways/smsclick.class.php:85 includes/gateways/smsde.class.php:89
+#: includes/gateways/smsfa.class.php:86
+#: includes/gateways/smsgateway.class.php:76
+#: includes/gateways/smsgatewaycenter.class.php:71
+#: includes/gateways/smsgatewayhub.class.php:94
+#: includes/gateways/smsglobal.class.php:101
+#: includes/gateways/smshooshmand.class.php:89
+#: includes/gateways/smshosting.class.php:103
+#: includes/gateways/smsline.class.php:77
+#: includes/gateways/smsmart.class.php:86
+#: includes/gateways/smsmaster.class.php:81
+#: includes/gateways/smsmelli.class.php:81
+#: includes/gateways/smsozone.class.php:88
+#: includes/gateways/smsroo.class.php:85 includes/gateways/smss.class.php:76
+#: includes/gateways/smsservice.class.php:84
+#: includes/gateways/smstoos.class.php:85
+#: includes/gateways/smstrade.class.php:75
+#: includes/gateways/sonoratecnologia.class.php:115
+#: includes/gateways/spadbs.class.php:80 includes/gateways/spirius.class.php:85
+#: includes/gateways/ssmss.class.php:80
+#: includes/gateways/tablighsmsi.class.php:77
+#: includes/gateways/tcisms.class.php:80 includes/gateways/textsms.class.php:80
+#: includes/gateways/tgfsms.class.php:80 includes/gateways/tsms.class.php:77
+#: includes/gateways/viensms.class.php:76 includes/gateways/vsms.class.php:96
+#: includes/gateways/websmscy.class.php:82
+#: includes/gateways/wifisms.class.php:75
+#: includes/gateways/yashilsms.class.php:90
+msgid "Username/Password not set for this gateway"
+msgstr "Nome de usuário/senha não definido para este gateway"
+
+#: includes/gateways/_1s2u.class.php:74 includes/gateways/afilnet.class.php:60
+#: includes/gateways/afilnet.class.php:99
+#: includes/gateways/asr3sms.class.php:57
+#: includes/gateways/asr3sms.class.php:96
+#: includes/gateways/cheapglobalsms.class.php:87
+#: includes/gateways/cheapglobalsms.class.php:114
+#: includes/gateways/easysendsms.class.php:72
+#: includes/gateways/eshare.class.php:58
+#: includes/gateways/experttexting.class.php:56
+#: includes/gateways/experttexting.class.php:98
+#: includes/gateways/gateway.class.php:66
+#: includes/gateways/gatewayapi.class.php:88
+#: includes/gateways/itfisms.class.php:54
+#: includes/gateways/itfisms.class.php:96
+#: includes/gateways/mobtexting.class.php:88
+#: includes/gateways/mobtexting.class.php:124
+#: includes/gateways/msgwow.class.php:68 includes/gateways/msgwow.class.php:107
+#: includes/gateways/pridesms.class.php:54
+#: includes/gateways/pridesms.class.php:96
+#: includes/gateways/smsapi.class.php:54
+#: includes/gateways/smsgatewayhub.class.php:62
+#: includes/gateways/smsgatewayhub.class.php:101
+#: includes/gateways/smsozone.class.php:55
+#: includes/gateways/smsozone.class.php:95
+#: includes/gateways/spirius.class.php:59
+#: includes/gateways/suresms.class.php:56
+#: includes/gateways/textanywhere.class.php:58
+#: includes/gateways/textanywhere.class.php:96
+#: includes/gateways/unisender.class.php:57
+#: includes/gateways/unisender.class.php:97
+msgid "No response"
+msgstr "Sem resposta"
+
+#: includes/gateways/_500sms.class.php:84 includes/gateways/afe.class.php:95
+#: includes/gateways/amansoft.class.php:91
+#: includes/gateways/aradsms.class.php:89
+#: includes/gateways/ariaideh.class.php:91
+#: includes/gateways/arkapayamak.class.php:95
+#: includes/gateways/asiapayamak.class.php:89
+#: includes/gateways/barmanpayamak.class.php:89
+#: includes/gateways/barzinsms.class.php:89
+#: includes/gateways/bestit.class.php:102
+#: includes/gateways/caffeweb.class.php:89
+#: includes/gateways/chapargah.class.php:90
+#: includes/gateways/chaparpanel.class.php:95
+#: includes/gateways/farapayamak.class.php:89
+#: includes/gateways/farazpayam.class.php:91
+#: includes/gateways/fayasms.class.php:89
+#: includes/gateways/firstpayamak.class.php:80
+#: includes/gateways/freepayamak.class.php:89
+#: includes/gateways/hisms.class.php:90 includes/gateways/hostiran.class.php:82
+#: includes/gateways/imencms.class.php:87
+#: includes/gateways/iransms.class.php:77
+#: includes/gateways/iransmspanel.class.php:256
+#: includes/gateways/iranspk.class.php:89
+#: includes/gateways/irsmsland.class.php:78 includes/gateways/isun.class.php:96
+#: includes/gateways/itpayamak.class.php:81
+#: includes/gateways/jahanpayamak.class.php:100
+#: includes/gateways/labsmobile.class.php:103
+#: includes/gateways/loginpanel.class.php:90
+#: includes/gateways/markazpayamak.class.php:89
+#: includes/gateways/matinsms.class.php:80
+#: includes/gateways/mediana.class.php:19
+#: includes/gateways/melipayamak.class.php:89
+#: includes/gateways/modiranweb.class.php:81
+#: includes/gateways/navidsoft.class.php:91
+#: includes/gateways/niazpardaz.class.php:89
+#: includes/gateways/niazpardazcom.class.php:85
+#: includes/gateways/novin1sms.class.php:84
+#: includes/gateways/novinpayamak.class.php:92
+#: includes/gateways/paaz.class.php:89 includes/gateways/panizsms.class.php:89
+#: includes/gateways/parandhost.class.php:80
+#: includes/gateways/parsasms.class.php:86
+#: includes/gateways/parsgreen.class.php:100
+#: includes/gateways/payamakaria.class.php:89
+#: includes/gateways/payamakde.class.php:89
+#: includes/gateways/payamakpanel.class.php:89
+#: includes/gateways/payameavval.class.php:89
+#: includes/gateways/payameroz.class.php:90
+#: includes/gateways/payamgah.class.php:90
+#: includes/gateways/pegahpayamak.class.php:89
+#: includes/gateways/persiansms.class.php:90
+#: includes/gateways/pichakhost.class.php:90
+#: includes/gateways/popaksms.class.php:81
+#: includes/gateways/postgah.class.php:88
+#: includes/gateways/rayanbit.class.php:89
+#: includes/gateways/rayansmspanel.class.php:89
+#: includes/gateways/razpayamak.class.php:89
+#: includes/gateways/sabasms.class.php:90
+#: includes/gateways/sarabsms.class.php:89
+#: includes/gateways/sarinapayamak.class.php:95
+#: includes/gateways/sepehritc.class.php:89
+#: includes/gateways/sharifpardazan.class.php:89
+#: includes/gateways/sms_s.class.php:80 includes/gateways/smsarak.class.php:79
+#: includes/gateways/smsban.class.php:90
+#: includes/gateways/smsbartar.class.php:81
+#: includes/gateways/smscall.class.php:80
+#: includes/gateways/smsclick.class.php:89 includes/gateways/smsfa.class.php:90
+#: includes/gateways/smsline.class.php:81
+#: includes/gateways/smsmart.class.php:90 includes/gateways/smsroo.class.php:89
+#: includes/gateways/smstoos.class.php:89 includes/gateways/spadbs.class.php:84
+#: includes/gateways/ssmss.class.php:84
+#: includes/gateways/tablighsmsi.class.php:81
+#: includes/gateways/tcisms.class.php:84 includes/gateways/textsms.class.php:84
+#: includes/gateways/tsms.class.php:81 includes/gateways/websmscy.class.php:86
+msgid "Class SoapClient not found. please enable php_soap in your php."
+msgstr ""
+"Classe SoapClient não encontrada. Por favor, habilite php_soap em seu php."
+
+#: includes/gateways/afilnet.class.php:106
+#: includes/gateways/msgwow.class.php:114
+msgid "Server API Unavailable"
+msgstr "API do servidor indisponível"
+
+#: includes/gateways/africastalking.class.php:80
+#: includes/gateways/alchemymarketinggm.class.php:83
+#: includes/gateways/eazismspro.class.php:126
+#: includes/gateways/fortytwo.class.php:91
+#: includes/gateways/mobtexting.class.php:111
+#: includes/gateways/msgwow.class.php:100
+#: includes/gateways/unisender.class.php:90
+msgid "API key not set for this gateway"
+msgstr "Chave de API não definida para este gateway"
+
+#: includes/gateways/africastalking.class.php:84
+msgid "CURL extension not found in your server. please enable curl extension."
+msgstr ""
+"A extensão CURL não foi encontrada em seu servidor. Ative a extensão curl."
+
+#: includes/gateways/default.class.php:22
+msgid "Does not set any gateway"
+msgstr ""
+
+#: includes/gateways/gatewayapi.class.php:22
+msgid ""
+"Invalid API token provided in the settings. Please get your token from the "
+"<a href=\"https://gatewayapi.com/app\" target=\"_blank\">GatewayAPI "
+"Dashboard &rarr;</a>"
+msgstr ""
+"Token de API inválido fornecido nas configurações. Obtenha seu token em <a "
+"href=\"https://gatewayapi.com/app\" target=\"_blank\">GatewayAPI Dashboard "
+"&rarr;</a>"
+
+#: includes/gateways/textanywhere.class.php:89
+msgid "API key/Password not set for this gateway"
+msgstr "API Key/Senha não configurada para este gateway"
+
+#: includes/gateways/textanywhere.class.php:100
+#, php-format
+msgid "The <code>%s</code> function is not active in your server."
+msgstr "A função <code>%s</code> não está ativa em seu servidor."
+
+#~ msgid "Class DOMDocument not found in your php."
+#~ msgstr "La clase DOMDocument no ha sido encontrada en su PHP."
+
+#~ msgid "Function simplexml_load_string not found in your php."
+#~ msgstr "La función simplexml_load_string no ha sido encontrada en su PHP."

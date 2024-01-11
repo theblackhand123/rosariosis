@@ -1,0 +1,527 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Staff Absences module for RosarioSIS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-05 13:29-0300\n"
+"PO-Revision-Date: 2023-07-28 14:34+0200\n"
+"Last-Translator: Emerson Barros\n"
+"Language-Team: RosarioSIS <info@rosariosis.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-KeywordsList: dgettext:2;ngettext:2\n"
+"X-Poedit-Basepath: ../../..\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: AbsenceBreakdown.php:60 AbsenceBreakdown.php:439
+msgid "Staff"
+msgstr ""
+
+#: AbsenceBreakdown.php:88
+msgid "January"
+msgstr ""
+
+#: AbsenceBreakdown.php:89
+msgid "February"
+msgstr ""
+
+#: AbsenceBreakdown.php:90
+msgid "March"
+msgstr ""
+
+#: AbsenceBreakdown.php:91
+msgid "April"
+msgstr ""
+
+#: AbsenceBreakdown.php:92
+msgid "May"
+msgstr ""
+
+#: AbsenceBreakdown.php:93
+msgid "June"
+msgstr ""
+
+#: AbsenceBreakdown.php:94
+msgid "July"
+msgstr ""
+
+#: AbsenceBreakdown.php:95
+msgid "August"
+msgstr ""
+
+#: AbsenceBreakdown.php:96
+msgid "September"
+msgstr ""
+
+#: AbsenceBreakdown.php:97
+msgid "October"
+msgstr ""
+
+#: AbsenceBreakdown.php:98
+msgid "November"
+msgstr ""
+
+#: AbsenceBreakdown.php:99
+msgid "December"
+msgstr ""
+
+#: AbsenceBreakdown.php:243
+msgid "Yes"
+msgstr ""
+
+#: AbsenceBreakdown.php:244
+msgid "No"
+msgstr ""
+
+#: AbsenceBreakdown.php:449
+msgid "Field"
+msgstr ""
+
+#: AbsenceBreakdown.php:451
+msgid "Please choose a field"
+msgstr "Por favor, escolha um campo"
+
+#: AbsenceBreakdown.php:459
+msgid "Report Timeframe"
+msgstr ""
+
+#: AbsenceBreakdown.php:460
+msgid "to"
+msgstr ""
+
+#: AbsenceBreakdown.php:462 Absences.php:325 CancelledClasses.php:159
+msgid "Go"
+msgstr ""
+
+#: AbsenceBreakdown.php:471
+msgid "Column"
+msgstr ""
+
+#: AbsenceBreakdown.php:475
+msgid "List"
+msgstr ""
+
+#: AbsenceBreakdown.php:487
+msgid "Option"
+msgstr ""
+
+#: AbsenceBreakdown.php:522
+#, php-format
+msgid "%s Breakdown"
+msgstr ""
+
+#: AbsenceFields.php:110 Absences.php:108 AddAbsence.php:207
+msgid "Please fill in the required fields"
+msgstr ""
+
+#: AbsenceFields.php:113 Absences.php:84 AddAbsence.php:104
+msgid "Please enter valid Numeric data."
+msgstr ""
+
+#: AbsenceFields.php:125
+msgid "Absence Field"
+msgstr "Campo de ausência"
+
+#: AbsenceFields.php:158
+msgid "New Absence Field"
+msgstr "Novo campo de ausência"
+
+#: Absences.php:149 includes/StaffAbsences.fnc.php:337
+msgid "Absence"
+msgstr "Ausência"
+
+#: Absences.php:170
+msgid "File"
+msgstr ""
+
+#: Absences.php:242 CancelledClasses.php:51
+msgid "User"
+msgstr ""
+
+#: Absences.php:243 CancelledClasses.php:52
+#, php-format
+msgid "%s ID"
+msgstr ""
+
+#: Absences.php:244 includes/StaffAbsences.fnc.php:131
+msgid "Starts"
+msgstr ""
+
+#: Absences.php:245 includes/StaffAbsences.fnc.php:173
+msgid "Ends"
+msgstr ""
+
+#: Absences.php:246
+msgid "Days Absent"
+msgstr ""
+
+#: Absences.php:312 CancelledClasses.php:146
+msgid "Expanded View"
+msgstr ""
+
+#: Absences.php:317 CancelledClasses.php:151
+msgid "Original View"
+msgstr ""
+
+#: Absences.php:323 CancelledClasses.php:157
+msgid "From"
+msgstr ""
+
+#: Absences.php:324 CancelledClasses.php:158
+msgid "To"
+msgstr ""
+
+#: AddAbsence.php:192
+msgid "That absence has been referred to an administrator."
+msgstr "Essa ausência foi encaminhada para um administrador."
+
+#: AddAbsence.php:196
+msgid "That absence has been emailed."
+msgstr "Essa ausência foi enviada por e-mail."
+
+#: AddAbsence.php:202
+msgid "Start date must be anterior to end date."
+msgstr ""
+
+#: CancelledClasses.php:53
+msgid "Date"
+msgstr ""
+
+#: CancelledClasses.php:54
+msgid "Course Period"
+msgstr ""
+
+#: CancelledClasses.php:55
+msgid "Period"
+msgstr ""
+
+#: CancelledClasses.php:56
+msgid "Minutes"
+msgstr ""
+
+#: CancelledClasses.php:172
+msgid "Cancelled Class"
+msgstr "Turma cancelada"
+
+#: CancelledClasses.php:173 Menu.php:24 Menu.php:36
+#: includes/StaffAbsences.fnc.php:257
+msgid "Cancelled Classes"
+msgstr "Turmas canceladas"
+
+#: Menu.php:15 Menu.php:19 Menu.php:31
+msgid "Staff Absences"
+msgstr "Ausências de funcionários"
+
+#: Menu.php:21 Menu.php:33
+msgid "Add Absence"
+msgstr "Adicionar ausência"
+
+#: Menu.php:22 includes/Dashboard.inc.php:67 includes/StaffAbsences.fnc.php:338
+msgid "Absences"
+msgstr ""
+
+#: Menu.php:23 Menu.php:35
+msgid "Reports"
+msgstr ""
+
+#: Menu.php:25
+msgid "Days Absent Breakdown"
+msgstr "Detalhamento de dias de ausência"
+
+#: Menu.php:26
+msgid "Setup"
+msgstr "Configurações"
+
+#: Menu.php:27
+msgid "Absence Fields"
+msgstr "Campos de ausência"
+
+#: Menu.php:34
+msgid "My Absences"
+msgstr "Minhas ausências"
+
+#: functions.php:68
+#, php-format
+msgid "%d new staff absence"
+msgid_plural "%d new staff absences"
+msgstr[0] "%d ausência de novos funcionários"
+msgstr[1] "%d novas ausências de funcionários"
+
+#: includes/Notifications.fnc.php:19
+msgid "Email Absence to"
+msgstr "Email de ausência para"
+
+#: includes/Notifications.fnc.php:89
+msgid "Administrators"
+msgstr ""
+
+#: includes/Notifications.fnc.php:101
+msgid "Teachers"
+msgstr ""
+
+#: includes/Notifications.fnc.php:154
+msgid "Students enrolled in cancelled classes"
+msgstr "Alunos matriculados em turmas canceladas"
+
+#: includes/Notifications.fnc.php:155
+msgid "Parents having students enrolled in cancelled classes"
+msgstr "Pais com alunos matriculados em turmas canceladas"
+
+#: includes/Notifications.fnc.php:189
+msgid "Email Text"
+msgstr ""
+
+#: includes/Notifications.fnc.php:196
+msgid "Display Name"
+msgstr ""
+
+#: includes/Notifications.fnc.php:197
+msgid "School"
+msgstr ""
+
+#: includes/Notifications.fnc.php:198 includes/StaffAbsences.fnc.php:106
+msgid "Start Date"
+msgstr ""
+
+#: includes/Notifications.fnc.php:199 includes/StaffAbsences.fnc.php:148
+msgid "End Date"
+msgstr "Data final"
+
+#: includes/Notifications.fnc.php:271
+msgid "New staff absence"
+msgstr "Nova ausência de funcionário"
+
+#: includes/StaffAbsences.fnc.php:67
+msgid "Delete"
+msgstr ""
+
+#: includes/StaffAbsences.fnc.php:91 includes/common.fnc.php:49
+msgid "Morning"
+msgstr "Manhã"
+
+#: includes/StaffAbsences.fnc.php:92 includes/common.fnc.php:49
+msgid "Afternoon"
+msgstr "Tarde"
+
+#~ msgid "Students enrolled in"
+#~ msgstr "Estudiantes inscritos en"
+
+#~ msgid "Parents having students enrolled in"
+#~ msgstr "Padres teniendo hijos inscritos en"
+
+#~ msgid "Document"
+#~ msgstr "Documento"
+
+#~ msgid "Document Category"
+#~ msgstr "Categoría de Documentos"
+
+#~ msgid "The document was lent."
+#~ msgstr "El documento está prestado."
+
+#~ msgid "Lend"
+#~ msgstr "Prestar"
+
+#~ msgid "Lend \"%s\" to %s"
+#~ msgstr "Prestar \"%s\" a \"%s\""
+
+#~ msgid "New Document"
+#~ msgstr "Nuevo Documento"
+
+#~ msgid "New Document Category"
+#~ msgstr "Nueva Categoría de Documentos"
+
+#~ msgid "Document was returned."
+#~ msgstr "Se devolvió el documento."
+
+#~ msgid "Return Date"
+#~ msgstr "Fecha de Devolución"
+
+#~ msgid "Loan"
+#~ msgstr "Prestamo"
+
+#~ msgid "Loans"
+#~ msgstr "Prestamos"
+
+#~ msgid "Past Due"
+#~ msgstr "Aplazado"
+
+#~ msgid "Return document"
+#~ msgstr "Devolver el documento"
+
+#~ msgid "Library"
+#~ msgstr "Biblioteca"
+
+#~ msgid "Reference"
+#~ msgstr "Referencia"
+
+#~ msgid "Author"
+#~ msgstr "Autor"
+
+#~ msgid "Document Categories"
+#~ msgstr "Categorías de Documentos"
+
+#~ msgid "Documents"
+#~ msgstr "Documentos"
+
+#~ msgid "Available"
+#~ msgstr "Disponible"
+
+#~ msgid "Lent"
+#~ msgstr "Prestado"
+
+#~ msgid "Quiz"
+#~ msgid_plural "Quizzes"
+#~ msgstr[0] "Prueba"
+#~ msgstr[1] "Pruebas"
+
+#~ msgid "Quizzes"
+#~ msgstr "Pruebas"
+
+#~ msgid "Questions"
+#~ msgstr "Preguntas"
+
+#~ msgid "Question"
+#~ msgstr "Pregunta"
+
+#~ msgid "Question Category"
+#~ msgstr "Categoría de Preguntas"
+
+#~ msgid "New Question"
+#~ msgstr "Nueva Pregunta"
+
+#~ msgid "New Question Category"
+#~ msgstr "Nueva Categoría de Preguntas"
+
+#~ msgid "Back to Quizzes"
+#~ msgstr "Volver a las Pruebas"
+
+#~ msgid "New Quiz"
+#~ msgstr "Nueva Prueba"
+
+#~ msgid "Quiz submitted."
+#~ msgstr "Prueba entregada"
+
+#~ msgid "You alreay have graded this Quiz."
+#~ msgstr "Esta Prueba ya ha sido calificada."
+
+#~ msgid "Grade Quiz"
+#~ msgstr "Calificar la Prueba"
+
+#~ msgid "Add Question"
+#~ msgstr "Agregar Pregunta"
+
+#~ msgid "Question Categories"
+#~ msgstr "Categoría de Preguntas"
+
+#~ msgid "Select One from Options"
+#~ msgstr "Selección de Opción Simple"
+
+#~ msgid "Gap Fill"
+#~ msgstr "Llene los Blancos"
+
+#~ msgid "Mark correct answer with an asterisk *."
+#~ msgstr "Marcar las respuestas correctas con un asterisco *."
+
+#~ msgid ""
+#~ "*True\n"
+#~ "False"
+#~ msgstr ""
+#~ "*Correcto\n"
+#~ "Incorrecto"
+
+#~ msgid ""
+#~ "*Correct option #1\n"
+#~ "Wrong option #2\n"
+#~ "Wrong option #3\n"
+#~ "*Correct option #4"
+#~ msgstr ""
+#~ "*Opción correcta #1\n"
+#~ "Opción incorrecta #2\n"
+#~ "Opción incorrecta#3\n"
+#~ "*Opción correcta #4"
+
+#~ msgid "Text with gaps"
+#~ msgstr "Texto con blancos"
+
+#~ msgid "Delimit gaps with double underscores __"
+#~ msgstr "Delimita los blancos con doble guiones bajos __"
+
+#~ msgid ""
+#~ "The sky is __blue__.\n"
+#~ "The grass is __green__."
+#~ msgstr ""
+#~ "El cielo es __azul__.\n"
+#~ "El pasto es __verde__."
+
+#~ msgid "Answer"
+#~ msgstr "Respuesta"
+
+#~ msgid "No Assignments are available. Please add a new Assignment: %s"
+#~ msgstr "No hay Tareas disponibles. Por favor agregue una nueva Tarea: %s"
+
+#~ msgid "Show Correct Answers"
+#~ msgstr "Mostrar las Respuestas Correctas"
+
+#~ msgid "Random Question Order"
+#~ msgstr "Orden de Preguntas Aleatorio"
+
+#~ msgid "You are not allowed to access this quiz."
+#~ msgstr "No está autorizado para acceder a esta prueba."
+
+#~ msgid "Submissions for this quiz are closed."
+#~ msgstr "No es más posible entregar esta prueba."
+
+#~ msgid "Submit Quiz"
+#~ msgstr "Entregar la Prueba"
+
+#~ msgid "Answered"
+#~ msgstr "Respondida"
+
+#~ msgid "Answers"
+#~ msgstr "Respuestas"
+
+#~ msgid "Add New Quiz"
+#~ msgstr "Agregar una Nueva Prueba"
+
+#~ msgid "Quizzes already contain this question."
+#~ msgstr "La pruebas ya contienen esta pregunta."
+
+#~ msgid "Answer (optional)."
+#~ msgstr "Respuesta (opcional)."
+
+#~ msgid "# of Students"
+#~ msgstr "# de Estudiantes"
+
+#~ msgid "# of Administrators"
+#~ msgstr "# de Administradores"
+
+#~ msgid "# of Teachers"
+#~ msgstr "# de Docentes"
+
+#~ msgid "# of Parents"
+#~ msgstr "# de Padres"
+
+#~ msgid "Create Subject PDF for Selected Students"
+#~ msgstr "Crear el PDF Materia para los Estudiantes Seleccionados"
+
+#~ msgid "Quiz Widget"
+#~ msgstr "Widget de Ejemplo"
+
+#~ msgid "Quiz Resource"
+#~ msgstr "Recurso de Ejemplo"
+
+#~ msgid "The configuration value has been modified."
+#~ msgstr "El valor de configuración ha sido modificado."
+
+#~ msgid "Quiz module Setup"
+#~ msgstr "Configuración del Módulo Ejemplo"
+
+#~ msgid "Try to enter a non-numeric value"
+#~ msgstr "Intente entrar un valor no numerico"
+
+#~ msgid "Quiz config value label"
+#~ msgstr "Ejemplo de nombre del valor de config"
