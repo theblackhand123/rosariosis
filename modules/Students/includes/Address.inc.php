@@ -31,10 +31,11 @@ if ( ( ! empty( $_POST['values'] )
 				if ( $DatabaseType === 'mysql' )
 				{
 					// @since 10.0 Use GROUP BY instead of DISTINCT ON for MySQL
+					// @since 11.5.3 Fix MySQL 5.7.5+ error due to ONLY_FULL_GROUP_BY mode: use MIN()
 					DBQuery( "INSERT INTO students_join_people
 						(STUDENT_ID,PERSON_ID,ADDRESS_ID,CUSTODY,EMERGENCY,STUDENT_RELATION)
 						SELECT '" . UserStudentID() . "',PERSON_ID,
-						ADDRESS_ID,CUSTODY,EMERGENCY,STUDENT_RELATION
+						MIN(ADDRESS_ID),MIN(CUSTODY),MIN(EMERGENCY),MIN(STUDENT_RELATION)
 						FROM students_join_people
 						WHERE ADDRESS_ID='" . (int) $_REQUEST['address_id'] . "'
 						GROUP BY PERSON_ID" );
@@ -457,7 +458,7 @@ if ( ! $_REQUEST['modfunc'] )
 	//echo '<pre>'; var_dump($addresses_RET); echo '</pre>';
 
 	echo '<table><tr class="address st"><td class="valign-top">';
-	echo '<table class="widefat cellpadding-5">';
+	echo '<table class="widefat cellpadding-5 valign-middle">';
 
 	$i = 1;
 
@@ -695,7 +696,7 @@ if ( ! $_REQUEST['modfunc'] )
 
 			if ( ! empty( $contacts_RET ) || AllowEdit() )
 			{
-				echo '<table class="widefat width-100p"><tr><th colspan="3">';
+				echo '<table class="widefat width-100p valign-middle"><tr><th colspan="3">';
 
 				echo ( $_REQUEST['address_id'] == '0' ? _( 'Contacts without an Address' ) : _( 'Contacts at this Address' ) ) . '</th></tr>';
 			}
@@ -1005,7 +1006,7 @@ if ( ! $_REQUEST['modfunc'] )
 				}
 			}
 
-			echo '<br /><table class="widefat width-100p"><tr><td>' .
+			echo '<br /><table class="widefat width-100p valign-middle"><tr><td>' .
 				button( 'house', '', '', 'bigger' ) .
 				'</td><td>' .
 				CheckboxInput(

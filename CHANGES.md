@@ -1,6 +1,115 @@
 # CHANGES
 ## RosarioSIS Student Information System
 
+Changes in 11.6
+---------------
+- JS FixedMenu Round menu height as 100vh is sometimes not exactly equal to window height in jquery-fixedmenu.js
+- SubstitutionsInput() use Select2Input if more than 30 substitution codes in Substitutions.fnc.php
+- CSS add .valign-middle class in stylesheet.css
+- Use .valign-middle class for tables in Address.inc.php, Exceptions.php & Profiles.php
+- CSS increase input horizontal padding in stylesheet.css
+- CSS Vertical align button inside first td, use when row has input (list with fields) in stylesheet.css
+- CSS WPadmin theme use OpenSans Semibold font instead of OpenSans Bold in font.css
+- Add vertically align list data option (defaults to false) in ListOutput.fnc.php
+- Use vertically align list data option 'valign-middle', program wide
+- CSS add .has-input class to list having input (input or select fields) in ListOutput.fnc.php
+- CSS add .list-save class to Export list link in ListOutput.fnc.php
+- CSS add .list-add-row class (see `$link['add']` parameter) in ListOutput.fnc.php
+- HTML add data-list-id attribute to list in ListOutput.fnc.php
+- Sort list numerically or as strings case-insensitively in ListOutput.fnc.php
+- Sort list using cell's HTML if no inner text in ListOutput.fnc.php
+- ExplodeDate() use strtotime() in Date.php
+- Remove MonthNWSwitch(), `__mnwswitch_num2char()` & `__mnwswitch_char2num()` functions in Date.php
+- Send wkhtmltopdf error by email in PDF.php
+- Log error if not sending email ($RosarioErrorsAddress not set) in ErrorMessage.fnc.php
+- Remove `$link['add']['html']['remove'] = button( 'add' );` (button added by default), program wide
+- HTML add #BottomButtonBack id in Bottom.php
+- Fix check no assignment_id requested before deleting assignment type in Assignments.php
+- Fix PHP notice undefined array key "TITLE" on Assignment update in plugins/Moodle/Grades/Assignments.php
+- Add MailingLabelPositioned() function in MailingLabel.fnc.php
+- CSS add .mailing-label-left, .mailing-label-right & .mailing-label-top-margin classes in stylesheet.css
+- CSS Adjust Mailing Labels top margin for Report Cards in wkhtmltopdf.css
+- Use MailingLabelPositioned() function in ReportCards.fnc.php, ProgressReports.php, PrintRequests.php, PrintSchedules.php, Statements.php, Letters.php & PrintStudentInfo.php
+- Add Mailing Label Position option (left or right) in User.fnc.php & Preferences.php
+- CSS fix Select2 min-width when hidden in stylesheet.css
+- Update French & Spanish translations in rosariosis.po
+- CSS responsive tables: Prevent overscroll/bounce in iOS 16+ MobileSafari and Chrome in zresponsive.css
+- CSS select: Normalize color on iOS 15+ in colors.css
+- MariaDB $DatabaseDumpPath allow 'mariadb-dump' binary in diagnostic.php & config.inc.sample.php
+
+Changes in 11.5.3
+-----------------
+- Fix MySQL 5.7.5+ error due to ONLY_FULL_GROUP_BY mode: use MIN() in Address.inc.php
+
+Changes in 11.5.2
+-----------------
+- Fix get Student Info when Parent associated to various students in ReportCards.fnc.php
+
+Changes in 11.5.1
+-----------------
+- Fix PHP warning undefined array key "" when `$days_array` is empty in PrintSchedules.php & Schedule.inc.php
+- Fix Calculate GPA for all Marking Periods when Year not checked in Transcripts.fnc.php
+- Fix HTML display Transcript footer when Credits unchecked in Transcripts.fnc.php
+- Format Credit Earned, display 0.33 instead of 0.333333333333333 in Transcripts.fnc.php
+- Fix PHP8.3 fatal error Duplicate declaration of static variable in classes/Markdownify/Converter.php
+
+Changes in 11.5
+---------------
+- Moodle plugin: Add REST API protocol in plugins/Moodle/, rosariosis.sql & rosariosis_mysql.sql
+- Add MoodleAPICall() & MoodleRESTCall() functions in plugins/Moodle/client.php
+- Remove check for xmlrpc extension in diagnostic.php
+- Send Course description HTML to Moodle in plugins/Moodle/Scheduling/Courses.php
+- Copy `$_REQUEST` to `$_SESSION['_REQUEST_vars']` last in Modules.php, ErrorMessage.fnc.php & PreparePHP_SELF.fnc.php
+- No error message if error code 4 (no file was attached) in FileUpload.fnc.php
+- DBInsertSQL() & DBUpdateSQL() better check empty values ('', false, null) in DBUpsert.php
+- Breaking change: Use `$_ROSARIO` global var instead of `$_SESSION` in School.php
+- Slovenian translation (71% complete), thanks to AT group in locale/sl_SI.utf8/ & locale/REFERENCE.md
+- Use DBUpdate() & DBInsert() functions in ReportCardGrades.php, Student.php & User.php
+- Fix PHP Fatal error maximum execution time of 120 seconds exceeded in InstallDatabase.php
+- Update French & Spanish translations in rosariosis.po
+- MakeChooseCheckbox() Add 'required' option to $value param. Prevent submitting form if no checkboxes are checked in Inputs.php
+- Use MakeChooseCheckbox()'s new 'required' option, program wide
+- Fix RedirectURL() when GET params also contained in POST form in PreparePHP_SELF.fnc.php
+- JS Compatibility with Use FormData instead of jQuery Form Plugin in FirstLogin.fnc.php
+- Add "Final Grading Percentages are not configured." warning in InputFinalGrades.php
+- Add ProperTime() function in Date.php
+- License change from GNU/GPLv2 to GNU/GPLv2 or later so it is compatible with GNU/GPLv3 in COPYRIGHT, composer.json & package.json
+- Unescape DB strings (`$_REQUEST` only, `$_GET` is not escaped) in PreparePHP_SELF.fnc.php
+- Use DBUpsert() function & simplify logic in SaveEnrollment.fnc.php
+- SQL exclude current record when checking dates for existing enrollment in SaveEnrollment.fnc.php
+- SQL include records without dropped dates when checking for existing enrollment in SaveEnrollment.fnc.php
+- Deprecate SaveData() function in SaveData.fnc.php
+- Add Hide Headers option in Letters.php
+- Show date inputs even if admin profile cannot edit in AccessLog.php
+- CSS FlatSIS theme fix left menu logo below top menu bar when fixed in stylesheet.css
+
+Changes in 11.4.4
+-----------------
+- Fix SQL transcript_grades view for History Marking Periods of existing school years in rosariosis.sql, rosariosis_mysql.sql & Update.fnc.php
+- Fix regression since 11.4 check MP exists before trying to get GPA: include History Marking Periods in Grades.fnc.php
+- Fix PHP Fatal error call to undefined function pg_fetch_array() in database.inc.php & AccessLog.php
+
+Changes in 11.4.3
+-----------------
+- Fix SQL update gradebook_assignment_types only for old teacher's assignments in Courses.fnc.php
+- Fix SQL Get all assignment types having assignments for this course period in GradebookBreakdown.php, Assignments.php, Grades.php & Courses.fnc.php
+- Fix only requested modname logic in AccessLog.php
+
+Changes in 11.4.2
+-----------------
+- Course Teacher change: Update teacher's assignments in Courses.fnc.php
+
+Changes in 11.4.1
+-----------------
+- Fix SQL error invalid input syntax for type integer: "" in Courses.php
+- InputDivOnclick() Do not not convert single quotes to gain a few bytes in Inputs.php
+- Add `functions/PDF.php|pdf_stop_html` & `functions/PDF.php|pdf_stop_pdf` action hooks in Actions.php & PDF.php
+- Fix PHP warning use reset() instead of guessing if $errors[1] is set in ErrorMessage.fnc.php & diagnostic.php
+- Add arguments to Action tags PHPDoc in Actions.php
+- Add `Students/Letters.php|header` action hook in Actions.php & Letters.php
+- Add `Grades/HonorRoll.php|header` action hook in Actions.php & HonorRoll.php
+- Add `ProgramFunctions/Template.fnc.php|before_get` & `ProgramFunctions/Template.fnc.php|before_save` action hooks in Actions.php & Template.fnc.php
+
 Changes in 11.4
 ---------------
 - Add XRedirectUrl JS global var for soft redirection when not an AJAX request in PreparePHP_SELF.fnc.php & warehouse.js

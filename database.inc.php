@@ -255,10 +255,12 @@ function db_fetch_row( $result )
 
 	$return = false;
 
-	if ( $DatabaseType === 'mysql'
-		&& $result instanceof mysqli_result )
+	if ( $DatabaseType === 'mysql' )
 	{
-		$return = mysqli_fetch_assoc( $result );
+		if ( $result instanceof mysqli_result )
+		{
+			$return = mysqli_fetch_assoc( $result );
+		}
 	}
 	else
 	{
@@ -637,9 +639,8 @@ function db_properties( $table )
 
 /**
  * Show SQL error message
- * Send notification email if `$RosarioNotifyAddress` or `$RosarioErrorsAddress` set
+ * Send error email if `$RosarioErrorsAddress` set in the config.inc.php file, or log error
  *
- * @global string $RosarioNotifyAddress or $RosarioErrorsAddress email set in config.inc.php file
  * @since 4.0 Uses ErrorSendEmail()
  * @since 4.6 Show SQL query.
  *
@@ -649,9 +650,6 @@ function db_properties( $table )
  */
 function db_show_error( $sql, $failnote, $additional = '' )
 {
-	global $RosarioNotifyAddress,
-		$RosarioErrorsAddress;
-
 	// TRANSLATION: do NOT translate these since error messages need to stay in English for technical support.
 	?>
 	<br />
@@ -680,9 +678,6 @@ function db_show_error( $sql, $failnote, $additional = '' )
 	</td></tr></tbody></table>
 	<?php
 
-	// Send notification email if $RosarioNotifyAddress set & functions loaded.
-	$db_error_email = ! empty( $RosarioErrorsAddress ) ? $RosarioErrorsAddress : $RosarioNotifyAddress;
-
 	if ( function_exists( 'ErrorSendEmail' ) )
 	{
 		$db_error = [
@@ -691,6 +686,7 @@ function db_show_error( $sql, $failnote, $additional = '' )
 			$sql,
 		];
 
+		// Send error email if `$RosarioErrorsAddress` set in the config.inc.php file, or log error
 		ErrorSendEmail( $db_error, 'Database Error' );
 	}
 

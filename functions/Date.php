@@ -116,7 +116,7 @@ function ProperDateTime( $datetime, $length = 'long' )
 	$locale_time = mb_substr( $locale_time, -3 ) === ':00' ? mb_substr( $locale_time, 0, -3 ) : $locale_time;
 
 	// 0x202f is hex for "narrow no-break space" unicode character.
-	$locale_time = str_replace( ':00 ', ' ', $locale_time );
+	$locale_time = str_replace( [ ':00 ', ':00 ' ], [ ' ', ' ' ], $locale_time );
 
 	$date = mb_substr( $datetime, 0, 10 );
 
@@ -135,6 +135,53 @@ function ProperDateTime( $datetime, $length = 'long' )
 
 
 /**
+ * Localized Time
+ * AM/PM: "16:35:42" => "04:35:42 PM"
+ * 24H: "22:30:00" => "22:30"
+ * Datetime: "2024-02-29 16:35:42" => "04:35:42 PM"
+ *
+ * @since 11.5
+ *
+ * @example ProperTime( $value );
+ * @example DBGet( "SELECT ON_TIME FROM meetings", [ 'ON_TIME' => 'ProperTime' ] );
+ *
+ * @param string $time   Time or datetime.
+ * @param string $column DB column (optional). When using this function as DBGet() callback.
+ *
+ * @return string Localized Time
+ */
+function ProperTime( $time, $column = '' )
+{
+	if ( ! $time )
+	{
+		return $time;
+	}
+
+	try
+	{
+		// Preferred time based on locale.
+		$locale_time = strftime_compat( '%X', strtotime( $time ) );
+	}
+	catch ( \Exception $e )
+	{
+		return $time;
+	}
+
+	// Add raw time inside HTML comment (only if different from locale time). Used for sorting in ListOutput()
+	$comment = $locale_time === $time ? '' : '<!-- ' . $time . ' -->';
+
+	// Strip seconds :00.
+	$locale_time = mb_substr( $locale_time, -3 ) === ':00' ? mb_substr( $locale_time, 0, -3 ) : $locale_time;
+
+	// Strip seconds when AM/PM :00.
+	// 0x202f is hex for "narrow no-break space" unicode character.
+	$locale_time = str_replace( [ ':00 ', ':00 ' ], [ ' ', ' ' ], $locale_time );
+
+	return $comment . $locale_time;
+}
+
+
+/**
  * Verify date
  *
  * Accepts 3 dates formats (Oracle & Postgres)
@@ -147,11 +194,8 @@ function VerifyDate( $date )
 {
 	$date_exploded = ExplodeDate( (string) $date );
 
-	if ( (string) (int) $date_exploded['month'] != $date_exploded['month']
-		|| (string) (int) $date_exploded['day'] != $date_exploded['day']
-		|| (string) (int) $date_exploded['year'] != $date_exploded['year'] )
+	if ( ! $date_exploded['month'] )
 	{
-		// Exploded date components are not integer.
 		return false;
 	}
 
@@ -428,90 +472,27 @@ function PrepareDate( $date, $name_attr = '', $allow_na = true, $options = [] )
 /**
  * Explode a ISO or Oracle date
  *
- * @todo use strtotime()?
+ * @since 11.6 Use strtotime()
+ * @link https://www.php.net/strtotime
  *
  * @param  string $date Postgres or Oracle date.
  *
- * @return array  array( 'year' => '4_digits_year', 'month' => 'numeric_month', 'day' => 'day' )
+ * @return array  [ 'year' => '4_digits_year', 'month' => 'numeric_month', 'day' => 'day' ]
  */
 function ExplodeDate( $date )
 {
-	// Invalid format.
-	$year = $month = $day = '';
+	$timestamp = strtotime( $date );
 
-	if ( empty( $date ) )
+	if ( empty( $timestamp ) )
 	{
-		return [ 'year' => $year, 'month' => $month, 'day' => $day ];
+		return [ 'year' => '', 'month' => '', 'day' => '' ];
 	}
 
-	// Oracle format DD-MMM-YY.
-	if ( mb_strlen( $date ) === 9 )
-	{
-		$year = mb_substr( $date, 7, 2 );
-
-		$year = ( $year < 30 ? '20' : '19' ) . $year;
-
-		$month = MonthNWSwitch( mb_substr( $date, 3, 3 ), 'tonum' );
-
-		$day = mb_substr( $date, 0, 2 );
-	}
-	// ISO format YYYY-MM-DD.
-	elseif ( mb_strlen( $date ) === 10 )
-	{
-		$year = mb_substr( $date, 0, 4 );
-
-		$month = mb_substr( $date, 5, 2 );
-
-		$day = mb_substr( $date, 8, 2 );
-
-		if ( ! is_numeric( $year )
-			&& is_numeric( mb_substr( $date, 6, 4 ) ) )
-		{
-			if ( mb_substr( $date, 2, 1 ) === '/' )
-			{
-				// US Format: MM/DD/YYYY.
-				$year = mb_substr( $date, 6, 4 );
-
-				$month = mb_substr( $date, 0, 2 );
-
-				$day = mb_substr( $date, 3, 2 );
-			}
-
-			if ( mb_substr( $date, 2, 1 ) === '-'
-				|| $month > 12 )
-			{
-				// European Format: DD-MM-YYYY.
-				$year = mb_substr( $date, 6, 4 );
-
-				$month = mb_substr( $date, 3, 2 );
-
-				$day = mb_substr( $date, 0, 2 );
-			}
-		}
-	}
-	// Oracle with 4-digits year DD-MMM-YYYY.
-	elseif ( mb_strlen( $date ) === 11 )
-	{
-		$year = mb_substr( $date, 7, 4 );
-
-		$month = MonthNWSwitch( mb_substr( $date, 3, 3 ), 'tonum' );
-
-		$day = mb_substr( $date, 0, 2 );
-	}
-	// Short European Format: DD-MM-YY.
-	elseif ( mb_strlen( $date ) === 8 )
-	{
-		$year = mb_substr( $date, 6, 2 );
-
-		// Add 19 or 20 to complete 4 digits year.
-		$year = 40 >= $year ? '19' . $year : '20' . $year;
-
-		$month = mb_substr( $date, 3, 2 );
-
-		$day = mb_substr( $date, 0, 2 );
-	}
-
-	return [ 'year' => $year, 'month' => $month, 'day' => $day ];
+	return [
+		'year' => date( 'Y', $timestamp ),
+		'month' => date( 'm', $timestamp ),
+		'day' => date( 'd', $timestamp ),
+	];
 }
 
 /**
@@ -726,124 +707,4 @@ function AddRequestedDates( $request_index, $add_to_post = '' )
 	{
 		$_POST[ $request_index ] = $requested_dates;
 	}
-}
-
-
-/**
- * Switch Month to Number or Characters
- *
- * @deprecated since 2.9 use ISO format.
- *
- * @param  string $month     number or characters month.
- * @param  string $direction tonum|tochar|both (optional). Default to 'both'.
- *
- * @return string            Switched month
- */
-function MonthNWSwitch( $month, $direction = 'both' )
-{
-	// To number.
-	if ( $direction === 'tonum' )
-	{
-		if ( mb_strlen( $month ) < 3 ) // Assume already num.
-		{
-			return $month;
-		}
-
-		return __mnwswitch_char2num( $month );
-	}
-	// To characters.
-	elseif ( $direction === 'tochar' )
-	{
-		if ( mb_strlen( $month === 3 ) ) // Assume already char.
-		{
-			return $month;
-		}
-
-		return __mnwswitch_num2char( $month );
-	}
-	// Both.
-
-	$month = __mnwswitch_num2char( $month );
-
-	return __mnwswitch_char2num( $month );
-}
-
-
-/**
- * Switch number month to characters
- * Local function
- *
- * @deprecated since 2.9 use ISO format.
- *
- * @param  string $month number month.
- *
- * @return string        characters month
- */
-function __mnwswitch_num2char( $month )
-{
-	$months_number = [
-		'01' => 'JAN',
-		'02' => 'FEB',
-		'03' => 'MAR',
-		'04' => 'APR',
-		'05' => 'MAY',
-		'06' => 'JUN',
-		'07' => 'JUL',
-		'08' => 'AUG',
-		'09' => 'SEP',
-		'10' => 'OCT',
-		'11' => 'NOV',
-		'12' => 'DEC',
-		'00' => 'DEC',
-	];
-
-	if ( mb_strlen( $month ) === 1 )
-	{
-		$month = '0' . $month;
-	}
-
-	if ( array_key_exists( $month, $months_number ) )
-	{
-		return $months_number[ $month ];
-	}
-	else
-		return $month;
-}
-
-
-/**
- * Switch characters month to number
- * Local function
- *
- * @deprecated since 2.9 use ISO format.
- *
- * @param  string $month characters month.
- *
- * @return string        number month
- */
-function __mnwswitch_char2num( $month )
-{
-	$months_number = [
-		'JAN' => '01',
-		'FEB' => '02',
-		'MAR' => '03',
-		'APR' => '04',
-		'MAY' => '05',
-		'JUN' => '06',
-		'JUL' => '07',
-		'AUG' => '08',
-		'SEP' => '09',
-		'OCT' => '10',
-		'NOV' => '11',
-		'DEC' => '12',
-	];
-
-	$month = mb_strtoupper( $month );
-
-	if ( array_key_exists( $month, $months_number ) )
-	{
-		return $months_number[ $month ];
-	}
-	else
-		return $month;
 }

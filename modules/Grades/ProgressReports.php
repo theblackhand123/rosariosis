@@ -122,12 +122,6 @@ if ( $_REQUEST['modfunc'] === 'save' )
 	{
 		unset( $_ROSARIO['DrawHeader'] );
 
-		if ( isset( $_REQUEST['mailing_labels'] )
-			&& $_REQUEST['mailing_labels'] == 'Y' )
-		{
-			echo '<br /><br /><br />';
-		}
-
 		DrawHeader( _( 'Progress Report' ) );
 		DrawHeader( $student['FULL_NAME'], $student['STUDENT_ID'] );
 		DrawHeader( $student['GRADE_ID'], SchoolInfo( 'TITLE' ) );
@@ -136,8 +130,8 @@ if ( $_REQUEST['modfunc'] === 'save' )
 		if ( isset( $_REQUEST['mailing_labels'] )
 			&& $_REQUEST['mailing_labels'] == 'Y' )
 		{
-			echo '<br /><br /><table class="width-100p"><tr><td style="width:50px;"> &nbsp; </td><td>' .
-				$student['MAILING_LABEL'] . '</td></tr></table><br />';
+			// @since 11.6 Add Mailing Label position
+			echo MailingLabelPositioned( $student['MAILING_LABEL'] );
 		}
 
 		if ( User( 'PROFILE' ) !== 'teacher' )
@@ -411,7 +405,7 @@ if ( ! $_REQUEST['modfunc'] )
 	$extra['link'] = [ 'FULL_NAME' => false ];
 	$extra['SELECT'] = ",s.STUDENT_ID AS CHECKBOX";
 	$extra['functions'] = [ 'CHECKBOX' => 'MakeChooseCheckbox' ];
-	$extra['columns_before'] = [ 'CHECKBOX' => MakeChooseCheckbox( 'Y', '', 'st_arr' ) ];
+	$extra['columns_before'] = [ 'CHECKBOX' => MakeChooseCheckbox( 'Y_required', '', 'st_arr' ) ];
 	$extra['options']['search'] = false;
 
 	// Parent: associated students.
@@ -525,6 +519,11 @@ function _makeExtraGrade( $value, $column )
 		return _( 'N/A' );
 	}
 
+	if ( ! isset( $weighted_grade[$THIS_RET['ASSIGNMENT_TYPE_ID']] ) )
+	{
+		$weighted_grade[$THIS_RET['ASSIGNMENT_TYPE_ID']] = 0;
+	}
+
 	if ( empty( $THIS_RET['DUE'] )
 		&& $value != '' )
 	{
@@ -537,11 +536,6 @@ function _makeExtraGrade( $value, $column )
 	}
 
 	$percent = _makeLetterGrade( $value / $THIS_RET['TOTAL_POINTS'], $cp_id, $teacher_id, '%' );
-
-	if ( ! isset( $weighted_grade[$THIS_RET['ASSIGNMENT_TYPE_ID']] ) )
-	{
-		$weighted_grade[$THIS_RET['ASSIGNMENT_TYPE_ID']] = 0;
-	}
 
 	// @since 11.0 Add Weight Assignments option
 	$weighted_grade[$THIS_RET['ASSIGNMENT_TYPE_ID']] += ( $value / $THIS_RET['TOTAL_POINTS'] ) * $THIS_RET['WEIGHT'];

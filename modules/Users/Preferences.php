@@ -218,6 +218,7 @@ if ( ! $_REQUEST['modfunc'] )
 		'search' => false,
 		'save' => false,
 		'count' => false,
+		'valign-middle' => true,
 	];
 
 	if ( ! in_array( $_REQUEST['tab'], [ 'student_fields', 'staff_fields' ] ) )
@@ -455,6 +456,25 @@ if ( ! $_REQUEST['modfunc'] )
 			Preferences( 'HEADER' ),
 			'values[Preferences][HEADER]',
 			_( 'PDF List Header Color' ),
+			$extra,
+			$div
+		);
+
+		echo '</td></tr><tr><td>';
+
+		/**
+		 * Add Mailing Label Position
+		 * Position or side for a windowed envelope
+		 * Defaults to right for French speaking countries
+		 *
+		 * @since 11.6
+		 */
+		echo SelectInput(
+			Preferences( 'MAILING_LABEL_POSITION' ),
+			'values[Preferences][MAILING_LABEL_POSITION]',
+			_( 'Mailing Label Position' ),
+			[ 'left' => _( 'Left' ), 'right' => _( 'Right' ) ],
+			$allow_na,
 			$extra,
 			$div
 		);

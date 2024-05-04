@@ -27,6 +27,10 @@
 	/* 100% of browser screen height */
 }
 
+#menu.fixedmenu-fixed #menu-top {
+	margin-top: 39px;
+}
+
 #menu-top select {
 	width: 100%;
 }
@@ -138,7 +142,7 @@ input[type=radio] {
 }
 
 input[type=number] {
-	width: 50px
+	width: 58px
 }
 
 input[type=number][name*=AMOUNT],
@@ -243,11 +247,15 @@ select,
 textarea {
 	line-height: 1.3;
 	margin: 1px 1px 1px 0;
-	padding: 2px;
+	padding: 2px 4px;
+}
+
+input[type=number] {
+	padding-right: 2px;
 }
 
 select {
-	padding: 0 3px;
+	padding: 0 2px 0 4px;
 	height: 27px
 }
 
@@ -613,6 +621,12 @@ textarea {
 
 label {
 	vertical-align: middle
+}
+
+/* Choose checkbox, see MakeChooseCheckbox() */
+
+.list td:first-of-type label input[type="checkbox"] {
+	vertical-align: initial
 }
 
 /* Proper Date, see ProperDate() */
@@ -1065,7 +1079,7 @@ textarea {
 	border-width: 1px;
 	border-bottom-width: 2px;
 	border-style: solid;
-	padding: 2px 7px;
+	padding: 2px 4px;
 	margin-bottom: 2px;
 	box-sizing: border-box;
 	overflow-y: auto;
@@ -1160,6 +1174,19 @@ td.valign-bottom,
 tr.valign-bottom td,
 table.valign-bottom td {
 	vertical-align: bottom
+}
+
+td.valign-middle,
+tr.valign-middle td,
+table.valign-middle td {
+	vertical-align: middle
+}
+
+/* Vertical align button inside first td, use when row has input (list with fields) */
+
+.list.has-input:not(.valign-middle) > tbody > tr > td:first-child .button,
+.list.has-input:not(.valign-middle) > tbody > tr > td:first-child .button + b {
+	padding-top: 8px
 }
 
 .align-right,
@@ -1323,6 +1350,10 @@ a > .button {
 .BottomButton.loading {
 	float: right;
 	padding-bottom: 13px;
+}
+
+.BottomButton.hide {
+	display: none;
 }
 
 /* Loading spinner */
@@ -1617,6 +1648,7 @@ a .button + b {
 	font-weight: normal;
 	text-transform: uppercase;
 	font-size: 14px;
+	vertical-align: middle;
 }
 
 /* Tooltip */
@@ -1834,6 +1866,10 @@ input[type=checkbox].toggle {
 	padding-right: 15px;
 }
 
+.select2-container {
+	min-width: 55px;
+}
+
 /* Add 23px to multiple Chosen/Select2 select */
 
 .chosen-select[multiple],
@@ -1938,4 +1974,37 @@ input[type=checkbox].toggle {
 .password-strength-bars ~ label {
 	display: inline-block;
 	margin-top: -2px;
+}
+
+/**
+ * Mailing Labels
+ *
+ * @since 11.6 Add Mailing Label position
+ */
+
+.mailing-label-left,
+.mailing-label-right {
+	margin-top: 21px;
+	margin-bottom: 36px;
+}
+
+.mailing-label-left td:first-of-type,
+.mailing-label-right td:last-of-type {
+	width: 60px;
+}
+
+.mailing-label-left td:last-of-type,
+.mailing-label-right td:first-of-type {
+	width: 400px;
+}
+
+.mailing-label-right {
+	width: auto;
+	margin-right: 0;
+	margin-left: auto;
+}
+
+.mailing-label-top-margin {
+	/* Add the equivalent of 6 line breaks. */
+	margin-top: 126px;
 }

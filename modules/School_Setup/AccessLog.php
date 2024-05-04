@@ -37,11 +37,12 @@ if ( $_REQUEST['modfunc'] === 'delete' )
 	}
 }
 
-if ( count( $_REQUEST ) === 1 )
+if ( count( $_REQUEST ) === 3
+	&& ! $_REQUEST['modfunc'] )
 {
 	// Only requested modname.
 	// @since 11.4 Automatically clear Access Log entries older than one year
-	DBGet( "DELETE FROM access_log
+	DBQuery( "DELETE FROM access_log
 		WHERE CREATED_AT<'" . date( 'Y-m-d', strtotime( '1 year ago' ) ) . "'" );
 }
 
@@ -51,11 +52,23 @@ if ( ! $_REQUEST['modfunc'] )
 {
 	echo '<form action="' . URLEscape( 'Modules.php?modname=' . $_REQUEST['modname']  ) . '" method="GET">';
 
+	if ( ! AllowEdit() )
+	{
+		$_ROSARIO['allow_edit'] = true;
+
+		$allow_edit_tmp = true;
+	}
+
 	DrawHeader(
 		_( 'From' ) . ' ' . DateInput( $start_date, 'start', '', false, false ) . ' - ' .
 		_( 'To' ) . ' ' . DateInput( $end_date, 'end', '', false, false ) .
 		Buttons( _( 'Go' ) )
 	);
+
+	if ( ! empty( $allow_edit_tmp ) )
+	{
+		$_ROSARIO['allow_edit'] = false;
+	}
 
 	echo '</form>';
 

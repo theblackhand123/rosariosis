@@ -18,7 +18,7 @@
  * @package RosarioSIS
  */
 
-define( 'ROSARIO_VERSION', '11.4' );
+define( 'ROSARIO_VERSION', '11.6' );
 
 /**
  * Include config.inc.php file.
@@ -724,11 +724,13 @@ function Warehouse( $mode )
 				if ( ! isPopup() ):
 				?>
 	</div><!-- #wrap -->
-				<?php endif;
+<?php
+				endif;
 
 			?>
 </body></html>
-			<?php endif;
+<?php
+			endif;
 
 			if ( ! isPopup() ):
 
@@ -749,8 +751,9 @@ function Warehouse( $mode )
 
 				?>
 		</div><!-- #body -->
-	</body></html>
-			<?php endif;
+</body></html>
+<?php
+			endif;
 
 			ETagCache( 'stop' );
 

@@ -2,6 +2,7 @@
 //FJ Moodle integrator
 
 //core_course_create_categories function
+// @since 11.5 Send Course description HTML to Moodle
 function core_course_create_categories_object()
 {
 	//first, gather the necessary variables
@@ -30,6 +31,8 @@ function core_course_create_categories_object()
 			$_REQUEST['MOODLE_COURSE_SUBJECT_PARENT_CATEGORY'] : 0;
 
 		//$idnumber = (string)$_REQUEST['subject_id'];
+
+		$description = '';
 	}
 	elseif ( $table_name == 'courses' )
 	{
@@ -42,6 +45,9 @@ function core_course_create_categories_object()
 		}
 
 		//$idnumber = (string)$_REQUEST['course_id'];
+
+		// @since 11.5 Send Course description to Moodle
+		$description = DBUnescapeString( $columns['DESCRIPTION'] );
 	}
 	else //error...
 
@@ -56,9 +62,15 @@ function core_course_create_categories_object()
 			'name' => $name,
 			'parent' => $parent,
 			//'idnumber' => $idnumber,
+			'description' => $description,
 			'descriptionformat' => $descriptionformat,
 		],
 	];
+
+	if ( MOODLE_API_PROTOCOL === 'rest' )
+	{
+		return [ 'categories' => $categories ];
+	}
 
 	return [ $categories ];
 }
@@ -105,6 +117,7 @@ function core_course_create_categories_response( $response )
 }
 
 //core_course_update_categories function
+// @since 11.5 Send Course description HTML to Moodle
 function core_course_update_categories_object()
 {
 	//first, gather the necessary variables
@@ -151,12 +164,31 @@ function core_course_update_categories_object()
 
 	$name = $columns['TITLE'];
 
+	if ( $table_name == 'courses' )
+	{
+		// @since 11.5 Send Course description to Moodle
+		$description = DBUnescapeString( $columns['DESCRIPTION'] );
+	}
+	elseif ( $table_name == 'course_subjects' )
+	{
+		$description = '';
+	}
+
+	$descriptionformat = 1;
+
 	$categories = [
 		[
 			'id' => $id,
 			'name' => $name,
+			'description' => $description,
+			'descriptionformat' => $descriptionformat,
 		],
 	];
+
+	if ( MOODLE_API_PROTOCOL === 'rest' )
+	{
+		return [ 'categories' => $categories ];
+	}
 
 	return [ $categories ];
 }
@@ -211,6 +243,11 @@ function core_course_delete_categories_object()
 			'recursive' => $recursive,
 		],
 	];
+
+	if ( MOODLE_API_PROTOCOL === 'rest' )
+	{
+		return [ 'categories' => $categories ];
+	}
 
 	return [ $categories ];
 }
@@ -330,6 +367,11 @@ function core_course_create_courses_object()
 		],
 	];
 
+	if ( MOODLE_API_PROTOCOL === 'rest' )
+	{
+		return [ 'courses' => $courses ];
+	}
+
 	return [ $courses ];
 }
 
@@ -408,6 +450,11 @@ function core_role_assign_roles_object()
 		],
 	];
 
+	if ( MOODLE_API_PROTOCOL === 'rest' )
+	{
+		return [ 'assignments' => $assignments ];
+	}
+
 	return [ $assignments ];
 }
 
@@ -436,9 +483,14 @@ function core_course_delete_courses_object()
 	int   //course ID
 	)*/
 
-	$courses = [ $id ];
+	$courseids = [ $id ];
 
-	return [ $courses ];
+	if ( MOODLE_API_PROTOCOL === 'rest' )
+	{
+		return [ 'courseids' => $courseids ];
+	}
+
+	return [ $courseids ];
 }
 
 /**
@@ -502,6 +554,11 @@ function core_role_unassign_roles_object()
 			'instanceid' => $instanceid,
 		],
 	];
+
+	if ( MOODLE_API_PROTOCOL === 'rest' )
+	{
+		return [ 'unassignments' => $unassignments ];
+	}
 
 	return [ $unassignments ];
 }
@@ -594,6 +651,11 @@ function core_course_update_courses_object()
 	$courses = [
 		$course,
 	];
+
+	if ( MOODLE_API_PROTOCOL === 'rest' )
+	{
+		return [ 'courses' => $courses ];
+	}
 
 	return [ $courses ];
 }

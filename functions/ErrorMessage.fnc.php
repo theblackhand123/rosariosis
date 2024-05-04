@@ -35,6 +35,8 @@ $note = $error = $warning = [];
  */
 function ErrorMessage( $errors, $code = 'error' )
 {
+	global $_ROSARIO;
+
 	if ( ! $errors
 		|| ! is_array( $errors ) )
 	{
@@ -58,8 +60,7 @@ function ErrorMessage( $errors, $code = 'error' )
 
 	if ( count( $errors ) === 1 )
 	{
-		// Note: do not use issetVal() here.
-		$return .= ': ' . ( isset( $errors[0] ) ? $errors[0] : $errors[1] ) . '</p>';
+		$return .= ': ' . reset( $errors ) . '</p>';
 	}
 
 	// More than one error: list.
@@ -84,6 +85,21 @@ function ErrorMessage( $errors, $code = 'error' )
 
 		if ( ! isset( $_REQUEST['_ROSARIO_PDF'] ) )
 		{
+			/**
+			 * Save $_REQUEST vars in session: used to recreate $_REQUEST in Bottom.php
+			 * Note: Code duplicated from Modules.php
+			 *
+			 * @since 11.5 Copy $_REQUEST to $_SESSION['_REQUEST_vars'] last
+			 */
+			if ( isset( $_ROSARIO['page'] )
+				&& $_ROSARIO['page'] === 'modules'
+				&& empty( $_REQUEST['LO_save'] )
+				&& ( mb_strpos( $_REQUEST['modname'], 'misc/' ) === false
+					|| $_REQUEST['modname'] === 'misc/Portal.php' ) )
+			{
+				$_SESSION['_REQUEST_vars'] = $_REQUEST;
+			}
+
 			Warehouse( 'footer' );
 
 			exit;
@@ -107,9 +123,12 @@ function ErrorMessage( $errors, $code = 'error' )
  * @since 4.0
  * @since 6.5 Add Profile.
  * @since 10.0 Add Can use modname.
+ * @since 11.6 Log error if not sending email ($RosarioErrorsAddress not set)
  *
  * @param array  $error Error messages. Optional.
  * @param $title string Email title. Optional.
+ *
+ * @return True if email sent, false otherwise.
  */
 function ErrorSendEmail( $error = [], $title = 'PHP Fatal error' )
 {
@@ -146,6 +165,12 @@ function ErrorSendEmail( $error = [], $title = 'PHP Fatal error' )
 
 	if ( ! filter_var( $RosarioErrorsAddress, FILTER_VALIDATE_EMAIL ) )
 	{
+		if ( $title !== 'PHP Fatal error' )
+		{
+			// Log error.
+			error_log( $title . ' - ' . implode( ' ', $error ) );
+		}
+
 		return false;
 	}
 
@@ -192,7 +217,5 @@ function ErrorSendEmail( $error = [], $title = 'PHP Fatal error' )
 		$message = nl2br( $message );
 	}
 
-	SendEmail( $RosarioErrorsAddress, $title, $message );
-
-	return true;
+	return SendEmail( $RosarioErrorsAddress, $title, $message );
 }

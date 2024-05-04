@@ -166,13 +166,14 @@ if ( ! empty( $DatabaseDumpPath )
 	$error[] = 'The value for $DatabaseDumpPath in the config.inc.php file is not correct. pg_dump utility not found.';
 }
 
-// Check mysqldump binary exists.
+// Check mysqldump or mariadb-dump binary exists.
 if ( ! empty( $DatabaseDumpPath )
 	&& $DatabaseType === 'mysql'
 	&& ( ! file_exists( $DatabaseDumpPath )
-		|| strpos( basename( $DatabaseDumpPath ), 'mysqldump' ) !== 0 ) )
+		|| ( strpos( basename( $DatabaseDumpPath ), 'mysqldump' ) !== 0
+			&& strpos( basename( $DatabaseDumpPath ), 'mariadb-dump' ) !== 0 ) ) )
 {
-	$error[] = 'The value for $DatabaseDumpPath in the config.inc.php file is not correct. mysqldump utility not found.';
+	$error[] = 'The value for $DatabaseDumpPath in the config.inc.php file is not correct. mysqldump or mariadb-dump utility not found.';
 }
 
 // Check for gd extension.
@@ -187,17 +188,10 @@ if ( ! extension_loaded( 'zip' ) )
 	$error[] = 'PHP extensions: RosarioSIS relies on the zip extension (used to upload add-ons and by Import add-ons). Please install and activate it.';
 }
 
-// Check for xmlrpc extension.
-if ( version_compare( PHP_VERSION, '8.0' ) == -1
-	&& ! extension_loaded( 'xmlrpc' ) )
-{
-	$error[] = 'PHP extensions: RosarioSIS relies on the xmlrpc extension (only used to connect to Moodle). Please install and activate it.';
-}
-
 // Check for curl extension.
 if ( ! extension_loaded( 'curl' ) )
 {
-	$error[] = 'PHP extensions: RosarioSIS relies on the curl extension (only used to connect to Moodle). Please install and activate it.';
+	$error[] = 'PHP extensions: RosarioSIS relies on the curl extension. Please install and activate it.';
 }
 
 // Check for intl extension.
@@ -247,7 +241,7 @@ function _ErrorMessage( $error, $code = 'error' )
 			else
 				$return .= '<b><span style="color:#00CC00">Note:</span></b> ';
 
-			$return .= ( ($error[0]) ? $error[0] : $error[1] );
+			$return .= reset( $error );
 		}
 		else
 		{
@@ -257,7 +251,7 @@ function _ErrorMessage( $error, $code = 'error' )
 				$return .= '<b><span style="color:#CC0000">Errors:</span></b>';
 			}
 			else
-				$return .= '<b><span style="color:#00CC00">Note:</span></b>';
+				$return .= '<b><span style="color:#00CC00">Notes:</span></b>';
 
 			$return .= '<ul>';
 

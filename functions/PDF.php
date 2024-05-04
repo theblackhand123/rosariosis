@@ -61,6 +61,8 @@ function PDFStart( $options = [] )
  * @since 7.5 Use phpwkhtmltopdf class instead of Wkhtmltopdf (more reliable & faster)
  * @since 10.9 CSS Add modname class, ie .modname-grades-reportcards-php for modname=Grades/ReportCards.php
  * @since 11.2 Security remove $wkhtmltopdfAssetsPath & --enable-local-file-access, use base URL instead
+ * @since 11.4.1 Add `functions/PDF.php|pdf_stop_html` & `functions/PDF.php|pdf_stop_pdf` action hooks
+ * @since 11.6 Send wkhtmltopdf error by email
  *
  * @link https://github.com/mikehaertl/phpwkhtmltopdf
  *
@@ -68,7 +70,7 @@ function PDFStart( $options = [] )
  *
  * @param  array $handle from PDFStart(), PDF options.
  *
- * @return string Full path to file if Save mode, else outputs HTML if not wkhtmltopdf or Embed / Download PDF
+ * @return string Full path to file if Save mode (empty if error), else outputs HTML if not wkhtmltopdf or Embed / Download PDF
  */
 function PDFStop( $handle )
 {
@@ -160,7 +162,8 @@ function PDFStop( $handle )
 	// Decode UTF8 is useful for Windows only.
 	$filename = iconv(
 		'UTF-8',
-		'ISO-8859-1',
+		// Fix PHP Notice iconv() Detected an illegal character in input string
+		'ISO-8859-1//IGNORE',
 		str_replace(
 			[ _( 'Print' ) . ' ', ' ' ],
 			[ '', '_' ],
@@ -170,6 +173,13 @@ function PDFStop( $handle )
 
 	if ( empty( $wkhtmltopdfPath ) )
 	{
+		/**
+		 * PDF Stop HTML (no wkhtmltopdf)
+		 *
+		 * @since 11.4.1
+		 */
+		do_action( 'functions/PDF.php|pdf_stop_html', [ $html, $handle ] );
+
 		// If no wkhtmltopdf, render in HTML.
 		if ( $handle['mode'] !== 3 ) // Display HTML.
 		{
@@ -279,6 +289,14 @@ function PDFStop( $handle )
 
 	$pdf->addPage( $html );
 
+	/**
+	 * PDF Stop (wkhtmltopdf)
+	 * Note: $pdf is a mikehaertl\wkhtmlto\Pdf object
+	 *
+	 * @since 11.4.1
+	 */
+	do_action( 'functions/PDF.php|pdf_stop_pdf', [ $pdf, $handle ] );
+
 	if ( $handle['mode'] === 3 ) // Save.
 	{
 		$full_path = $path . DIRECTORY_SEPARATOR . $filename . '.pdf';
@@ -287,6 +305,10 @@ function PDFStop( $handle )
 		if ( ! $pdf->saveAs( $full_path ) )
 		{
 			echo ErrorMessage( [ $pdf->getError() ] );
+
+			ErrorSendEmail( [ $pdf->getError() ], 'wkhtmltopdf error' );
+
+			return '';
 		}
 
 		return $full_path;
@@ -296,6 +318,8 @@ function PDFStop( $handle )
 	if ( ! $pdf->send( $filename . '.pdf', (bool) $handle['mode'] ) ) // Embed or Download.
 	{
 		echo ErrorMessage( [ $pdf->getError() ] );
+
+		ErrorSendEmail( [ $pdf->getError() ], 'wkhtmltopdf error' );
 	}
 
 	return '';

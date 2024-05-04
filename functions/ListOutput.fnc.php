@@ -28,6 +28,9 @@ function ListOutput( $result, $column_names, $singular = '.', $plural = '.', $li
 		// @since 10.9 Add pagination option (defaults to false)
 		// Deactivated by default as yields strange results when multiple lists on same page.
 		'pagination' => false,
+		// @since 11.6 Add vertically align list data option (defaults to false)
+		// Use when some columns are text & others input & should be displayed on 1 line only.
+		'valign-middle' => false,
 	];
 
 	$options = empty( $options ) ?
@@ -189,7 +192,8 @@ function ListOutput( $result, $column_names, $singular = '.', $plural = '.', $li
 		{
 			foreach ( (array) $result as $sort )
 			{
-				if ( ! isset( $sort[$LO_sort] ) )
+				if ( ! isset( $sort[$LO_sort] )
+					|| (string) $sort[$LO_sort] === '' )
 				{
 					$sort_array[] = '';
 
@@ -198,13 +202,14 @@ function ListOutput( $result, $column_names, $singular = '.', $plural = '.', $li
 
 				if ( mb_substr( (string) $sort[$LO_sort], 0, 4 ) != '<!--' )
 				{
-					//FJ better list sorting by isolating the values
-					//$sort_array[] = $sort[ $LO_sort ];
-					$sort_array[] = strip_tags( preg_replace(
+					// Better list sorting by isolating the values
+					$inner_text = trim( strip_tags( preg_replace(
 						'/<script\b[^>]*>(.*?)<\/script>/is',
 						"",
 						(string) $sort[$LO_sort]
-					) );
+					) ) );
+
+					$sort_array[] = $inner_text !== '' ? $inner_text : trim( $sort[ $LO_sort ] );
 
 					continue;
 				}
@@ -219,15 +224,9 @@ function ListOutput( $result, $column_names, $singular = '.', $plural = '.', $li
 
 			$dir = $LO_dir == -1 ? SORT_DESC : SORT_ASC;
 
-			if ( is_int( $sort_array[1] )
-				|| is_double( $sort_array[1] ) )
-			{
-				array_multisort( $sort_array, $dir, SORT_NUMERIC, $result );
-			}
-			else
-			{
-				array_multisort( $sort_array, $dir, $result );
-			}
+			$flag = is_numeric( $sort_array[1] ) ? SORT_NUMERIC : SORT_STRING | SORT_FLAG_CASE;
+
+			array_multisort( $sort_array, $dir, $flag, $result );
 
 			array_unshift( $result, [ 'always_start_list_at_key_1' ] );
 
@@ -425,7 +424,7 @@ function ListOutput( $result, $column_names, $singular = '.', $plural = '.', $li
 			// Save / Export list button.
 			echo '<a href="' . $PHP_tmp_SELF . '&' . $extra .
 			'&LO_save=' . $options['save'] .
-			'&_ROSARIO_PDF=true" target="_blank"><img src="assets/themes/' .
+			'&_ROSARIO_PDF=true" class="list-save" target="_blank"><img src="assets/themes/' .
 			Preferences( 'THEME' ) . '/btn/download.png" class="alignImg" title="' .
 			AttrEscape( _( 'Export list' ) ) . '" alt="' . AttrEscape( _( 'Export list' ) ) . '"></a>';
 		}
@@ -476,9 +475,30 @@ function ListOutput( $result, $column_names, $singular = '.', $plural = '.', $li
 
 	if ( $result_count > 0 )
 	{
+		// List has input?
+		$list_has_input = false;
+
+		$item = reset( $result );
+
+		foreach ( (array) $item as $string )
+		{
+			if ( $string
+				&& ( strpos( $string, '<input' ) !== false
+					|| strpos( $string, '<select' ) !== false ) )
+			{
+				// First row has input.
+				$list_has_input = true;
+
+				break;
+			}
+		}
+
 		echo '<div class="list-wrapper"><table class="list widefat' .
 			( $options['responsive'] && ! isset( $_REQUEST['_ROSARIO_PDF'] ) ? ' rt' : '' ) .
-			( ! $list_has_nav ? ' list-no-nav' : '' ) . '"><thead><tr>';
+			( $options['valign-middle'] ? ' valign-middle' : '' ) .
+			( ! $list_has_nav ? ' list-no-nav' : '' ) .
+			( $list_has_input ? ' has-input' : '' ) .
+			'" data-list-id="' . $list_id . '"><thead><tr>';
 
 		$i = 1;
 
@@ -516,7 +536,7 @@ function ListOutput( $result, $column_names, $singular = '.', $plural = '.', $li
 
 				if ( $options['sort']
 					// Fix MakeChooseCheckbox() remove parent link to sort column
-					&& mb_strpos( $value, 'id="controller"' ) === false )
+					&& mb_strpos( $value, 'id="controller' ) === false )
 				{
 					echo '<th class="' . $class . '"><a href="' . $PHP_tmp_SELF . URLEscape( '&LO_page=' . $LO_page .
 						'&LO_sort=' . $key . '&LO_dir=' . $direction .
@@ -538,9 +558,9 @@ function ListOutput( $result, $column_names, $singular = '.', $plural = '.', $li
 		if ( isset( $link['add']['first'] )
 			&& ( $stop - $start + 1 ) >= $link['add']['first'] )
 		{
-			if ( $link['add']['link'] && ! isset( $_REQUEST['_ROSARIO_PDF'] ) )
+			if ( isset( $link['add']['link'] ) && ! isset( $_REQUEST['_ROSARIO_PDF'] ) )
 			{
-				echo '<tr><td colspan="' . ( $remove ? $cols + 1 : $cols ) . '">' .
+				echo '<tr class="list-add-row"><td colspan="' . ( $remove ? $cols + 1 : $cols ) . '">' .
 					button(
 						'add',
 						issetVal( $link['add']['title'], '' ),
@@ -549,14 +569,14 @@ function ListOutput( $result, $column_names, $singular = '.', $plural = '.', $li
 							URLEscape( $link['add']['link'] ) )
 					) . '</td></tr>';
 			}
-			elseif ( $link['add']['span'] && ! isset( $_REQUEST['_ROSARIO_PDF'] ) )
+			elseif ( isset( $link['add']['span'] ) && ! isset( $_REQUEST['_ROSARIO_PDF'] ) )
 			{
-				echo '<tr><td colspan="' . ( $remove ? $cols + 1 : $cols ) . '">' .
+				echo '<tr class="list-add-row"><td colspan="' . ( $remove ? $cols + 1 : $cols ) . '">' .
 					button( 'add' ) . $link['add']['span'] . '</td></tr>';
 			}
-			elseif ( $link['add']['html'] && $cols )
+			elseif ( isset( $link['add']['html'] ) && $cols )
 			{
-				echo '<tr>';
+				echo '<tr class="list-add-row">';
 
 				if ( $remove && ! isset( $_REQUEST['_ROSARIO_PDF'] ) && $link['add']['html']['remove'] )
 				{
@@ -569,7 +589,7 @@ function ListOutput( $result, $column_names, $singular = '.', $plural = '.', $li
 
 				foreach ( (array) $column_names as $key => $value )
 				{
-					echo '<td>' . $link['add']['html'][$key] . '</td>';
+					echo '<td>' . issetVal( $link['add']['html'][$key], '' ) . '</td>';
 				}
 
 				echo '</tr>';
@@ -678,7 +698,7 @@ function ListOutput( $result, $column_names, $singular = '.', $plural = '.', $li
 		{
 			if ( isset( $link['add']['link'] ) && ! isset( $_REQUEST['_ROSARIO_PDF'] ) )
 			{
-				echo '<tr><td colspan="' . ( $remove ? $cols + 1 : $cols ) . '">' .
+				echo '<tr class="list-add-row"><td colspan="' . ( $remove ? $cols + 1 : $cols ) . '">' .
 				button(
 					'add',
 					issetVal( $link['add']['title'], '' ),
@@ -689,12 +709,12 @@ function ListOutput( $result, $column_names, $singular = '.', $plural = '.', $li
 			}
 			elseif ( isset( $link['add']['span'] ) && ! isset( $_REQUEST['_ROSARIO_PDF'] ) )
 			{
-				echo '<tr><td colspan="' . ( $remove ? $cols + 1 : $cols ) . '">' .
+				echo '<tr class="list-add-row"><td colspan="' . ( $remove ? $cols + 1 : $cols ) . '">' .
 					button( 'add' ) . $link['add']['span'] . '</td></tr>';
 			}
 			elseif ( isset( $link['add']['html'] ) && $cols )
 			{
-				echo '<tr>';
+				echo '<tr class="list-add-row">';
 
 				if ( $remove
 					&& ! isset( $_REQUEST['_ROSARIO_PDF'] )
@@ -745,15 +765,17 @@ function ListOutput( $result, $column_names, $singular = '.', $plural = '.', $li
 		{
 			if ( ! empty( $link['add']['html'] ) )
 			{
-				echo '<div class="list-wrapper"><table class="list widefat';
+				echo '<div class="list-wrapper"><table class="list widefat has-input';
 
 				echo $options['responsive'] ? ' rt' : '';
+
+				echo $options['valign-middle'] ? ' valign-middle' : '';
 
 				echo $list_has_nav ? '' : ' list-no-nav';
 
 				echo $options['center'] ? ' center' : '';
 
-				echo '"><thead><tr>';
+				echo '" data-list-id="' . $list_id . '"><thead><tr>';
 
 				echo '<th><span class="a11y-hidden">' . _( 'Delete' ) . '</span></th>';
 
@@ -762,7 +784,7 @@ function ListOutput( $result, $column_names, $singular = '.', $plural = '.', $li
 					echo '<th>' . ParseMLField( $value ) . '</th>';
 				}
 
-				echo '</tr></thead><tbody><tr><td>';
+				echo '</tr></thead><tbody><tr class="list-add-row"><td>';
 
 				echo ! empty( $link['add']['html']['remove'] ) ?
 					$link['add']['html']['remove'] :
@@ -783,7 +805,7 @@ function ListOutput( $result, $column_names, $singular = '.', $plural = '.', $li
 
 				echo $options['center'] ? ' center' : '';
 
-				echo '"><tr><td>' . button( 'add' ) . $link['add']['span'] . '</td></tr></table>';
+				echo '"><tr class="list-add-row"><td>' . button( 'add' ) . $link['add']['span'] . '</td></tr></table>';
 			}
 		}
 

@@ -1,6 +1,10 @@
 <?php
 /**
- * Prepare PHP SELF function
+ * URL related functions:
+ * - Prepare PHP SELF
+ * - Redirect URL
+ * - Escape URL
+ * - RosarioSIS URL
  *
  * @package RosarioSIS
  * @subpackage functions
@@ -9,8 +13,9 @@
 /**
  * Prepare PHP SELF
  * Generates `Modules.php` SELF URL with GET parameters
+ * null, false & '' (empty string) are removed from URL
  *
- * @example PreparePHP_SELF( $_REQUEST, array(), array( 'modfunc' => 'delete' ) );
+ * @example PreparePHP_SELF( $_REQUEST, [], [ 'modfunc' => 'delete' ] );
  *
  * @uses URLEscape()
  *
@@ -27,12 +32,12 @@ function PreparePHP_SELF( $tmp_REQUEST = [], $remove = [], $add = [] )
 	if ( empty( $tmp_REQUEST ) )
 	{
 		$tmp_REQUEST = $_REQUEST;
-	}
 
-	// Remove Cookie vars.
-	foreach ( $_COOKIE as $key => $value )
+		$is_REQUEST = true;
+	}
+	else
 	{
-		unset( $tmp_REQUEST[ $key ] );
+		$is_REQUEST = $tmp_REQUEST === $_REQUEST;
 	}
 
 	// Remove vars in $remove.
@@ -41,15 +46,17 @@ function PreparePHP_SELF( $tmp_REQUEST = [], $remove = [], $add = [] )
 		unset( $tmp_REQUEST[ $key ] );
 	}
 
-	// Unescape DB strings.
-	array_rwalk(
-		$tmp_REQUEST,
-		function ( $input )
-		{
-			// null & false are converted to empty string so they are removed from URL.
-			return $input == '' ? (string) $input : DBUnescapeString( $input );
-		}
-	);
+	if ( $is_REQUEST )
+	{
+		// Unescape DB strings ($_REQUEST only, $_GET is not escaped).
+		array_rwalk(
+			$tmp_REQUEST,
+			function ( $input )
+			{
+				return $input == '' ? $input : DBUnescapeString( $input );
+			}
+		);
+	}
 
 	// Add vars in $add.
 	foreach ( (array) $add as $key => $value )
@@ -77,7 +84,7 @@ function PreparePHP_SELF( $tmp_REQUEST = [], $remove = [], $add = [] )
 						{
 							foreach ( $value2 as $key3 => $value3 )
 							{
-								if ( $value3 !== '' )
+								if ( (string) $value3 !== '' )
 								{
 									$PHP_tmp_SELF .= '&' . $key .
 										'[' . $key1 . '][' . $key2 .
@@ -85,20 +92,20 @@ function PreparePHP_SELF( $tmp_REQUEST = [], $remove = [], $add = [] )
 								}
 							}
 						}
-						elseif ( $value2 !== '' )
+						elseif ( (string) $value2 !== '' )
 						{
 							$PHP_tmp_SELF .= '&' . $key . '[' . $key1 .
 								'][' . $key2 . ']=' . $value2;
 						}
 					}
 				}
-				elseif ( $value1 !== '' )
+				elseif ( (string) $value1 !== '' )
 				{
 					$PHP_tmp_SELF .= '&' . $key . '[' . $key1 . ']=' . $value1;
 				}
 			}
 		}
-		elseif ( $value !== '' )
+		elseif ( (string) $value !== '' )
 		{
 			$PHP_tmp_SELF .= '&' . $key . "=" . $value;
 		}
@@ -120,6 +127,7 @@ function PreparePHP_SELF( $tmp_REQUEST = [], $remove = [], $add = [] )
  * @since 3.3
  * @since 11.2 Add $add_post argument, POST parameters to add to the URL (optional)
  * @since 11.4 Add XRedirectUrl JS global var for soft redirection when not an AJAX request
+ * @since 11.5 Copy $_REQUEST to $_SESSION['_REQUEST_vars'] last in Modules.php, no need to remove here
  *
  * @example RedirectURL( [ 'modfunc', 'id' ] );
  *
@@ -128,14 +136,15 @@ function PreparePHP_SELF( $tmp_REQUEST = [], $remove = [], $add = [] )
  *
  * @see warehouse.js check for X-Redirect-Url or XRedirectUrl
  *
- * @param array|string $remove   Parameters to remove from the $_REQUEST & $_SESSION['_REQUEST_vars'] arrays.
+ * @param array|string $remove   Parameters to remove from the $_REQUEST array.
  * @param array|string $add_post POST parameters to add to the URL (optional).
  *
  * @return boolean     False if nothing to remove, else true.
  */
 function RedirectURL( $remove, $add_post = [] )
 {
-	static $add_post_all = [];
+	static $remove_all = [],
+		$add_post_all = [];
 
 	if ( ! $remove
 		&& ! $add_post )
@@ -152,10 +161,7 @@ function RedirectURL( $remove, $add_post = [] )
 
 		$_REQUEST[ $request_key ] = false;
 
-		if ( isset( $_SESSION['_REQUEST_vars'][ $request_key ] ) )
-		{
-			$_SESSION['_REQUEST_vars'][ $request_key ] = false;
-		}
+		$remove_all[] = $request_key;
 	}
 
 	foreach ( (array) $add_post as $post_key )
@@ -165,10 +171,10 @@ function RedirectURL( $remove, $add_post = [] )
 			continue;
 		}
 
-		$add_post_all[ $post_key ] = $post_key;
+		$add_post_all[ $post_key ] = $_POST[ $post_key ];
 	}
 
-	$redirect_url = PreparePHP_SELF( $_REQUEST, array_diff( array_keys( $_POST ), $add_post_all ) );
+	$redirect_url = PreparePHP_SELF( $_GET, $remove_all, $add_post_all );
 
 	// Redirect URL.
 	header( 'X-Redirect-Url: ' . $redirect_url );

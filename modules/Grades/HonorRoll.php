@@ -75,7 +75,7 @@ if ( ! $_REQUEST['modfunc'] )
 			$substitutions['__SUBJECT__'] = _( 'Subject' );
 		}
 
-		$substitutions += SubstitutionsCustomFields( 'STUDENT' );
+		$substitutions += SubstitutionsCustomFields( 'student' );
 
 		$extra['extra_header_left'] .= '<tr class="st"><td class="valign-top">' .
 			SubstitutionsInput( $substitutions ) .
@@ -84,6 +84,15 @@ if ( ! $_REQUEST['modfunc'] )
 		$extra['extra_header_left'] .= HonorRollFrame();
 
 		$extra['extra_header_left'] .= '</table>';
+
+		/**
+		 * Honor Roll header
+		 * Add your headers to
+		 * @global $extra['extra_header_left']
+		 *
+		 * @since 11.4.1
+		 */
+		do_action( 'Grades/HonorRoll.php|header' );
 	}
 
 	$extra['new'] = true;
@@ -92,7 +101,7 @@ if ( ! $_REQUEST['modfunc'] )
 	{
 		$extra['SELECT'] = ",s.STUDENT_ID AS CHECKBOX";
 		$extra['functions'] = [ 'CHECKBOX' => 'MakeChooseCheckbox' ];
-		$extra['columns_before'] = [ 'CHECKBOX' => MakeChooseCheckbox( '', '', 'st_arr' ) ];
+		$extra['columns_before'] = [ 'CHECKBOX' => MakeChooseCheckbox( 'required', '', 'st_arr' ) ];
 	}
 
 	$extra['link'] = [ 'FULL_NAME' => false ];

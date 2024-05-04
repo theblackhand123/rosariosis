@@ -19,6 +19,8 @@ if ( $_REQUEST['modfunc'] === 'save'
 
 	$_REQUEST['mailing_labels'] = issetVal( $_REQUEST['mailing_labels'], '' );
 
+	$_REQUEST['hide_headers'] = issetVal( $_REQUEST['hide_headers'], '' );
+
 	$st_list = "'" . implode( "','", $_REQUEST['st_arr'] ) . "'";
 
 	$extra['WHERE'] = " AND s.STUDENT_ID IN (" . $st_list . ")";
@@ -115,21 +117,22 @@ if ( $_REQUEST['modfunc'] === 'save'
 	{
 		unset( $_ROSARIO['DrawHeader'] );
 
-		if ( $_REQUEST['mailing_labels'] == 'Y' )
+		if ( ! $_REQUEST['hide_headers'] )
 		{
-			echo '<br /><br /><br />';
+			DrawHeader( '&nbsp;' );
+			DrawHeader( $student['FULL_NAME'], $student['STUDENT_ID'] );
+			DrawHeader( $student['GRADE_ID'], $student['SCHOOL_TITLE'] );
+			DrawHeader( ProperDate( DBDate() ) );
+		}
+		elseif ( $_REQUEST['mailing_labels'] === 'Y' )
+		{
+			echo '<br /><br /><br /><br /><br /><br /><br /><br /><br />';
 		}
 
-		//DrawHeader(ParseMLField(Config('TITLE')).' Letter');
-		DrawHeader( '&nbsp;' );
-		DrawHeader( $student['FULL_NAME'], $student['STUDENT_ID'] );
-		DrawHeader( $student['GRADE_ID'], $student['SCHOOL_TITLE'] );
-		//DrawHeader('',GetMP(GetCurrentMP('QTR',DBDate(),false)));
-		DrawHeader( ProperDate( DBDate() ) );
-
-		if ( $_REQUEST['mailing_labels'] == 'Y' )
+		if ( $_REQUEST['mailing_labels'] === 'Y' )
 		{
-			echo '<br /><br /><table class="width-100p"><tr><td style="width:50px;"> &nbsp; </td><td>' . $student['MAILING_LABEL'] . '</td></tr></table><br />';
+			// @since 11.6 Add Mailing Label position
+			echo MailingLabelPositioned( $student['MAILING_LABEL'] );
 		}
 
 		$substitutions = [
@@ -172,7 +175,7 @@ if ( ! $_REQUEST['modfunc'] )
 		$extra['search'] = '';
 
 		// FJ add TinyMCE to the textarea.
-		$extra['extra_header_left'] .= '<table class="width-100p"><tr><td>' .
+		$extra['extra_header_left'] .= '<table class="width-100p"><tr class="st"><td>' .
 		TinyMCEInput(
 			GetTemplate(),
 			'letter_text',
@@ -200,11 +203,29 @@ if ( ! $_REQUEST['modfunc'] )
 			$substitutions['__ROOM__'] = _( 'Your Room' );
 		}
 
-		$substitutions += SubstitutionsCustomFields( 'STUDENT' );
+		$substitutions += SubstitutionsCustomFields( 'student' );
 
-		$extra['extra_header_left'] .= '<table><tr class="st"><td class="valign-top">' .
+		$extra['extra_header_left'] .= '<tr class="st"><td>' .
 			SubstitutionsInput( $substitutions ) .
-		'</td></tr></table>';
+		'</td></tr>';
+
+		// @since 11.5 Add Hide Headers option
+		$extra['extra_header_left'] .= '<tr class="st"><td>' . CheckboxInput(
+			issetVal( $_REQUEST['hide_headers'], '' ),
+			'hide_headers',
+			_( 'Hide Headers' ),
+			'',
+			true
+		) . '</td></tr></table>';
+
+		/**
+		 * Print Letters header
+		 * Add your headers to
+		 * @global $extra['extra_header_left']
+		 *
+		 * @since 11.4.1
+		 */
+		do_action( 'Students/Letters.php|header' );
 	}
 
 	$extra['SELECT'] = issetVal( $extra['SELECT'], '' );
@@ -212,7 +233,7 @@ if ( ! $_REQUEST['modfunc'] )
 	$extra['SELECT'] .= ",s.STUDENT_ID AS CHECKBOX";
 	$extra['link'] = [ 'FULL_NAME' => false ];
 	$extra['functions'] = [ 'CHECKBOX' => 'MakeChooseCheckbox' ];
-	$extra['columns_before'] = [ 'CHECKBOX' => MakeChooseCheckbox( 'Y', '', 'st_arr' ) ];
+	$extra['columns_before'] = [ 'CHECKBOX' => MakeChooseCheckbox( 'Y_required', '', 'st_arr' ) ];
 	$extra['options']['search'] = false;
 	$extra['new'] = true;
 

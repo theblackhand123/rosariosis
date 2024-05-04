@@ -111,7 +111,7 @@ $categories_RET = DBGet( "SELECT rc.ID,rc.TITLE,rc.COLOR,1,rc.SORT_ORDER
 
 if ( ! isset( $_REQUEST['tab_id'] )
 	|| $_REQUEST['tab_id'] == ''
-	|| ! $categories_RET[$_REQUEST['tab_id']] )
+	|| empty( $categories_RET[$_REQUEST['tab_id']] ) )
 {
 	$_REQUEST['tab_id'] = key( $categories_RET ) . '';
 }
@@ -430,7 +430,20 @@ if ( $_REQUEST['modfunc'] === 'gradebook' )
 
 				foreach ( (array) $percents as $percent )
 				{
-					$total += $percent['GRADE_PERCENT'] * $gradebook_config[$prefix . $percent['MARKING_PERIOD_ID']];
+					if ( ! isset( $gradebook_config[$prefix . $percent['MARKING_PERIOD_ID']] ) )
+					{
+						// @since 11.5 Add "Final Grading Percentages are not configured." warning
+						$warning['config_percent'] = _( 'Final Grading Percentages are not configured.' );
+
+						if ( AllowUse( 'Grades/Configuration.php' ) )
+						{
+							$warning['config_percent'] .= ' <a href="Modules.php?modname=Grades/Configuration.php">' .
+								_( 'Configuration' ) . '</a>';
+						}
+					}
+
+					$total += $percent['GRADE_PERCENT'] *
+						issetVal( $gradebook_config[$prefix . $percent['MARKING_PERIOD_ID']] );
 
 					$total_percent += $gradebook_config[$prefix . $percent['MARKING_PERIOD_ID']];
 				}
@@ -1406,6 +1419,8 @@ else
 	DrawHeader( GetMP( UserMP() ) );
 }
 
+echo ErrorMessage( $warning, 'warning' );
+
 $LO_columns = [ 'FULL_NAME' => _( 'Student' ), 'STUDENT_ID' => sprintf( _( '%s ID' ), Config( 'NAME' ) ) ];
 
 if ( $_REQUEST['include_inactive'] == 'Y' )
@@ -1455,7 +1470,7 @@ foreach ( (array) $categories_RET as $id => $category )
 	] + ( $category[1]['COLOR'] ? [ 'color' => $category[1]['COLOR'] ] : [] );
 }
 
-$LO_options = [ 'save' => false, 'search' => false ];
+$LO_options = [ 'save' => false, 'search' => false, 'valign-middle' => true ];
 
 if ( ! empty( $categories_RET ) && GetMP( $_REQUEST['mp'], 'DOES_COMMENTS' ) == 'Y' )
 {

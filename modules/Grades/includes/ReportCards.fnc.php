@@ -197,7 +197,7 @@ if ( ! function_exists( 'ReportCardsIncludeForm' ) )
 				'__YEAR__' => _( 'School Year' ),
 			];
 
-			$substitutions += SubstitutionsCustomFields( 'STUDENT' );
+			$substitutions += SubstitutionsCustomFields( 'student' );
 
 			$return .= '<table><tr class="st"><td class="valign-top">' .
 				SubstitutionsInput( $substitutions ) .
@@ -860,6 +860,9 @@ if ( ! function_exists( 'ReportCardsGenerate' ) )
 					AND sch.SYEAR='" . UserSyear() . "') AS SCHOOL_TITLE";
 			}
 
+			// Parent: associated students.
+			$extra2['ASSOCIATED'] = User( 'STAFF_ID' );
+
 			$student = GetStuList( $extra2 );
 
 			$student = $student[1];
@@ -889,14 +892,6 @@ if ( ! function_exists( 'ReportCardsGenerate' ) )
 
 			foreach ( (array) $addresses as $address )
 			{
-				unset( $_ROSARIO['DrawHeader'] );
-
-				if ( isset( $_REQUEST['mailing_labels'] )
-					&& $_REQUEST['mailing_labels'] === 'Y' )
-				{
-					echo '<BR /><BR /><BR />';
-				}
-
 				echo '<table class="width-100p"><tr>';
 
 				// FJ add school logo.
@@ -912,6 +907,8 @@ if ( ! function_exists( 'ReportCardsGenerate' ) )
 				}
 
 				echo '<td>';
+
+				unset( $_ROSARIO['DrawHeader'] );
 
 				// Headers.
 				DrawHeader( _( 'Report Card' ) );
@@ -1017,22 +1014,16 @@ if ( ! function_exists( 'ReportCardsGenerate' ) )
 				echo '</tr></table>';
 
 				// Mailing Labels.
-
 				if ( isset( $_REQUEST['mailing_labels'] )
 					&& $_REQUEST['mailing_labels'] === 'Y' )
 				{
-					for ( $i = $count_lines; $i <= 6; $i++ )
-					{
-						echo '<BR />';
-					}
-
-					echo '<table><tr>
-					<td style="width:50px;"> &nbsp; </td>
-					<td style="width:300px;">' . $address[1]['MAILING_LABEL'] . '</td>
-					</tr></table>';
+					// @since 11.6 Add Mailing Label position
+					echo MailingLabelPositioned( $address[1]['MAILING_LABEL'] );
 				}
-
-				echo '<BR />';
+				else
+				{
+					echo '<br />';
+				}
 
 				ListOutput( $grades_RET, $LO_columns, '.', '.', [], [], [ 'count' => false ] );
 

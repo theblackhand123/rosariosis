@@ -110,17 +110,14 @@ if ( $_REQUEST['modfunc'] === 'save' )
 			{
 				foreach ( (array) $courses as $address )
 				{
-					echo '<br /><br /><br />';
 					unset( $_ROSARIO['DrawHeader'] );
 					DrawHeader( _( 'Student Schedule' ) );
 					DrawHeader( SchoolInfo( 'TITLE' ), ProperDate( $date ) );
 					DrawHeader( $address[1]['FULL_NAME'], $address[1]['STUDENT_ID'] );
 					DrawHeader( $address[1]['GRADE_ID'], $_REQUEST['mp_id'] ? GetMP( $_REQUEST['mp_id'] ) : '' );
 
-					echo '<br /><br /><br /><table class="width-100p"><tr>
-						<td style="width:50px;"> &nbsp; </td>
-						<td>' . $address[1]['MAILING_LABEL'] . '</td>
-					</tr></table><br />';
+					// @since 11.6 Add Mailing Label position
+					echo MailingLabelPositioned( $address[1]['MAILING_LABEL'] );
 
 					ListOutput(
 						$address,
@@ -270,17 +267,14 @@ if ( $_REQUEST['modfunc'] === 'save' )
 			{
 				foreach ( (array) $RET[$student_id] as $address )
 				{
-					echo '<br /><br /><br />';
 					unset( $_ROSARIO['DrawHeader'] );
 					DrawHeader( _( 'Student Schedule' ) );
 					DrawHeader( SchoolInfo( 'TITLE' ), ProperDate( $date ) );
 					DrawHeader( $address[1]['FULL_NAME'], $address[1]['STUDENT_ID'] );
 					DrawHeader( $address[1]['GRADE_ID'], $_REQUEST['mp_id'] ? GetMP( $_REQUEST['mp_id'] ) : '' );
 
-					echo '<br /><br /><br /><table class="width-100p"><tr>
-						<td style="width:50px;"> &nbsp; </td>
-						<td>' . $address[1]['MAILING_LABEL'] . '</td>
-					</tr></table><br />';
+					// @since 11.6 Add Mailing Label position
+					echo MailingLabelPositioned( $address[1]['MAILING_LABEL'] );
 
 					$schedule_table = _schedule_table_RET( $schedule_table );
 
@@ -433,7 +427,7 @@ if ( ! $_REQUEST['modfunc'] )
 	$extra['link'] = [ 'FULL_NAME' => false ];
 	$extra['SELECT'] = ",s.STUDENT_ID AS CHECKBOX";
 	$extra['functions'] = [ 'CHECKBOX' => 'MakeChooseCheckbox' ];
-	$extra['columns_before'] = [ 'CHECKBOX' => MakeChooseCheckbox( 'Y', '', 'st_arr' ) ];
+	$extra['columns_before'] = [ 'CHECKBOX' => MakeChooseCheckbox( 'Y_required', '', 'st_arr' ) ];
 	$extra['options']['search'] = false;
 	$extra['new'] = true;
 
@@ -462,10 +456,22 @@ function _GetDays( $value, $column )
 {
 	global $schedule_table_days;
 
+	if ( ! $value )
+	{
+		// Fix PHP warning undefined array key ""
+		return [];
+	}
+
 	$days_array = str_split( $value );
 
-	foreach ( $days_array as $index => $day )
+	foreach ( $days_array as $day )
 	{
+		if ( ! $day )
+		{
+			// Fix PHP warning undefined array key "" when $days_array is empty
+			continue;
+		}
+
 		$schedule_table_days[$day] = true;
 	}
 
